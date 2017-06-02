@@ -4,7 +4,7 @@
 
 ### Cross Training
 
-We will seek to have more than one developer with working knowledge (code + business case/understanding of importance to organization) of supported apps. “Working knowledge” means the ability to fix an app with little friction
+We will seek to have more than one developer with working knowledge (code + business case/understanding of importance to organization) of supported apps. “Working knowledge” means the ability to fix an app with little friction.
 
 ### Peer Review
 
