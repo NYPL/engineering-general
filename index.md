@@ -41,7 +41,7 @@ The documentation should focus on how to install, run, and deploy an app.
 
 We recognize that it is hard to translate difficulty points to time and, therefore, can refuse to give time estimate.
 
-### Having Sufficient Time & Advanced Notice
+### Having Sufficient Time & Advance Notice
 
 * We understand the importance of having sufficient time to do work and will communicate that to stakeholders.
 
