@@ -10,8 +10,9 @@ We will seek to have more than one developer with working knowledge (code + busi
 
 We value collaboration in all its forms, especially pull requests.
 
-### Fixing Quickly vs Ideally
+### Velocity vs. Ideal
 
+Simple solutions, delivered today are often better than perfect solutions delivered tomorrow.
 “Quick fixes” are acceptable if they are documented and agreed upon by other developers.
 
 ### Not Shaming or Blaming
