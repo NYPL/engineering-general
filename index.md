@@ -1,4 +1,4 @@
-# Developer Rights & Responsibilities
+# Engineering Values
 
 ## We Value
 
