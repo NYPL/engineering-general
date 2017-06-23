@@ -4,4 +4,10 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 
 ## Contents
 
+### Culture
+
 * [Engineering Values](values.md)
+
+### Standards
+
+* [Log Message Standard](standards/logging.md)
