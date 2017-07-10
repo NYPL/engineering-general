@@ -5,6 +5,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 The message format MUST be JSON.
 
 The message MUST contain the following top-level keys: `level`, `message`:
+
 - `level` MUST be a **string** of one of the following values (case-sensitive) and MUST follow this order of severity (from least to greatest): `DEBUG`, `INFO`, `NOTICE`, `WARNING`, `ERROR`, `CRITICAL`, `ALERT`, or `EMERGENCY`.
 - `message` MUST be a **string** and SHOULD contain a message useful for debugging/error reporting.
 
