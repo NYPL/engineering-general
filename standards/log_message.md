@@ -8,7 +8,7 @@ The message MUST contain the following top-level keys: `level`, `message`:
 - `level` MUST be a **string** of one of the following values (case-sensitive) and MUST follow this order of severity (from least to greatest): `DEBUG`, `INFO`, `NOTICE`, `WARNING`, `ERROR`, `CRITICAL`, `ALERT`, or `EMERGENCY`.
 - `message` MUST be a **string** and SHOULD contain a message useful for debugging/error reporting.
 
-The message is RECOMMENDED to contain the following top-level keys:
+The message is MAY contain the following top-level keys:
 
 - `levelCode` MUST be a **integer** and correspond to the log `level`:
     - `DEBUG`: 7
