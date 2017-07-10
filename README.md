@@ -18,4 +18,4 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 
 ### Data
 
-* [Data Repo](https://github.com/NYPL/nypl-core)
+* :link: [Data Repo](https://github.com/NYPL/nypl-core)
