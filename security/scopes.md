@@ -11,10 +11,9 @@ These scopes are common to all services:
 - `openid`: required by [OpenID Connect specification](http://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
 - `offline_access`: issues a refresh token (when applicable)
 
-These scopes define the role requested:
+Additional scopes can be used to define the *role* requested:
 
-- `role:patron`
-- `role:service`
+- `role:service`: used to indicate request originates from a service
 
 ## Service-specific Scopes
 
