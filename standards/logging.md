@@ -34,7 +34,7 @@ Any logging SHOULD be sent to aggregation service such as Loggly or CloudWatch.
 ## Metrics & Exception Notification
 
 We SHOULD use log parsing for generating metrics & exception notification.
-`level`s of error & above means human beings MUST be notified.
+A severity of `ERROR` & above means human beings MUST be notified.
 
 ## Rotation
 
