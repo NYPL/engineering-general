@@ -10,7 +10,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 
 ### Standards
 
-* [Log Message Standard](standards/log_message.md)
+* [Logging](standards/logging.md)
 
 ### Security
 
