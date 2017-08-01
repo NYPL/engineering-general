@@ -10,6 +10,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 
 ### Standards
 
+* [Alerting & Notifications](standards/alerting.md)
 * [Logging](standards/logging.md)
 
 ### Security
