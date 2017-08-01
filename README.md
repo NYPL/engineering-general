@@ -11,6 +11,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 ### Standards
 
 * [Logging](standards/logging.md)
+* [Coding Style](standards/coding-standards.md)
 
 ### Security
 
