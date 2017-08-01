@@ -29,12 +29,14 @@ Additional key/values of any type MAY be included and MUST NOT break functionali
 
 ## Aggregation
 
-Any logging SHOULD be sent to aggregation service such as Loggly or CloudWatch.
+Any logging MUST be sent to CloudWatch.
+
+Services built prior to this standard, MAY send logs to another aggregation service like Loggly.
 
 ## Metrics & Exception Notification
 
 We SHOULD use log parsing for generating metrics & exception notification.  
-**A severity of `ERROR` & above means human beings MUST be notified.**
+**A severity of `ERROR` & above means human beings MUST be [notified](alerting.md).**
 
 ## Rotation
 
