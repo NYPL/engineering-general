@@ -4,9 +4,9 @@
 
 - All code SHOULD go through the process of peer review. It is a form of collaboration and it strengthens code quality.
 
-- It SHOULD involve a more experienced developer evaluating whether best practices are followed for code-in-review.
+- It MAY involve a more experienced developer evaluating whether best practices are followed for code-in-review.
 
-- It SHOULD consists of at least one (1) session of one-on-one code review.
+- It SHOULD consist of at least one (1) session of one-on-one code review.
 
   - Example: One team member would make an appointment with another team member to chat about coding progress, followed by walk-through of code-in-review.
 
