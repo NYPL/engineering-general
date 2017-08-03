@@ -13,6 +13,7 @@
 - It MAY involve a team member who is less experienced with the tech stack.
 
   - Example: A team member who is familiar with PHP can sit down with a team member familiar with Ruby on Rails, walking through the idea behind the PHP code, followed by a list concrete tests showing the code works.
+  
 
 ##Pull Request Workflow
 
