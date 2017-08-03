@@ -4,11 +4,13 @@
 
 The message format MUST be JSON.
 
-The message MUST contain the following top-level keys: `level`, `message`:
+The message MUST contain the top-level keys:
 
-- `level` MUST be a **case-sensitive string** of one of the following values & MUST follow this order of severity (from least to greatest): `DEBUG`, `INFO`, `NOTICE`, `WARNING`, `ERROR`, `CRITICAL`, `ALERT`, or `EMERGENCY`.
-
-- `message` MUST be a **string** and SHOULD contain a message useful for debugging/error reporting.
+| key            | type                 | note
+| :------------- | :-------------       | :-------------
+| level          | case-sensitive string| MUST follow this order of severity (from least to greatest): `DEBUG`, `INFO`, `NOTICE`, `WARNING`, `ERROR`, `CRITICAL`, `ALERT`, or `EMERGENCY`
+| message        | string               |SHOULD contain a message useful for debugging/error reporting.
+| timestamp      | string               |MUST be formatted as [iso8601](https://en.wikipedia.org/wiki/ISO_8601), (e.g. "2017-08-01T18:41:09.707Z")
 
 The message MAY also contain the following top-level keys:
 
