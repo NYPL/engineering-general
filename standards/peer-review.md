@@ -6,7 +6,7 @@
 
 - It SHOULD involve a more experienced developer evaluating whether best practices are followed.
 
-- It May consist of at least one (1) session of one-on-one peer review.
+- It MAY consist of at least one (1) session of one-on-one peer review.
 
   - Example: One team member would make an appointment with another team member to chat about coding progress, followed by walk-through of code-in-review.
 
