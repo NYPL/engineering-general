@@ -14,9 +14,10 @@
 
   - Example: A team member who is familiar with PHP can sit down with a team member familiar with Ruby on Rails, walking through the idea behind the PHP code, followed by a list concrete tests showing the code works.
 
+##Pull Request Workflow
+
 A common type of peer review involves two or more developers reviewing a pull request from a code repository.
 
-##Pull Request Workflow
 
 - Developers when submitting pull request, SHOULD mark at least one (1) developer as reviewer.
 
