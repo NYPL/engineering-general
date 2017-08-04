@@ -8,7 +8,7 @@ Services SHOULD check [OAuth scopes](../security/oauth.md) and [OpenID Connect c
 
 Services SHOULD be on a private network inaccessible from the Internet whenever possible.
 
-Services that are publicly exposed SHOULD be behind an API Gateway and use the API Gateway for authentication, DoS protection, and rate limiing.
+Services that are publicly exposed SHOULD be behind an API Gateway and use the API Gateway for authentication, DoS protection, and rate limiting.
 
 Services SHOULD use HTTPS for connections.
 
@@ -16,11 +16,15 @@ Services SHOULD use HTTPS for connections.
 
 Applications MUST NOT expose private credentials to users or in source control (e.g. OAuth credentials, tokens, API keys, etc.).
 
+Applications SHOULD use ENVIRONMENT variables to store private credentials (e.g. OAuth credentials, tokens, API keys, etc.).
+
+Front-end Applications MUST NOT store any private credentials in browser cache or cookies (e.g. OAuth credentials, tokens, API keys, etc.).
+
 Applications SHOULD protect against [XSS and CSRF](http://www.redotheweb.com/2015/11/09/api-security.html) attacks.
 
 Applications SHOULD use HTTPS for connections.
 
-Applications SHOULD sanitize all user inputs or any input parameters exposed to the user to prevent attacks (e.g. XSS, SQL injection).
+Applications SHOULD sanitize all user inputs, url parameters or any input parameters exposed to the user to prevent attacks (e.g. XSS, SQL injection).
 
 When storing passwords, `bcrypt` SHOULD be used.
 
