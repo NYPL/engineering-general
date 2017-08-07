@@ -10,13 +10,15 @@ Client IDs SHOULD use snake-case.
 
 Client IDs SHOULD be limited to 16 alphabetical characters.
 
-Client Secrets MUST NOT be shared across applications and MUST NOT be committed to source control or exposed publicly (see [security](README.md)).
+Client secrets MUST NOT be shared across applications and MUST NOT be committed to source control or exposed publicly (see [security](README.md)).
 
 ## Scopes
 
 Scopes are used to specify access on [NYPL platform services](http://platformdocs.nypl.org/).
 
 Scopes let you specify exactly what type of access you need. Scopes limit access for OAuth tokens. They do not grant any additional permission beyond that which the user or application already has.
+
+Clients SHOULD always request the most specific scopes when requesting a token.
 
 ### Common Scopes
 
