@@ -7,6 +7,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 ### Culture
 
 * [Engineering Values](culture/values.md)
+* [Library Values](culture/library-values.md)
 
 ### Standards
 
