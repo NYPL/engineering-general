@@ -29,6 +29,8 @@ The message MAY also contain the following top-level keys:
 
 Additional key/values of any type MAY be included and MUST NOT break functionality.
 
+Developers SHOULD be aware of message size limits to prevent malformed JSON. For example, CloudWatch [truncates log messages](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html) to 256 KB.
+
 ## Aggregation
 
 Any logging MUST be sent to CloudWatch.
