@@ -16,7 +16,7 @@ Services SHOULD use HTTPS for connections.
 
 Applications MUST NOT expose private credentials to users or in source control (e.g. OAuth credentials, tokens, API keys, etc.).
 
-Applications SHOULD use environment variables to store private credentials.
+Applications SHOULD use environment variables to store private credentials and SHOULD be encrypted using [AWS KMS](http://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) or other encryption service.
 
 Front-end applications MUST NOT store any private credentials in browser cache or cookies.
 
