@@ -1,8 +1,8 @@
 # Monitoring & Alarms
 
-All components MUST have an alarm set up.
+All services, applications, and consumers MUST have a [CloudWatch Alarm](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) set up,
 
-Components MAY have multiple alarms.
+Multiple alarms MAY be set up.
 
 Owners SHOULD identify and monitor other key success metrics.
 
@@ -10,7 +10,7 @@ Owners SHOULD identify and monitor other key success metrics.
 
 ### Log Messages
 
-A service MUST create a metric filter for [log messages](logging.md) of severity `ERROR` and greater. 
+All services, applications, and consumers MUST create a metric filter for their [log messages](logging.md) of severity `ERROR` and greater. 
 
 The metric filter MUST be named and namespaced consistently:
 
