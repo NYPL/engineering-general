@@ -14,7 +14,7 @@ All services, applications, and consumers MUST create a metric filter for their 
 
 The metric filter MUST be named and namespaced consistently:
 
-- The namespace MUST be `LogMetrics`
+- The namespace MUST be `LogMetrics`.
 - The name MUST be in upper camel case and MUST be prefixed with the component name. For example: `BibServiceError`.
 
 The RECOMMENDED search for a metric filter is `{ $.levelCode <= 3 }`.
