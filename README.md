@@ -13,6 +13,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 * [Alerting & Notifications](standards/alerting.md)
 * [Logging](standards/logging.md)
 * [Coding Style](standards/coding-standards.md)
+* [Test Coverage](standars/test-coverage.md)
 
 ### Security
 

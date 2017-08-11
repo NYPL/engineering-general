@@ -18,6 +18,8 @@ Unit tests SHOULD be written before the implementation required to make them pas
 
 Unit tests SHOULD aim to cover the import and custom logical choices in your code. They SHOULD be thorough -- beyond the code coverage percentage, it is important to cover ALL potential ways in which your code can function. 
 
+Developers MUST document how to install all test dependencies and fully run their tests in their code repository's wiki or in their README. 
+
 ## Integration Testing
 
 Where external services or applications are involved in your code, you MUST develop a plan for integration testing -- whether through automation or a logical series of manual steps. 
