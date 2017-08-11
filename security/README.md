@@ -1,6 +1,6 @@
 # Security
 
-# Services
+## Services
 
 Services SHOULD check client [OAuth scopes](../security/oauth.md) and [OpenID Connect claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims) (e.g. `sub` ) for proper authorization. 
 
@@ -12,7 +12,7 @@ Publicly exposed services SHOULD be behind an API Gateway and use the API Gatewa
 
 Services SHOULD use HTTPS for connections.
 
-# Applications
+## Applications
 
 Applications MUST NOT expose private credentials to users or in source control (e.g. OAuth credentials, tokens, API keys, etc.).
 
@@ -28,7 +28,7 @@ Applications SHOULD sanitize all user inputs, URL parameters or any input parame
 
 When storing passwords, `bcrypt` SHOULD be used.
 
-# General Guidelines
+## General Guidelines
 
 Two-factor authentication (2FA) SHOULD be enabled for account logins (e.g. AWS, Github, etc.)
 
