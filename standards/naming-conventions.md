@@ -47,7 +47,7 @@ All development environment strings MUST adhere to one of three allowable types:
 
 ## Repository Names
 
-Repository names MUST be written with `lower-snake-case` where the delimiter is a hyphen ("-").
+Repository names MUST be written with `lower snake case` where the delimiter is a hyphen ("-") or an underscore ("\_") character.
 
 ## Code
 
