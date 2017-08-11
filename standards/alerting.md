@@ -14,13 +14,14 @@ All services, applications, and consumers MUST create a metric filter for their 
 
 The metric filter MUST be named and namespaced consistently:
 
-- The namespace MUST be `Log Message`
-- The name MUST be in upper camel case and MUST be prefixed with the component name. For example: `BibServiceLogError`.
+- The namespace MUST be `LogMetrics`
+- The name MUST be in upper camel case and MUST be prefixed with the component name. For example: `BibServiceError`.
 
 The RECOMMENDED search for a metric filter is `{ $.levelCode <= 3 }`.
 
 The metric created from the metric filter MUST be used to trigger an alarm. 
-Other Alarms
+
+### Other Alarms
 
 Additional alarms MAY be set up for other metrics. For example: 
 
@@ -30,16 +31,24 @@ Additional alarms MAY be set up for other metrics. For example:
 
 ### Alarm Configuration
 
-Alarms MUST be named consistently:
+#### SNS Topic
 
-- The name MUST be in upper camel case and MUST be prefixed with the component name. For example: `BibServiceLogAlarm`.
-
-Alarms SHOULD notify a SNS topic when triggered.
+The SNS topic SHOULD be setup before creating an alarm.
 
 The SNS topic MUST be named consistently and SHOULD be reused for all the component alarms.
 
-- The name MUST be in upper camel case and MUST be prefixed with the component name. For example: `BibServiceAlarmNotification`.
+- The name MUST be in upper camel case and MUST be prefixed with the component name. For example: `BibServiceErrorAlarm`.
 
-The SNS topic SHOULD notify the component owner(s) by email or other means.
+The SNS topic SHOULD notify the component owner(s) by email or other method.
+
+#### Alarm Setup
+
+Alarms MUST be named consistently:
+
+- The name MUST be in upper camel case and MUST be prefixed with the component name. For example: `BibServiceErrorAlarm`.
+
+Alarms SHOULD generally use the *sum* of a metric to trigger an alarm.
+ 
+Alarms SHOULD notify a SNS topic when triggered.
 
 Alarms SHOULD be added to an alarms dashboard.
