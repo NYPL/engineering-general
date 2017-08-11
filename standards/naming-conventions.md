@@ -69,7 +69,7 @@ Letter-case separated words will create boundaries using medial capitalization.
 
 Delimit separate words with a non-alphanumeric character.
 
-The two characters commonly used for this purpose are the hyphen ("-") and the underscore ("_").
+The two characters commonly used for this purpose are the hyphen ("-") and the underscore ("\_").
 
 - lower_snake_case
   - ex: `get_job_id`
