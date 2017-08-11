@@ -1,10 +1,10 @@
 # Security
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
-
 # Services
 
-Services SHOULD check client [OAuth scopes](../security/oauth.md) and [OpenID Connect claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims) (e.g. `sub` ) for proper authorization.
+Services SHOULD check client [OAuth scopes](../security/oauth.md) and [OpenID Connect claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims) (e.g. `sub` ) for proper authorization. 
+
+- If using the API Gateway, this information can found in the `X-NYPL-Identity` header added by the API Gateway. 
 
 Services SHOULD be on a private network inaccessible from the Internet whenever possible.
 
