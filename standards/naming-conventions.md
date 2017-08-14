@@ -9,6 +9,22 @@ Establishing proper naming will help each developer by:
 
 - Enabling code quality review tools to focus their reporting mainly on significant issues other than syntax and style preferences
 
+## Table of Contents
+
+- [Naming Conventions](#naming-conventions)
+  * Identifiers
+    + [Readability](#readability)
+    + [Multiple Words versus Single Word](#multiple-words-versus-single-word)
+    + [Length of Identifiers](#length-of-identifiers)
+  * AWS
+    + [Lambdas](#lambdas)
+    + [Metrics](#metrics)
+    + [Alarms](#alarms)
+  * [Repository Names](#repository-names)
+  * [Code](#code)
+    + [Camel Case](#camel-case)
+    + [Snake Case](#snake-case)
+
 ## Identifiers
 
 ### Readability
@@ -31,7 +47,9 @@ Developers SHOULD avoid the following issues that may arise by:
 
 Developers SHOULD find the right balance as long as readability, clarity and meaning is accomplished.
 
-## Consumers (Lambdas)
+## AWS
+
+### Lambdas
 
 AWS Lambda functions MUST be in upper camel case and MUST be suffixed with the development environment string to include a `-` (dash) separator.
 
@@ -44,6 +62,14 @@ All development environment strings MUST adhere to one of three allowable types:
 - `-development`
 - `-qa`
 - `-production`
+
+### Metrics
+
+TODO: Add metrics naming conventions
+
+### Alarms
+
+TODO: Add metrics naming conventions
 
 ## Repository Names
 
