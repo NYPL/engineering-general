@@ -18,7 +18,8 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 
 ### Security
 
-* [Platform OAuth Scopes](security/scopes.md)
+* [General](security/README.md)
+* [OAuth](security/oauth.md)
 
 ### Data
 
