@@ -16,6 +16,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 * [Monitoring & Alarms](standards/alerting.md)
 * [Naming Conventions](standards/naming-conventions.md)
 * [Peer Review](standards/peer-review.md)
+* [Accessibility](standards/accessibility.md)
 
 ### Security
 
