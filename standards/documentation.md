@@ -13,13 +13,14 @@ repository supported with the application.
 
 README documents MUST contain the following sections:
 
-- Title
+- Name
 - Summary/Purpose
 - Requirements
     - Version numbers MUST be included for all software requirements
 - Dependencies
     - Version numbers MUST be included for all software dependencies
-- Installation information
+- Installation information MUST be provided
+- Usage examples are RECOMMENDED
 
 ### Optional README sections/additions
 
@@ -33,12 +34,14 @@ README documents MUST contain the following sections:
     - stable/unstable version
     - standards compliance (CSS, HTML, etc.)
     - license type
-- MAY include pixel art
+- MAY include ASCII art
 
 ### API Documentation
 
 - APIs MUST provide Swagger v2 documentation
-- APIs SHOULD provide additional wiki style documentation
+- It is RECOMMENDED that APIs provide wiki-style or similar additional
+documentation be provided.
+
 
 ### CHANGELOG
 
