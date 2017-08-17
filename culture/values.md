@@ -27,8 +27,8 @@ We strive for a [blameless culture](https://codeascraft.com/2012/05/22/blameless
 We will build quality apps through best practices like:
 
 * Testing
-* Log aggregation
-* Systems monitoring
+* [Log aggregation](../standards/logging.md)
+* Systems monitoring & [alerting](../standards/monitoring.md)
 * Adhering, within reason, to the principles of [The Twelve-Factor App](https://12factor.net/).
 
 We recognize the importance of having a thorough understanding of the problem we are trying to solve with a willingness to create a new, improved solution.
