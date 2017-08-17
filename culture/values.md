@@ -28,7 +28,7 @@ We will build quality apps through best practices like:
 
 * Testing
 * [Log aggregation](../standards/logging.md)
-* Systems monitoring & [alerting](../standards/monitoring.md)
+* Systems monitoring & [alerting](../standards/alerting.md)
 * Adhering, within reason, to the principles of [The Twelve-Factor App](https://12factor.net/).
 
 We recognize the importance of having a thorough understanding of the problem we are trying to solve with a willingness to create a new, improved solution.
