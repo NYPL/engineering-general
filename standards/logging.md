@@ -29,14 +29,18 @@ The message MAY also contain the following top-level keys:
 
 Additional key/values of any type MAY be included and MUST NOT break functionality.
 
+Developers SHOULD be aware of message size limits to prevent malformed JSON. For example, CloudWatch [truncates log messages](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html) to 256 KB.
+
 ## Aggregation
 
-Any logging SHOULD be sent to aggregation service such as Loggly or CloudWatch.
+Any logging MUST be sent to CloudWatch.
+
+Services built prior to this standard, MAY send logs to another aggregation service like Loggly.
 
 ## Metrics & Exception Notification
 
 We SHOULD use log parsing for generating metrics & exception notification.  
-**A severity of `ERROR` & above means human beings MUST be notified.**
+**A severity of `ERROR` & above means human beings MUST be [notified](alerting.md).**
 
 ## Rotation
 
