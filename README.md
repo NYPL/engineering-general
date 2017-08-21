@@ -18,6 +18,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 * [Test Coverage](standards/test-coverage.md)
 * [Peer Review](standards/peer-review.md)
 * [Accessibility](standards/accessibility.md)
+* [Documentation](standards/documentation.md)
 
 ### Security
 
