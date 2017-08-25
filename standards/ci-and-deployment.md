@@ -16,7 +16,7 @@ In order to ensure that the new code changes have not broken the behavior of the
 3) When the build is red, the top priority of the team is to fix the build
 A red build means the last change possibly did not integrate with the existing code. All further check-ins that are not related to fix the build must be stopped and the goal has to be to get the build passing again.
 
-**Example Usage - Travis**
+**Example Usage - Travis Configuration In Java**
 Travis docs has a section for different programming languages. You can refer to that based on the language you are using - `https://docs.travis-ci.com/`
 
 For Java apps using maven, in the `.travis.yml` file, if you have:
