@@ -18,6 +18,8 @@ Developers SHOULD build user interfaces (UIs) using the native HTML elements int
 
 Developers MUST build applications for users with slow connections in mind. This means having the 'above the fold' CSS and HTML be delivered quickly.
 
+Applications MUST be built with valid HTML. Browsers will try their best to render invalid HTML but the results are undefined. Common browser intepretations of invalid HTML may change unpredictably and may be incompatible with assistive technology (or future technology of any kind).
+
 Developers SHOULD write components that provide valid HTML over a framework's implementation. For example, when building a definition list `dl`, the only valid HTML allowed as children are `dt` and `dd`. React cannot return a component in the form of
 
     <dt>Term</dt>
@@ -26,6 +28,8 @@ Developers SHOULD write components that provide valid HTML over a framework's im
 and require the developer to wrap those elements in a `div` or `span`. Since this creates invalid HTML, it is preferable to not create a smaller component for that HTML and instead allow it to be part of a bigger component. It is better to write a big and accessible React component than smaller and inaccessible React components.
 
 ### Tools
+
+Developers MUST run their applications through validation tools.
 
 Developers MUST run their applications through web accessibility tools.
 
