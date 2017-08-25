@@ -16,7 +16,7 @@ This repo is intended to be used for information relevant to the NYPL Engineerin
 * [Monitoring & Alarms](standards/alerting.md)
 * [Naming Conventions](standards/naming-conventions.md)
 * [Test Coverage](standards/test-coverage.md)
-* [CI Coverage] (standards/ci-and-deployment.md)
+* [CI Coverage](standards/ci-and-deployment.md)
 * [Peer Review](standards/peer-review.md)
 * [Accessibility](standards/accessibility.md)
 * [Documentation](standards/documentation.md)
