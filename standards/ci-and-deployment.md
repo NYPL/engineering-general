@@ -29,4 +29,4 @@ install:
 If your repository is configured for Travis CI, it will build and run tests (if there are no settings in pom.xml to skip tests)
 
 **Single Repo For Each Service And Corresponsing CI Build**
-Every microservice should have its own independent source code repo and its corresponding CI build. Though its possible to have a single repo for multiple services with separate CI builds, the most ideal set up is the later one. Having just one repo for multiple services and having one CI build for all the services is not a good idea and is definitely discouraged.
+Every microservice SHOULD have its own independent source code repo and its corresponding CI build. Though its possible to have a single repo for multiple services with separate CI builds, the most ideal set up is the later one. Having just one repo for multiple services and having one CI build for all the services is not a good idea and is definitely discouraged.
