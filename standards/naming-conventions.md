@@ -78,11 +78,11 @@ Examples: `nypl-digital-dev`, `nypl-sandbox`, `nypl`
 
 ### Metrics
 
-See [Monitoring & Alarms](/alerting.md)
+See [Monitoring & Alarms](../standards/alerting.md)
 
 ### Alarms
 
-See [Monitoring & Alarms](/alerting.md)
+See [Monitoring & Alarms](../standards/alerting.md)
 
 ## Repository Names
 
