@@ -60,16 +60,29 @@ An incorrect example would be `ItemService-dev`. Although it uses upper camel ca
 All development environment strings MUST adhere to one of three allowable types:
 
 - `-development`
+
 - `-qa`
+
 - `-production`
+
+### Profile Names
+AWS profile name format MUST be in lower snake case, delimited by a hyphen ("-").
+
+The profile name SHOULD be one of the following:
+
+- `Account ID`
+
+- `Alias`
+
+Examples: `nypl-digital-dev`, `nypl-sandbox`, `nypl`
 
 ### Metrics
 
-TODO: Add metrics naming conventions
+See [Monitoring & Alarms](/alerting.md)
 
 ### Alarms
 
-TODO: Add metrics naming conventions
+See [Monitoring & Alarms](/alerting.md)
 
 ## Repository Names
 
