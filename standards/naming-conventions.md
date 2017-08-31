@@ -66,7 +66,7 @@ All development environment strings MUST adhere to one of three allowable types:
 - `-production`
 
 ### Profile Names
-AWS profile name format MUST be in kebab-case.
+AWS profile name format MUST be in kebab-case/dasherized.
 
 The profile name SHOULD be one of the following:
 
