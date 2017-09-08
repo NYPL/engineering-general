@@ -13,6 +13,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 
 ### Standards
 
+* [Lambda deployment with node-lambda](standards/node-lambda.md)
 * [Coding Style](standards/coding-standards.md)
 * [Logging](standards/logging.md)
 * [Monitoring & Alarms](standards/alerting.md)
