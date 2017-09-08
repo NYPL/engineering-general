@@ -3,6 +3,10 @@
 We MUST use the node-lambda \([github](https://github.com/motdotla/node-lambda)/[npm](https://www.npmjs.com/package/node-lambda)) tool to deploy lambdas.  
 [node-lambda's README](https://github.com/motdotla/node-lambda) is a good primer on its commands & configuration files.
 
+Because of a wonky interaction between the `aws-sdk` and `dotenv` node modules.
+Developers MUST NOT have a `[default]` environment in their files located in `./.aws/`.
+See this [PR-38](https://github.com/NYPL/engineering-general/pull/38) for a full discussion.
+
 ## Standards
 
 * Lambdas SHOULD get their description from the `'description'` attribute of `package.json`, not from the `DESCRIPTION` variable in `.env`.
