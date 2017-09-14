@@ -31,17 +31,22 @@ Additional scopes can be used to define the *role* requested:
 
 ### Service-specific Scopes
 
-| Scope                | Description                             |
-|----------------------|------------------------------------------
-| `read:hold_request`  | Read hold requests                      |
-| `write:hold_request` | Write hold requests                     |
-| `read:bib`           | Read bibs                               |
-| `write:bib`          | Write bibs                              |
-| `read:item`          | Read items                              |
-| `write:item`         | Write items                             |
-| `read:patron`        | Read patron information                 |
-| `write:patron`       | Write patron information                |
-| `read:checkin`       | Read check-ins                          |
-| `write:checkin`      | Write check-ins                         |
-| `read:checkout`      | Read check-outs                         |
-| `write:checkout`     | Write check-outs                        |
+| Scope                    | Description                             |
+|--------------------------|------------------------------------------
+| `admin`                  | Administrative/global access            |
+| `read:hold_request`      | Read hold requests                      |
+| `write:hold_request`     | Write hold requests                     |
+| `read:bib`               | Read bibs                               |
+| `write:bib`              | Write bibs                              |
+| `read:item`              | Read items                              |
+| `write:item`             | Write items                             |
+| `read:patron`            | Read patron information                 |
+| `write:patron`           | Write patron information                |
+| `read:checkin_request`   | Read check-ins requests                 |
+| `write:checkin_request`  | Write check-in requests                 |
+| `read:checkout_request`  | Read check-out requests                 |
+| `write:checkout_request` | Write check-out requests                |
+| `read:recall_request`    | Read recall requests                    |
+| `write:recall_request`   | Write recall requests                   |
+| `read:refile_request`    | Read refile requests                    |
+| `write:refile_request`   | Write refile requests                   |
