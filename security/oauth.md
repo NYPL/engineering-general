@@ -27,27 +27,21 @@ These scopes are common to all services:
 
 Additional scopes can be used to define the *role* requested:
 
-- `role:service`: used to indicate request originates from a service
+- `role:client`: used to indicate token originates from an API client (i.e. not a patron)
 
 ### Service-specific Scopes
 
-#### Hold Requests
-
-- `readwrite:hold_request`
-- `read:hold_request`
-
-#### Bibs
-
-- `readwrite:bib`
-- `read:bib`
-
-#### Items
-
-- `readwrite:item`
-- `read:item`
-
-### User-specific Scopes
-
-#### Patrons
-
-- `read:patron`
+| Scope                | Description                             |
+|----------------------|------------------------------------------
+| `read:hold_request`  | Read hold requests                      |
+| `write:hold_request` | Write hold requests                     |
+| `read:bib`           | Read bibs                               |
+| `write:bib`          | Write bibs                              |
+| `read:item`          | Read items                              |
+| `write:item`         | Write items                             |
+| `read:patron`        | Read patron information                 |
+| `write:patron`       | Write patron information                |
+| `read:checkin`       | Read check-ins                          |
+| `write:checkin`      | Write check-ins                         |
+| `read:checkout`      | Read check-outs                         |
+| `write:checkout`     | Write check-outs                        |
