@@ -24,6 +24,7 @@ These scopes are common to all services:
 
 - `openid`: required by [OpenID Connect specification](http://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
 - `offline_access`: issues a refresh token (when applicable)
+- `login:staff`: use the NYPL Active Directory for authentication on `authorization_code` requests
 
 Additional scopes can be used to define the *role* requested:
 
