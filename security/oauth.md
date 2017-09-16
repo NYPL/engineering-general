@@ -35,18 +35,18 @@ Additional scopes can be used to define the *role* requested:
 | Scope                    | Description                             |
 |--------------------------|------------------------------------------
 | `admin`                  | Administrative/global access            |
-| `read:hold_request`      | Read hold requests                      |
-| `write:hold_request`     | Write hold requests                     |
 | `read:bib`               | Read bibs                               |
 | `write:bib`              | Write bibs                              |
-| `read:item`              | Read items                              |
-| `write:item`             | Write items                             |
-| `read:patron`            | Read patron information                 |
-| `write:patron`           | Write patron information                |
 | `read:checkin_request`   | Read check-ins requests                 |
 | `write:checkin_request`  | Write check-in requests                 |
 | `read:checkout_request`  | Read check-out requests                 |
 | `write:checkout_request` | Write check-out requests                |
+| `read:hold_request`      | Read hold requests                      |
+| `write:hold_request`     | Write hold requests                     |
+| `read:item`              | Read items                              |
+| `write:item`             | Write items                             |
+| `read:patron`            | Read patron information                 |
+| `write:patron`           | Write patron information                |
 | `read:recall_request`    | Read recall requests                    |
 | `write:recall_request`   | Write recall requests                   |
 | `read:refile_request`    | Read refile requests                    |
