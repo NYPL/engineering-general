@@ -37,7 +37,7 @@ A `package.json` that looks like:
 ```javascript
 { //...snip!
   'scripts': {
-    'deploy-qa': './node_modules/.bin/node-lambda deploy -e production -f ./config/prod.env -S config/event_sources_prod.json -b subnet-id1,subnet-id2 -g sg-id --role arn:aws:iam::[some-id]:role/[rolename] --profile nypl-sandbox'
+    'deploy-production': './node_modules/.bin/node-lambda deploy -e production -f ./config/prod.env -S config/event_sources_prod.json -b subnet-id1,subnet-id2 -g sg-id --role arn:aws:iam::[some-id]:role/[rolename] --profile our-profile-name'
   },
   // ...snip!
 }
