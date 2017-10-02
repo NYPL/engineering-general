@@ -24,30 +24,30 @@ These scopes are common to all services:
 
 - `openid`: required by [OpenID Connect specification](http://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
 - `offline_access`: issues a refresh token (when applicable)
+- `login:staff`: use the NYPL Active Directory for authentication on `authorization_code` requests
 
 Additional scopes can be used to define the *role* requested:
 
-- `role:service`: used to indicate request originates from a service
+- `role:client`: used to indicate token originates from an API client (i.e. not a patron)
 
 ### Service-specific Scopes
 
-#### Hold Requests
-
-- `readwrite:hold_request`
-- `read:hold_request`
-
-#### Bibs
-
-- `readwrite:bib`
-- `read:bib`
-
-#### Items
-
-- `readwrite:item`
-- `read:item`
-
-### User-specific Scopes
-
-#### Patrons
-
-- `read:patron`
+| Scope                    | Description                             |
+|--------------------------|------------------------------------------
+| `admin`                  | Administrative/global access            |
+| `read:bib`               | Read bibs                               |
+| `write:bib`              | Write bibs                              |
+| `read:checkin_request`   | Read check-ins requests                 |
+| `write:checkin_request`  | Write check-in requests                 |
+| `read:checkout_request`  | Read check-out requests                 |
+| `write:checkout_request` | Write check-out requests                |
+| `read:hold_request`      | Read hold requests                      |
+| `write:hold_request`     | Write hold requests                     |
+| `read:item`              | Read items                              |
+| `write:item`             | Write items                             |
+| `read:patron`            | Read patron information                 |
+| `write:patron`           | Write patron information                |
+| `read:recall_request`    | Read recall requests                    |
+| `write:recall_request`   | Write recall requests                   |
+| `read:refile_request`    | Read refile requests                    |
+| `write:refile_request`   | Write refile requests                   |
