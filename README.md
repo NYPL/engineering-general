@@ -29,6 +29,10 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [General](security/README.md)
 * [OAuth](security/oauth.md)
 
+### Search
+
+* :link: [Search Analytics](https://github.com/NYPL/search-analytics)
+
 ### Data
 
 * [Data Repo](https://github.com/NYPL/nypl-core)
