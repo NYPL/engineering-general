@@ -51,3 +51,5 @@ Additional scopes can be used to define the *role* requested:
 | `write:recall_request`   | Write recall requests                   |
 | `read:refile_request`    | Read refile requests                    |
 | `write:refile_request`   | Write refile requests                   |
+| `read:staff_picks`       | Read staff picks and staff pick lists   |
+| `write:staff_picks`      | Write staff picks and staff pick lists  |
