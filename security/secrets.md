@@ -49,7 +49,7 @@ See the [API Reference](http://docs.aws.amazon.com/systems-manager/latest/APIRef
 Adding a parameter:
 
 ```
-aws ssm put-parameter --name '/development/testservice/credentials/admin' --type 'SecureString' --key-id d1a6a910-1455-4d62-b789-f9910bd2df68 --description 'This describes this key' --value '{"username":"admin","password":"password123"}' --profile nypl-digital-dev
+aws ssm put-parameter --name '/development/testservice/credentials/admin' --type 'SecureString' --key-id alias/secrets-key --description 'This describes this key' --value '{"username":"admin","password":"password123"}' --profile nypl-digital-dev
 ```
 
 Getting a parameter:
