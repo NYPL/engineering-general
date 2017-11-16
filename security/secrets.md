@@ -26,7 +26,7 @@ Values MUST be stored as the `SecureString` type.
 
 Values SHOULD be encrypted using the KMS Key ID `alias/secrets-key`. 
 
-A description SHOULD be provided (using the `--description` flag).
+A description SHOULD be provided (e.g. using the `--description` flag).
 
 Values MUST be in JSON. For example:
 
