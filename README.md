@@ -35,7 +35,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 
 ### Data
 
-* [Data Repo](https://github.com/NYPL/nypl-core)
+* :link: [Data Repo](https://github.com/NYPL/nypl-core)
 
 ### Documentation
 
