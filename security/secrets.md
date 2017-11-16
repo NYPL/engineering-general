@@ -34,9 +34,9 @@ Values MUST be in JSON. For example:
 {"username":"admin","password":"password123"}
 ```
 
-### Parameter Store limits
+### Limits
 
-Developers SHOULD be aware of the following limits:
+Developers SHOULD be aware of the following limits with Parameter Store:
 
 - Name hierarchy has a maximum of 5 levels.
 - Maximum length of `name` is 2,048 characters.
