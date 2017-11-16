@@ -55,5 +55,5 @@ aws ssm put-parameter --name '/development/testservice/credentials/admin' --type
 Getting a parameter:
 
 ```
-aws ssm get-parameter --name '/development/testservice/credentials/admin'  --with-decryption --profile nypl-digital-dev
+aws ssm get-parameter --name '/development/testservice/credentials/admin' --with-decryption --profile nypl-digital-dev
 ```
