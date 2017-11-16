@@ -29,16 +29,22 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [General](security/README.md)
 * [OAuth](security/oauth.md)
 
+## Other Documentation
+
+Important and useful :link: links to other documentation and standards at NYPL.
+
 ### Search
 
-* :link: [Search Analytics](https://github.com/NYPL/search-analytics)
+* [Search Analytics](https://github.com/NYPL/search-analytics)
 
 ### Data
 
-* :link: [Data Repo](https://github.com/NYPL/nypl-core)
+* [Data Repo](https://github.com/NYPL/nypl-core)
 
-### Documentation
+### Platform
 
-Links to documentation relevant to NYPL applications and services.
+* [Platform API Documentation](https://docs.google.com/document/d/1p3q9OT9latXqON20WDh4CNPxIShUunfGgqT163r-Caw/edit?usp=sharing)
 
-* [Platform API](https://docs.google.com/document/d/1p3q9OT9latXqON20WDh4CNPxIShUunfGgqT163r-Caw/edit?usp=sharing)
+### Data Warehouse
+
+* [Data Warehouse Documentation](https://github.com/NYPL/data-warehouse)
