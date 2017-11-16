@@ -24,7 +24,7 @@ production/bibservice/database-credentials/admin
 
 Values MUST be stored as the `SecureString` type.
 
-Values SHOULD be encrypted using the KMS Key ID `d1a6a910-1455-4d62-b789-f9910bd2df68`. 
+Values SHOULD be encrypted using the KMS Key ID `alias/secrets-key`. 
 
 A description SHOULD be provided (using the `--description` flag).
 
