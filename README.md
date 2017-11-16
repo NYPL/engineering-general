@@ -28,6 +28,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 
 * [General](security/README.md)
 * [OAuth](security/oauth.md)
+* [Secrets Management](security/secrets.md)
 
 ## Other Documentation
 

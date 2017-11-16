@@ -18,6 +18,8 @@ Applications MUST NOT expose private credentials to users or in source control (
 
 Applications SHOULD use environment variables to store private credentials and SHOULD be encrypted using [AWS KMS](http://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) or other encryption service.
 
+- If storing or sharing secrets, they MUST be stored or shared according to the [Secret Management](secrets.md) guidelines.
+
 Front-end applications MUST NOT store any private credentials in browser cache or cookies.
 
 Applications SHOULD protect against [XSS and CSRF](http://www.redotheweb.com/2015/11/09/api-security.html) attacks.
