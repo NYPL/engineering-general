@@ -34,6 +34,16 @@ Values MUST be in JSON. For example:
 {"username":"admin","password":"password123"}
 ```
 
+### Parameter Store limits
+
+Developers SHOULD be aware of the following limits:
+
+- Name hierarchy has a maximum of 5 levels.
+- Maximum length of `name` is 2,048 characters.
+- Maximum length of `value` is 4,096 characters.
+
+See the [API Reference](http://docs.aws.amazon.com/systems-manager/latest/APIReference/API_Parameter.html) for current limits.
+
 ### Sample AWS command line commands
 
 Adding a parameter:
