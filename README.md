@@ -24,27 +24,17 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [Accessibility](standards/accessibility.md)
 * [Documentation](standards/documentation.md)
 
-### Security
+#### Security
 
 * [General](security/README.md)
 * [OAuth](security/oauth.md)
 
-## Other Documentation
+### Onboarding/Offboarding
 
-Important and useful :link: links to other documentation and standards at NYPL.
+* [Onboarding](on-off-board/onboarding.md)
+* [Offboarding](on-off-board/offboarding.md)
 
-### Search
+### Other Documentation
 
-* [Search Analytics](https://github.com/NYPL/search-analytics)
-
-### Data
-
-* [Data Repo](https://github.com/NYPL/nypl-core)
-
-### Platform
-
-* [Platform API Documentation](https://docs.google.com/document/d/1p3q9OT9latXqON20WDh4CNPxIShUunfGgqT163r-Caw/edit?usp=sharing)
-
-### Data Warehouse
-
-* [Data Warehouse Documentation](https://github.com/NYPL/data-warehouse)
+* [Master Links](other/README.md)
+  * Important and useful :link: links to other documentation and resources at NYPL.
