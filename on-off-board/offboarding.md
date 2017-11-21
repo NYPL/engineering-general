@@ -1,6 +1,6 @@
 # Offboarding
 
-It's so hard to say goodbye but sometimes we have to at NYPL.
+It's so hard to say goodbye but sometimes we must at NYPL.
 
 ## 1. Remove accounts
 
