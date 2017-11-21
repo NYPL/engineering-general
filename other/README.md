@@ -19,6 +19,7 @@ Important and useful :link: links to other documentation and standards at NYPL.
 ## Platform
 
 * [Platform API Documentation](https://docs.google.com/document/d/1p3q9OT9latXqON20WDh4CNPxIShUunfGgqT163r-Caw/edit?usp=sharing)
+* [OAuth Server Documentation](https://confluence.nypl.org/display/WT/ISSO)
 
 ## Data Warehouse
 
