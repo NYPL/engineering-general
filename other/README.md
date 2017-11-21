@@ -42,4 +42,4 @@ Important and useful :link: links to other documentation and standards at NYPL.
 ## Digital Collections/Digitization
 
 * [Digital Collections](https://digitalcollections.nypl.org/)
-* [MMS (Metadata Management System](http://metadata.nypl.org/users/sign_in) 
+* [MMS (Metadata Management System)](http://metadata.nypl.org/users/sign_in) 
