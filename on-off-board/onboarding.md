@@ -42,7 +42,7 @@ A developer will generally need accounts for the following services:
 
 - NYPL Platform
     - [https://platform.nypl.org](https://platform.nypl.org)
-- Loggly*
+- Loggly
     - [https://nypl.loggly.com](https://nypl.loggly.com)
 - Bamboo*
     - [http://bamboo.nypl.org/](http://bamboo.nypl.org/)
