@@ -1,8 +1,8 @@
 # Secrets Management
 
-Secrets and credentials (e.g. API keys, database logins, or other credentials) SHOULD be stored so they are not lost and can be shared appropriately. 
+If secrets (e.g. API keys, database logins, or other credentials) are to be stored or shared, they MUST be stored or shared in one secure place, to signify one source of truth and to make resources easier to find.
 
-If secrets are to be stored or shared, they MUST be stored or shared using [AWS Parameter Store](http://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-paramstore.html).
+[AWS Parameter Store](http://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-paramstore.html) SHOULD be used to store secrets.
 
 ## Parameter Store
 
