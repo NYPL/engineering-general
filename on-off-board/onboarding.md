@@ -57,7 +57,9 @@ A developer will generally need accounts for the following services:
         - [nypl/prod](https://nypl.signin.aws.amazon.com/console)
         - [nypl-dev](https://nypl-dev.signin.aws.amazon.com/console)
         - [nypl-labs](https://nypl-labs.signin.aws.amazon.com/console)
-    
+- Data Warehouse DB credential
+    - [https://github.com/NYPL/data-warehouse#users](https://github.com/NYPL/data-warehouse#users)
+
 *&#42; uses [NYPL/ServiceNow](https://nyplprod.service-now.com) credentials for authentication*
 
 ## 3. Set up keys
