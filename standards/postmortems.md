@@ -1,4 +1,4 @@
-# Post-mortem
+# Post-mortems
 
 After an outage, security incident or other service disruption a post-mortem SHOULD be performed.
 
@@ -6,13 +6,12 @@ The post-mortem SHOULD be done as soon as possible _after_ the incident and SHOU
 
 Post-mortems are *blameless*. We're all human and make mistakes. At NYPL we want to encourage an [engineering culture](../culture/values.md#not-shaming-or-blaming) of experimentation, learning, continuous improvement, and make room for mistakes. We celebrate our post-mortems.
 
-## More learning about post-mortems
+_More learning about post-mortems:_
 
 - [Google SRE - Postmortem Culture: Learning from Failure](https://landing.google.com/sre/book/chapters/postmortem-culture.html)
 - [How to Write Great Outage Post-Mortems](http://artsy.github.io/blog/2014/11/19/how-to-write-great-outage-post-mortems/)
 - [What is an Incident Post-Mortem?](https://www.pagerduty.com/resources/learn/post-mortem-incident-report/)
 - [Blameless PostMortems and a Just Culture](https://codeascraft.com/2012/05/22/blameless-postmortems/)
-
 
 ## Sample Post-mortem Template
 
