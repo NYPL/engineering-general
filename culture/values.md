@@ -17,7 +17,7 @@ Simple solutions, delivered today are often better than perfect solutions delive
 
 ### Not Shaming or Blaming
 
-We strive for a [blameless culture](https://codeascraft.com/2012/05/22/blameless-postmortems/) with teachable moments.
+We strive for a [blameless culture](../standards/postmortems.md) with teachable moments.
 
 * We understand that an existing solution may have been built under extenuating circumstances.
 * We challenge _ideas_ not _people_.
