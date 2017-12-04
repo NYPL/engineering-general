@@ -4,7 +4,7 @@ After an outage, security incident or other service disruption a post-mortem SHO
 
 The post-mortem SHOULD be done as soon as possible _after_ the incident and SHOULD be done as a collaboration between engineers, managers, and parties affected.
 
-Post-mortems are *blameless*. We're all human and make mistakes. At NYPL we want to encourage an [engineering culture](../culture/values.md#not-shaming-or-blaming) of experimentation, learning, continuous improvement, and make room for mistakes. We celebrate our post-mortems.
+Post-mortems are *blameless*. We're all human and make mistakes. At NYPL we want to encourage an [engineering culture](../culture/values.md#not-shaming-or-blaming) of experimentation, learning, continuous improvement, and making room for mistakes. We celebrate our post-mortems.
 
 _More learning about post-mortems:_
 
