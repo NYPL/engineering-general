@@ -57,3 +57,27 @@ Getting a parameter:
 ```
 aws ssm get-parameter --name '/development/testservice/credentials/admin' --with-decryption --profile nypl-digital-dev
 ```
+
+## Encrypting/Decrypting
+
+### Using the AWS Command Line
+
+To encrypt a secret using the AWS command line:
+
+```
+aws kms encrypt --key-id alias/lambda-default --profile nypl-digital-dev --query CiphertextBlob --output text --plaintext "THIS IS A SECRET"
+```
+
+returns:
+
+`AQECAHh7ea2tyZ6phZgT4B9BDKwguhlFtRC6hgt+7HbmeFsrsgAAAGkwZwYJKoZIhvcNAQcGoFowWAIBADBTBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDHM+CBbD63yvLYX7YAIBEIAmPAZ1EOrQMd5GRao2MTOyY16JZmMhOgDNJWvy1V3eWr1xHIWIuRo=`
+
+To decrypt a secret using the AWS command line:
+
+```
+aws kms decrypt --profile nypl-digital-dev --query Plaintext --output text --ciphertext-blob fileb://<(echo "AQECAHh7ea2tyZ6phZgT4B9BDKwguhlFtRC6hgt+7HbmeFsrsgAAAGkwZwYJKoZIhvcNAQcGoFowWAIBADBTBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDK5NDY0/rIiVt3rp4AIBEIAm5tjVxfouymAm2+UDCc6aYesUxlAXvU5lgI9VlQBYIrl7LozlQ2o=" | base64 --decode) | base64 --decode
+```
+
+returns:
+
+`THIS IS A SECRET`
