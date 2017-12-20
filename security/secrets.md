@@ -8,17 +8,20 @@ If secrets (e.g. API keys, database logins, or other credentials) are to be stor
 
 ### Name conventions
 
-Parameter names MUST use a hierarchy and list the environment name and other descriptors:
+Parameter names MUST use a hierarchy and list the environment name and other descriptors.
 
-```
-environment/{service or application name}/{other descriptors}
-```
+The name MUST include the following:
 
-For example:
+- The first segment of the parameter name MUST be environment/stage/tier if applicable.
+- The service that this is a parameter for.
+- The app that uses this secret. This could be omitted if it's a resource shared by multiple apps.
+- A description of what this is.
 
-```
-production/bibservice/database-credentials/admin
-```
+Examples may be:
+
+- `/production/mms/rds/password-for-mms_productions-root-user`
+- `/production/elasticcache/my-cluser-name/password`
+- `/loggly/my-loggly-user-name/api-key` (environment/stage/tier isn't applicable)
 
 ### Value conventions
 
