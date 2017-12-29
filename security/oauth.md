@@ -41,6 +41,7 @@ Additional scopes can be used to define the *role* requested:
 | `write:checkin_request`  | Write check-in requests                 |
 | `read:checkout_request`  | Read check-out requests                 |
 | `write:checkout_request` | Write check-out requests                |
+| `read:doc`               | Read and generate new documentation     |
 | `read:hold_request`      | Read hold requests                      |
 | `write:hold_request`     | Write hold requests                     |
 | `read:item`              | Read items                              |
