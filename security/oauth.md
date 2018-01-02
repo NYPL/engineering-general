@@ -26,10 +26,6 @@ These scopes are common to all services:
 - `offline_access`: issues a refresh token (when applicable)
 - `login:staff`: use the NYPL Active Directory for authentication on `authorization_code` requests
 
-Additional scopes can be used to define the *role* requested:
-
-- `role:client`: used to indicate token originates from an API client (i.e. not a patron)
-
 ### Service-specific Scopes
 
 | Scope                    | Description                             |
