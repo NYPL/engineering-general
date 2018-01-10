@@ -2,9 +2,7 @@
 
 ## Services
 
-Services SHOULD check client [OAuth scopes](../security/oauth.md) and [OpenID Connect claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims) (e.g. `sub` ) for proper authorization. 
-
-- If using the API Gateway, this information can found in the `X-NYPL-Identity` header added by the API Gateway. 
+Services SHOULD ensure their API documentation has proper [OAuth scope](../security/oauth.md) requirements in their documentation.
 
 Services SHOULD be on a private network inaccessible from the Internet whenever possible.
 
@@ -32,6 +30,6 @@ When storing passwords, `bcrypt` SHOULD be used.
 
 ## General Guidelines
 
-Two-factor authentication (2FA) SHOULD be enabled for account logins (e.g. AWS, Github, etc.)
+Two-factor authentication (2FA) MUST be enabled for AWS accounts and SHOULD be enabled for other accounts (e.g. Github, Optimizely, etc.)
 
 Network resources (e.g. instances, databases, etc.) are RECOMMENDED to be installed on private networks and, otherwise, MUST have IP address filtering and as few open ports as possible.
