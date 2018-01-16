@@ -18,7 +18,7 @@ This document is intended to help developers become familiar with NYPL digital p
 ### Commonly used accounts
 
 A developer will generally need accounts for the following services:
-- [npm organization](https://www.npmjs.com/org/nypl)
+- [npm organization](https://www.npmjs.com/org/nypl): We pay by user, consider waiting until someone _needs_ to be added.
 - Slack
     - [nypl.slack.com](https://nypl.slack.com/)
 - Github
