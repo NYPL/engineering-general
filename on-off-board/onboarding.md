@@ -1,6 +1,6 @@
 # Onboarding
 
-Welcome to NYPL Digital! 
+Welcome to NYPL Digital!
 
 This document is intended to help developers become familiar with NYPL digital properties and standards.
 
@@ -18,7 +18,7 @@ This document is intended to help developers become familiar with NYPL digital p
 ### Commonly used accounts
 
 A developer will generally need accounts for the following services:
-
+- [npm organization](https://www.npmjs.com/org/nypl): We pay by user, consider waiting until someone _needs_ to be added.
 - Slack
     - [nypl.slack.com](https://nypl.slack.com/)
 - Github
@@ -38,7 +38,7 @@ A developer will generally need accounts for the following services:
     - Primary AWS accounts:
         - [nypl-digital-dev](https://nypl-digital-dev.signin.aws.amazon.com/console)
         - [nypl-sandbox](https://nypl-sandbox.signin.aws.amazon.com/console)
-        
+
 ### Less commonly used accounts
 
 - NYPL Platform
@@ -69,4 +69,3 @@ A developer will generally need accounts for the following services:
   * If ensuring provisioning scripts that contain this key are updated / run
 * Add user's public key to [NYPL/public_keys](https://github.com/NYPL/public_keys)
   * See that repo's README for offboarding instructions
-  
