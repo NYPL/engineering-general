@@ -19,6 +19,7 @@ This document is intended to help developers become familiar with NYPL digital p
 
 A developer will generally need accounts for the following services:
 - [npm organization](https://www.npmjs.com/org/nypl): We pay by user, consider waiting until someone _needs_ to be added.
+- [Travis CI](https://travis-ci.com): Accounts are OAuthed and synced through Github. Adding/Removing access to Github controls access to Travis.
 - Slack
     - [nypl.slack.com](https://nypl.slack.com/)
 - Github
