@@ -24,6 +24,7 @@ Establishing proper naming will help each developer by:
   * [Code](#code)
     + [Camel Case](#camel-case)
     + [Snake Case](#snake-case)
+  * [Versioning Tagging](#version-tagging)
 
 ## Identifiers
 
@@ -120,3 +121,7 @@ The two characters commonly used for this purpose are the hyphen ("-") and the u
   - ex: `SERVICE_API_URL`
 
 As long as the team/developer is consistent across their codebase, the selection of what format relies on the team/developer.
+
+## Version Tagging
+
+See our [Versioning standard](../standards/versioning.md) for guidance creating version tags.
