@@ -38,3 +38,35 @@ git push origin [npm release branch]
 npm publish
 ```
 
+## Changelog
+
+Repositories and components that maintain version tags SHOULD include a `CHANGELOG.md` that documents the difference between tags at a high level. This file SHOULD include one section for each tagged version, listed in reverse chronological order, with headings matching the version tags (optionally followed by date of release).
+
+Version sections MAY organize lists of changes under header level 3 subsections labeled "Features", "Bug Fixes", "BREAKING CHANGES", or other topics of interest to a reviewer.
+
+Pre-release versions MAY be excluded.
+
+A sample `CHANGELOG.md` follows:
+
+```
+# CHANGELOG
+
+## v2.0.1
+ - Add OZ code to locations and recapCustomerCodes
+
+## v2.0.0 - 2018-02-01
+ - Rename multiple mappings files for consistency
+
+### BREAKING CHANGES
+ - Multiple paths have changed, breaking previous contracts
+
+## v1.1.1
+ - Fixed broken CLI loglevel handling
+ - Documentation clean-up
+
+## v1.1.0
+ - Added CLI
+
+## v1.0.0
+ - Initial release
+```
