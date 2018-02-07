@@ -2,6 +2,8 @@
 
 Before launching a new service or application to production, it SHOULD be reviewed by the team to ensure production readiness and adherence with engineering standards.
 
+Not all categories may be applicable for certain services or applications (e.g. Accessibility for a back-end service).
+
 A pre-launch checklist SHOULD be completed and can be completed in a pre-launch team meeting:
 
 ![Production Readiness Whiteboard](../images/production-readiness.jpg)
@@ -19,4 +21,3 @@ A pre-launch checklist SHOULD be completed and can be completed in a pre-launch 
 | Accessibility [1](https://github.com/NYPL/engineering-general/blob/master/standards/accessibility.md)                                                                                                                                                      |                     |
 | Security [1](https://github.com/NYPL/engineering-general/blob/master/security/README.md), [2](https://github.com/NYPL/engineering-general/blob/master/security/oauth.md), [3](https://github.com/NYPL/engineering-general/blob/master/security/secrets.md) |                     |
 | Monitoring & Alarms [1](https://github.com/NYPL/engineering-general/blob/master/standards/alerting.md)                                                                                                                                                     |                     |
-
