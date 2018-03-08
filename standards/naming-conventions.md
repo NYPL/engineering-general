@@ -20,6 +20,7 @@ Establishing proper naming will help each developer by:
     + [Lambdas](#lambdas)
     + [Metrics](#metrics)
     + [Alarms](#alarms)
+    + [SQS](#sqs)
   * [Repository Names](#repository-names)
   * [Code](#code)
     + [Camel Case](#camel-case)
@@ -84,6 +85,30 @@ See [Monitoring & Alarms](../standards/alerting.md)
 ### Alarms
 
 See [Monitoring & Alarms](../standards/alerting.md)
+
+### SQS
+
+#### Naming
+
+Queues MUST be named in a way that describes:
+
+1.  _What_ is is the queue.
+2.  _Where_ the destination is for these records.
+
+The _What_ and the _Where_ SHOULD be separated by the word "for", unless
+it's awkward grammatically.   
+Finally, the queue name MUST be suffixed with
+the environment name.
+
+e.g. `user-profile-updates-for-sierra-development` tells us:
+
+1. The queue contains records that represent a user's profile update.
+2. The records will be sent to sierra.
+3. It is the `development` environment.
+
+#### Documenting
+
+Queues should be documented in https://github.com/NYPL/aws.
 
 ## Repository Names
 

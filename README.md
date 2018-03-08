@@ -24,6 +24,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [Accessibility](standards/accessibility.md)
 * [Documentation](standards/documentation.md)
 * [Versioning](standards/versioning.md)
+* [Production Readiness](standards/production-readiness.md)
 
 #### Security
 

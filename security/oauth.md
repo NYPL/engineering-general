@@ -26,10 +26,6 @@ These scopes are common to all services:
 - `offline_access`: issues a refresh token (when applicable)
 - `login:staff`: use the NYPL Active Directory for authentication on `authorization_code` requests
 
-Additional scopes can be used to define the *role* requested:
-
-- `role:client`: used to indicate token originates from an API client (i.e. not a patron)
-
 ### Service-specific Scopes
 
 | Scope                    | Description                             |
@@ -41,6 +37,7 @@ Additional scopes can be used to define the *role* requested:
 | `write:checkin_request`  | Write check-in requests                 |
 | `read:checkout_request`  | Read check-out requests                 |
 | `write:checkout_request` | Write check-out requests                |
+| `read:doc`               | Read and generate new documentation     |
 | `read:hold_request`      | Read hold requests                      |
 | `write:hold_request`     | Write hold requests                     |
 | `read:item`              | Read items                              |
