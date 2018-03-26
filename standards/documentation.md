@@ -25,6 +25,9 @@ README documents MUST contain the following sections:
 ### Optional README sections/additions
 
 - SHOULD include current, stable version information
+- SHOULD describe git workflow, including if branches map to certain environments.  
+  As an example, see [NYPL/scsb_item_updater's 'Git Workflow & Deployment Section'](https://github.com/NYPL-discovery/scsb_item_updater#git-workflow--deployment)
+- SHOULD include instructions about deployment.
 - SHOULD include any configuration information, if necessary
 - MAY include example usage
 - MAY include contributing guidelines
