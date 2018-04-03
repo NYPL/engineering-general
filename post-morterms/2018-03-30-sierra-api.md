@@ -8,9 +8,9 @@
 3. Author(s)
    - Kevin Friedman
 4. Timeline
-   - On March 30, 2018 at ~11:00am, it was noticed that there were no bib/item updates reported on our dashboard (:+1: for dashboards!).
+   - On March 30, 2018 at ~11:00am, it was noticed that there were no bib/item updates reported on our dashboard (:+1: for dashboards).
    - Upon checking CloudWatch, it was discovered that were virtually no updates posted since March 27, 2018 at ~2:55pm.
-   - After checking the CloudWatch logs from the bib/item pollers (which were logging great :smile:), it was discovered that there was an authentication error retrieving an access token from the Sierra API.
+   - After checking the CloudWatch logs from the bib/item pollers (:+1: for good logging), it was discovered that there was an authentication error retrieving an access token from the Sierra API.
    - It was confirmed that the Sierra API key used by our Platform services was deleted.
    - A new Sierra API key was issued and installed on appropriate services.
    - Normal service resumed by March 30, 2018 at ~12:30pm.
