@@ -6,7 +6,7 @@
    - On March 27, 2018 at ~2:55pm, bib/item updates from Sierra stopped propagating to our Platform.
    - It was discovered on March 30, 2018 at ~11:00am (almost 3 days later) that the primary Sierra API key used by our Platform services was accidently deleted.
 3. Author(s)
-   - Kevin Friedman (kevinfriedman@nypl.org)
+   - Kevin Friedman
 4. Timeline
    - On March 30, 2018 at ~11:00am, it was noticed that there were no bib/item updates reported on our dashboard.
    - Upon checking CloudWatch, it was discovered that were virtually no updates posted since March 27, 2018 at ~2:55pm.
