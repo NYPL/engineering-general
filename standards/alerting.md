@@ -6,6 +6,8 @@ Multiple alarms MAY be set up.
 
 Owners SHOULD identify and monitor other key success metrics.
 
+Alarms SHOULD be tested as part of the [Production Readiness](production-readiness.md) process.
+
 ## Alarm Triggers
 
 ### Log Messages
