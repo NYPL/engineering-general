@@ -28,4 +28,5 @@
    - Test Alarms as part of the [Production Readiness](../standards/production-readiness.md) process.
    - Consider tracking usage of Sierra API keys (i.e. what services use a Sierra API key) so they can changed more easily.
 8. Tracking of Preventative Measures
-   - This post-mortem will shared with relevant staff and asked to take appropriate actions
+   - This post-mortem will shared with relevant staff and asked to take appropriate actions.
+   - [Monitoring & Alarms](../standards/alerting.md) standard will be updated appropriately.
