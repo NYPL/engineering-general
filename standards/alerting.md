@@ -47,7 +47,7 @@ The metric created from the metric filter MUST be used to trigger an alarm.
 2. Go to `CloudWatch` by clicking `Services` dropdown menu from the top navigation and choose `CloudWatch`.
 
 3. Go to `Logs` from the left navigation and find the log group you want to build the metric on from the `Log Groups` list.
-   - Warning: Be careful about choosing the correct log group - especially for Elastic Beanstalk log groups (see a [previous post-mortem](../post-mortems/2018-03-30-sierra-api.md) that had metric filters improperly configured).
+   - Warning: Be careful about choosing the correct log group - especially for Elastic Beanstalk log groups (see a [previous post-mortem](../post-morterms/2018-03-30-sierra-api.md) that had metric filters improperly configured).
 
 4. Click the left circle of the log, and then go up to the top of the list, click `Create Metric Filter`.
 
