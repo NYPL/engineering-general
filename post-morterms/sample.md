@@ -1,3 +1,5 @@
+_Before running a post-mortem, please see the [post-mortem standards](../standards/postmortems.md)._
+
 # Sample Post-mortem
 
 1. Incident Date
