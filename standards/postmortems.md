@@ -6,7 +6,7 @@ The post-mortem SHOULD be done as soon as possible _after_ the incident and SHOU
 
 Post-mortems are *blameless*. We're all human and make mistakes. At NYPL we want to encourage an [engineering culture](../culture/values.md#not-shaming-or-blaming) of experimentation, learning, continuous improvement, and making room for mistakes. We celebrate our post-mortems.
 
-Completed post-mortems SHOULD be saved in the [post-mortems](../post-mortems) directory ([sample](../post-mortems/sample.md)) for a historical record and shared with relevant parties.
+Completed post-mortems SHOULD be saved in the [post-mortems](../post-mortems) directory for a historical record and shared with relevant parties.
 
 ### More learning about post-mortems ###
 
@@ -18,6 +18,8 @@ Completed post-mortems SHOULD be saved in the [post-mortems](../post-mortems) di
 ## Sample Post-mortem Template
 
 Here is the information that SHOULD be included in a post-mortem. The complexity and length of each answer MAY be determined by the severity of the incident.
+
+[Sample post-mortem template](../post-mortems/sample.md)
 
 1. Incident Date
    - The date/time that the incident started.
