@@ -36,7 +36,7 @@ A developer will generally need accounts for the following services:
 - Bitbucket
     - [bitbucket.org/NYPL](https://bitbucket.org/NYPL)
 - Amazon Web Services (AWS)
-    - Primary AWS accounts:
+    - Primary AWS accounts (MFA Login):
         - [nypl-digital-dev](https://nypl-digital-dev.signin.aws.amazon.com/console)
         - [nypl-sandbox](https://nypl-sandbox.signin.aws.amazon.com/console)
 
@@ -55,7 +55,7 @@ A developer will generally need accounts for the following services:
 - Google Analytics
     - [https://analytics.google.com](https://analytics.google.com)
 - Amazon Web Services (AWS)
-    - Secondary AWS accounts:
+    - Secondary AWS accounts (MFA Login):
         - [nypl/prod](https://nypl.signin.aws.amazon.com/console)
         - [nypl-dev](https://nypl-dev.signin.aws.amazon.com/console)
         - [nypl-labs](https://nypl-labs.signin.aws.amazon.com/console)
