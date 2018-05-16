@@ -8,9 +8,9 @@ _Before running a post-mortem, please see the [post-mortem standards](../standar
 2. Incident Summary
    - ReCAP partner items had not been accessioned since February 6th 2018
 3. Authors
-   - Stephen Betts (stephenbetts@nypl.org)
-   - Kevin Friedman (kevinfriedman@nypl.org)
-   - Kate Sweeney (katesweeney@nypl.org)
+   - Stephen Betts
+   - Kevin Friedman 
+   - Kate Sweeney
 4. Timeline
    - HTC send email January 18th, proposing a change of directory structure for partner record data, creating one for full data export files and one for incremental data export files
    - Other partners consented. 

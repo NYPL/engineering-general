@@ -7,8 +7,8 @@ _Before running a post-mortem, please see the [post-mortem standards](../standar
 2. Incident Summary
    - Website location pages were returning a 404 to the public
 3. Authors
-   - Kevin Friedman (kevinfriedman@nypl.org)
-   - Brett Richter (brettrichter@nypl.org)
+   - Kevin Friedman
+   - Brett Richter
 4. Timeline
    - At around 2pm on Sunday, Appsdev started receiving New Relic Refinery alerts.
    - Presumably around this time, locations pages (and other pages dependent on the Refinery) were returning a 404 error to the public.
