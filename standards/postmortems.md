@@ -30,7 +30,7 @@ Here is the information that SHOULD be included in a post-mortem. The complexity
 4. Timeline
    - What was the timeline of the service disruption? When it was first reported, what actions were taken, and when it was resolved?
 5. Root Cause
-   - What was the root cause of outage/interruption? What actions contributed to this disruption?
+   - What was the root cause of outage/interruption? What actions contributed to this disruption?  Consider using the [5 Whys Method](https://en.wikipedia.org/wiki/5_Whys).
 6. Resolution and Recovery
    - How was the problem resolved? Were short-term fixes used?
 7. Preventative Measures

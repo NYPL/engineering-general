@@ -21,6 +21,6 @@ A common type of peer review involves two or more developers reviewing a pull re
 
 - Developers when submitting pull request, SHOULD mark at least one (1) developer as reviewer.
 
-- Reviewers receiving pull request SHOULD accept invitation and SHOULD review the code.
+- Reviewers receiving pull request SHOULD accept the invitation and SHOULD review the code.
 
 - If reviewers do not respond to pull request within 3rd business day, developer sending in request SHOULD follow up with a one-on-one peer review.

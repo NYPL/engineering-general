@@ -21,6 +21,7 @@ README documents MUST contain the following sections:
     - Version numbers MUST be included for all software dependencies
 - Installation information MUST be provided
 - Usage examples are RECOMMENDED
+- Testing instructions MUST be provided as specified [here](test-coverage.md).
 
 ### Optional README sections/additions
 
@@ -42,8 +43,8 @@ README documents MUST contain the following sections:
 ### API Documentation
 
 - APIs MUST provide Swagger v2 documentation
-- It is RECOMMENDED that APIs provide wiki-style or similar additional
-documentation be provided.
+- It is RECOMMENDED that APIs provide wiki-style (or similar) additional
+documentation.
 
 
 ### CHANGELOG

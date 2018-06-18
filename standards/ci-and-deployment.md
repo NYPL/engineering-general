@@ -13,7 +13,7 @@ If your repo's mainline is development or master, you have to make sure that you
 2) Suite of tests to validate new code changes:
 In order to ensure that the new code changes have not broken the behavior of the system, it is important to have tests that run against your code.
 
-3) When the build is red, the top priority of the team is to fix the build
+3) When the build is red, the top priority of the team is to fix the build.
 A red build means the last change possibly did not integrate with the existing code. All further check-ins that are not related to fix the build must be stopped and the goal has to be to get the build passing again.
 
 **Example Usage - Travis Configuration In Java**  
@@ -29,4 +29,6 @@ install:
 If your repository is configured for Travis CI, it will build and run tests (if there are no settings in pom.xml to skip tests)
 
 **Single Repo For Each Service And Corresponsing CI Build**  
-  Every microservice SHOULD have its own independent source code repo and its corresponding CI build. Though its possible to have a single repo for multiple services with separate CI builds, the most ideal set up is the later one. Having just one repo for multiple services and having one CI build for all the services is not a good idea and is definitely discouraged.
+  Every microservice SHOULD have its own independent source code repo and its corresponding CI build. The following configurations are discouraged:
+  - having a single repo for multiple services with separate CI builds
+  - having a single repo for multiple services and having one CI build for all the services

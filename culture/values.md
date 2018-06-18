@@ -36,7 +36,7 @@ We recognize the importance of having a thorough understanding of the problem we
 ### Documentation
 
 We will write brief & useful documentation for fellow contributors.
-The documentation should focus on how to install, run, and deploy an app.
+The documentation should focus on how to install, test, run, and deploy an app.
 
 ### Acknowledge the Difficulty of Estimation
 
