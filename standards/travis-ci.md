@@ -30,7 +30,7 @@ There are many steps in between that can be added for further customization. Her
 
 1. `language`: Programming language of the code repository
 2. Language version such as `rvm`, `node_js`, etc.
-3.
+
 
 
 ## Possible trouble spots
