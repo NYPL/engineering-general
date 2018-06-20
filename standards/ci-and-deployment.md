@@ -32,3 +32,7 @@ If your repository is configured for Travis CI, it will build and run tests (if 
   Every microservice SHOULD have its own independent source code repo and its corresponding CI build. The following configurations are discouraged:
   - having a single repo for multiple services with separate CI builds
   - having a single repo for multiple services and having one CI build for all the services
+
+## More information ##
+
+* [Travis CI](./travis-ci.md)
