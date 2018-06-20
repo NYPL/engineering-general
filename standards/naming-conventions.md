@@ -116,7 +116,7 @@ Repository names MUST be written with `lower snake case` where the delimiter is 
 
 ## Code
 
-There MAY be language specific conventions developers will implement.
+There MAY be language-specific conventions developers will implement.
 
 Each team/developer MUST adhere to one of the allowable formats:
 

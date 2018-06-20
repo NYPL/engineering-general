@@ -33,6 +33,6 @@ Developers MUST run their applications through validation tools.
 
 Developers MUST run their applications through web accessibility tools.
 
-Developers SHOULD have repo tools or IDE tools installed to help fix accessibility issues as they code. For example, the [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) is an ESLint plugin that can be added to check for errors when running the app's code through ESLint. Some IDEs (Atom, for example), can pick up the configuration and tell you the errors as you code.
+Developers SHOULD have repo tools or IDE tools installed to help fix accessibility issues as they code. For example, the [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) is an ESLint plugin that can be added to check for errors when running the app's code through ESLint. Some IDEs and text editors (Atom, for example), can pick up the configuration and tell you the errors as you code.
 
 A more comprehensive list of tools can be found in the Design Toolkit's [Resources](https://nypl.github.io/design-toolkit/resources/resources.html) section.

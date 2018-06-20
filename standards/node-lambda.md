@@ -13,7 +13,7 @@ See this [PR-38](https://github.com/NYPL/engineering-general/pull/38) for a full
 
 * Each app MUST bring in its own version of node-lambda as a `devDependency`. It MUST NOT rely on a globally installed node-lambda.
 
-* Deployments MUST be done through pre-baked commands in the `'scripts'` block of `package.json` that follows the following rules.
+* Deployments MUST be done through pre-baked commands in the `'scripts'` block of `package.json` that follow the following rules:
 
   * The command will be named `'deploy-[ENVIRONMENT-NAME]'`
 
