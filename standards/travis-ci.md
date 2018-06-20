@@ -4,11 +4,9 @@
 
 ### CI: Continuous Integration ###
 
-In software engineering, continuous integration (CI) is the practice of merging all developer working copies to a shared mainline several times a day. (from Wikipedia)
+From Travis CI documentation
 
-### CD: Continuous Deployment ###
-
-Continuous deployment is a strategy for software releases wherein any code commit that passes the automated testing phase is automatically released into the production environment, making changes that are visible to the software's users.
+> Continuous Integration is the practice of merging in small code changes frequently - rather than merging in a large change at the end of a development cycle. The goal is to build healthier software by developing and testing in smaller increments.
 
 ## Process ##
 
