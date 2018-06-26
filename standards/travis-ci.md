@@ -49,6 +49,28 @@ Testing is often run during the `script` configuration stage.
 ### Deploy ###
 Travis has a `deploy` configuration stage, with a list of preconfigured providers you can use for deployments.
 
+To configure Travis to deploy to Elastic Beanstalk:
+
+ 1. If you haven't already, run log in to Github through travis:
+    `travis login --org`
+ 2. Add encrypted credentials to `.travis.yml` by running this encrypted command (stored in nypl-digital-dev parameter store): https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Parameters:Name=%5BEquals%5Dproduction/travis/add_aws;sort=Name
+ 3. Add `deploy` entries to `.travis.yml` for each deploy hook, e.g.:
+   ```
+   deploy:
+    - provider: elasticbeanstalk
+      skip_cleanup: true
+      access_key_id: "$AWS_ACCESS_KEY_ID_DEVELOPMENT"
+      secret_access_key: "$AWS_SECRET_ACCESS_KEY_DEVELOPMENT"
+      region: us-east-1
+      app: discovery-api # This is the name of the app
+      env: discovery-api-dev # This is the specific deployment
+      bucket_name: elasticbeanstalk-us-east-1-224280085904 # This is common across EB deployments in a given account
+      bucket_path: discovery-api-dev # Conventionally this should equal the `env` name
+      on:
+        repo: NYPL-discovery/discovery-api
+        branch: development # This is the branch in origin we'll watch
+   ```
+
 ## Troubleshooting
 
 ### Chrome
