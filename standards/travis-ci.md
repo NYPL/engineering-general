@@ -76,6 +76,23 @@ To configure Travis to deploy to Elastic Beanstalk:
 ### Chrome
 When using Chrome to conduct tests such as with `karma`, Chrome is not installed by default on the virtualization environment.
 
+The idea is to install Chrome as an apt addon and enabling display within the Travis virtualization machine so Chrome can run with a monitor on the background.
+
+```
+addons:
+  chrome: stable  # have Travis install chrome stable.
+  ...
+before_script:
+  - export DISPLAY=:99.0  # Export display to Travis
+  - sh -e /etc/init.d/xvfb start  # Start graphical operations
+```
+
+### Headless Chrome
+
+The installation of Chrome would still be required even if chrome-headless is used by `karma` or other test suites.
+
 ## References ##
 * [Travis CI: Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners/)
 * [Travis CI: Customizing the Build](https://docs.travis-ci.com/user/customizing-the-build/)
+* [Chromedriver support](https://github.com/travis-ci/travis-ci/issues/272#issuecomment-14402117)
+* [How to make travis execute Angular tests on Chrome](https://stackoverflow.com/questions/19255976/how-to-make-travis-execute-angular-tests-on-chrome-please-set-env-variable-chr)
