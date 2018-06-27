@@ -43,7 +43,7 @@ There are many steps in between the two configuration stages mentioned above tha
 12. `after_deploy`: Used for user-friendly messages to notify user deployment is successfully triggered.
 
 ### Test ###
-Testing is often run during the `script` configuration stage.
+Testing is often run during the `script` configuration stage as part of the build.
 
 
 ### Deploy ###
