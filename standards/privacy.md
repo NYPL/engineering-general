@@ -7,6 +7,8 @@ Products (i.e. services or applications) that retain personally identifiable inf
 PII includes:
 
 - Patron information (ID, name, email address, address, etc.)
-- Bibliographic information (ID, title, etc.)
-- Item information (ID, title, etc.)
+- Bibliographic information (e.g. ID, title, etc.) when it relates to a patron
+- Item information (e.g. ID, title, etc.) when it relates to a patron
 - Computer information (IP address, etc.)
+
+New third-party products (e.g. Optimizely, Google Analytics) used by the Engineering team MUST also be subject and evaluated according to this standard.
