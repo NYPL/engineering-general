@@ -20,6 +20,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [Naming Conventions](standards/naming-conventions.md)
 * [Test Coverage](standards/test-coverage.md)
 * [CI Coverage](standards/ci-and-deployment.md)
+* [Travis CI](standards/travis-ci.md)
 * [Peer Review](standards/peer-review.md)
 * [Accessibility](standards/accessibility.md)
 * [Documentation](standards/documentation.md)
