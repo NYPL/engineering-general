@@ -62,9 +62,8 @@ documentation.
 
 
 ## Commit Messages
-To tie a GitHub commit message to a Jira ticket, use the 
-    git commit -m 'ABC-123 #comment Your comment goes here'
-format, where ABC-123 points to the Jira issue your code commit is addressing.  For this to work, the email address you use for your GitHub commits needs to be the same as the address you use for Jira.
+To tie a GitHub commit message to a Jira ticket, use the `git commit -m 'ABC-123 #comment Your comment goes here'` format, 
+where ABC-123 points to the Jira issue your code commit is addressing.  For this to work, the email address you use for your GitHub commits needs to be the same as the address you use for Jira.
 
 
 
