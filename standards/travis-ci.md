@@ -53,9 +53,10 @@ To configure Travis to deploy to Elastic Beanstalk:
 
  1. If you haven't already, run log in to Github through travis:
     `travis login --org`
- 2. Add encrypted credentials to `.travis.yml` by running this encrypted command (stored in nypl-digital-dev parameter store): https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Parameters:Name=%5BEquals%5Dproduction/travis/add_aws;sort=Name
- 3. Add `deploy` entries to `.travis.yml` for each deploy hook, e.g.:
-   ```
+ 2. *From the root directory of your app,* run the encrypted command stored in nypl-digital-dev parameter store: https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Parameters:Name=%5BEquals%5Dproduction/travis/add_aws;sort=Name which will automatically add encrypted credentials for AWS_ACCESS_KEY_ID_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_QA, AWS_SECRET_ACCESS_KEY_PRODUCTION, AWS_ACCESS_KEY_ID_QA, and AWS_ACCESS_KEY_ID_PRODUCTION to `.travis.yml`.
+ 3. Add `deploy` entries to `.travis.yml` for each deploy hook.
+ Beanstalk example:
+   ```yml
    deploy:
     - provider: elasticbeanstalk
       skip_cleanup: true
@@ -68,8 +69,18 @@ To configure Travis to deploy to Elastic Beanstalk:
       bucket_path: discovery-api-dev # Conventionally this should equal the `env` name
       on:
         repo: NYPL-discovery/discovery-api
-        branch: development # This is the branch in origin we'll watch
+        branch: development # specify the branch for travis to watch
    ```
+Labmda example:
+  ```yml
+  deploy:
+  - provider: script
+    skip_cleanup: true
+    script: npm run deploy-development
+    on:
+      branch: development
+  ```
+
 
 ## Troubleshooting
 
@@ -78,7 +89,7 @@ When using Chrome to conduct tests such as with `karma`, Chrome is not installed
 
 The idea is to install Chrome as an apt addon and enabling display within the Travis virtualization machine so Chrome can run with a monitor on the background.
 
-```
+```yml
 addons:
   chrome: stable  # have Travis install chrome stable.
   ...
