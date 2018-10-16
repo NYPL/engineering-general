@@ -53,7 +53,7 @@ To configure Travis to deploy to Elastic Beanstalk:
 
  1. If you haven't already, run log in to Github through travis:
     `travis login --org`
- 2. *From the root directory of your app,* run the encrypted command stored in nypl-digital-dev parameter store: https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Parameters:Name=%5BEquals%5Dproduction/travis/add_aws;sort=Name which will automatically add encrypted credentials for AWS_ACCESS_KEY_ID_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_QA, AWS_SECRET_ACCESS_KEY_PRODUCTION, AWS_ACCESS_KEY_ID_QA, and AWS_ACCESS_KEY_ID_PRODUCTION to `.travis.yml`.
+ 2. *From the root directory of your app,* run the encrypted command stored in nypl-digital-dev parameter store: https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Parameters:Name=%5BEquals%5Dproduction/travis/add_aws;sort=Name which will automatically add encrypted credentials for AWS_ACCESS_KEY_ID_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_QA, AWS_SECRET_ACCESS_KEY_PRODUCTION, AWS_ACCESS_KEY_ID_QA, and AWS_ACCESS_KEY_ID_PRODUCTION to `.travis.yml`. (If this is a new Travis integration - or new to you - [ensure the repo is locally associated with the right Travis endpoint](#failure-to-decrypt-environmental-variables).)
  3. Add `deploy` entries to `.travis.yml` for each deploy hook.
  Beanstalk example:
    ```yml
@@ -132,7 +132,13 @@ repos:
 
 The `endpoints` section indicates I've authenticated against both `.org` and `.com` at some point. Under `repos`, we see that builds for discovery-front-end are expected to be run on `.org` whereas builds for schemaservice are expected to be run on `.com`. Consequently any time I run `travis encrypt ...` locally for either of those repos, the encryption will be tied to those endpoints.
 
-To correct an endpoint mismatch, re-run your `travis encrypt ...` command with ` --com` or ` --org` at the end. (This will add the missing entry to your `~/.travis/config.yml` for subsequent calls.)
+To correct an endpoint mismatch locally, re-run your `travis encrypt ...` command with ` --com` or ` --org` at the end. (This will add the missing entry to your `~/.travis/config.yml` for subsequent calls.)
+
+To ensure all new Travis integrations default to a `.com` association for you going forward:
+
+```
+travis endpoint --com --set-default
+```
 
 ## References ##
 * [Travis CI: Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners/)
