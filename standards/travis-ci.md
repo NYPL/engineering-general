@@ -102,6 +102,38 @@ before_script:
 
 The installation of Chrome would still be required even if chrome-headless is used by `karma` or other test suites.
 
+### Failure to Decrypt Environmental Variables
+
+If it seems your encrypted environmental variables aren't being set in builds and/or you see something like the following in your build log, this section is for you:
+```
+Setting environment variables from .travis.yml
+$ export CpxjaQ=[secure]
+...
+```
+
+One reason Travis will fail to properly decrypt environmental variables is if there's a mismatch between the Travis endpoint used to encrypt the values and the Travis endpoint used to run builds. Travis is in the process of moving from travis-ci.org to travis-ci.com. All builds will eventually migrate to the latter. Our repos are currently split between them, with most of the newer Travis integrations existing on `.com`.
+
+**To determine whether `.org` or `.com` is correct for a given repo**, simply check the Travis URL of any attempted build.
+
+**To determine which endpoint is actually used to encrypt on your local machine**, check `~/.travis/config.yml`. For example:
+
+```
+endpoints:
+  https://api.travis-ci.org/:
+    access_token: [snip]
+  https://api.travis-ci.com/:
+    access_token: [snip]
+repos:
+  NYPL-discovery/discovery-front-end:
+    endpoint: https://api.travis-ci.org/
+  NYPL-discovery/schemaservice:
+    endpoint: https://api.travis-ci.com/
+```
+
+The `endpoints` section indicates I've authenticated against both `.org` and `.com` at some point. Under `repos`, we see that builds for discovery-front-end are expected to be run on `.org` whereas builds for schemaservice are expected to be run on `.com`. Consequently any time I run `travis encrypt ...` locally for either of those repos, the encryption will be tied to those endpoints.
+
+To correct an endpoint mismatch, re-run your `travis encrypt ...` command with ` --com` or ` --org` at the end. (This will add the missing entry to your `~/.travis/config.yml` for subsequent calls.)
+
 ## References ##
 * [Travis CI: Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners/)
 * [Travis CI: Customizing the Build](https://docs.travis-ci.com/user/customizing-the-build/)
