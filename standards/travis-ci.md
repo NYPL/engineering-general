@@ -132,7 +132,7 @@ repos:
 
 The `endpoints` section indicates I've authenticated against both `.org` and `.com` at some point. Under `repos`, we see that builds for discovery-front-end are expected to be run on `.org` whereas builds for schemaservice are expected to be run on `.com`. Consequently any time I run `travis encrypt ...` locally for either of those repos, the encryption will be tied to those endpoints.
 
-To correct an endpoint mismatch locally, re-run your `travis encrypt ...` command with ` --com` or ` --org` at the end. (This will add the missing entry to your `~/.travis/config.yml` for subsequent calls.)
+When you run `travis encrypt ...`, the command makes a guess about whether the integration will be run on `.org` or `.com`. It makes that guess based on the contents of the `repos` section described above and, failing a match there, falls back on your default endpoint (see notes on `travis endpoint ...` below). When `travis encrypt` defaults to the wrong endpoint, correct that by re-running your `travis encrypt ...` command with ` --com` or ` --org` at the end. (This will add the missing entry to your `~/.travis/config.yml` for subsequent calls.)
 
 To ensure all new Travis integrations default to a `.com` association for you going forward:
 
