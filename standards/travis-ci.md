@@ -53,7 +53,7 @@ To configure Travis to deploy to Elastic Beanstalk:
 
  1. If you haven't already, run log in to Github through travis:
     `travis login --org`
- 2. *From the root directory of your app,* run the encrypted command stored in nypl-digital-dev parameter store: https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Parameters:Name=%5BEquals%5Dproduction/travis/add_aws;sort=Name which will automatically add encrypted credentials for AWS_ACCESS_KEY_ID_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_QA, AWS_SECRET_ACCESS_KEY_PRODUCTION, AWS_ACCESS_KEY_ID_QA, and AWS_ACCESS_KEY_ID_PRODUCTION to `.travis.yml`.
+ 2. *From the root directory of your app,* run the encrypted command stored in nypl-digital-dev parameter store: https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Parameters:Name=%5BEquals%5Dproduction/travis/add_aws;sort=Name which will automatically add encrypted credentials for AWS_ACCESS_KEY_ID_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_QA, AWS_SECRET_ACCESS_KEY_PRODUCTION, AWS_ACCESS_KEY_ID_QA, and AWS_ACCESS_KEY_ID_PRODUCTION to `.travis.yml`. (If this is a new Travis integration - or new to you - [ensure the repo is locally associated with the right Travis endpoint](#failure-to-decrypt-environmental-variables).)
  3. Add `deploy` entries to `.travis.yml` for each deploy hook.
  Beanstalk example:
    ```yml
@@ -101,6 +101,44 @@ before_script:
 ### Headless Chrome
 
 The installation of Chrome would still be required even if chrome-headless is used by `karma` or other test suites.
+
+### Failure to Decrypt Environmental Variables
+
+If it seems your encrypted environmental variables aren't being set in builds and/or you see something like the following in your build log, this section is for you:
+```
+Setting environment variables from .travis.yml
+$ export CpxjaQ=[secure]
+...
+```
+
+One reason Travis will fail to properly decrypt environmental variables is if there's a mismatch between the Travis endpoint used to encrypt the values and the Travis endpoint used to run builds. Travis is in the process of moving from travis-ci.org to travis-ci.com. All builds will eventually migrate to the latter. Our repos are currently split between them, with most of the newer Travis integrations existing on `.com`.
+
+**To determine whether `.org` or `.com` is correct for a given repo**, simply check the Travis URL of any attempted build.
+
+**To determine which endpoint is actually used to encrypt on your local machine**, check `~/.travis/config.yml`. For example:
+
+```
+endpoints:
+  https://api.travis-ci.org/:
+    access_token: [snip]
+  https://api.travis-ci.com/:
+    access_token: [snip]
+repos:
+  NYPL-discovery/discovery-front-end:
+    endpoint: https://api.travis-ci.org/
+  NYPL-discovery/schemaservice:
+    endpoint: https://api.travis-ci.com/
+```
+
+The `endpoints` section indicates I've authenticated against both `.org` and `.com` at some point. Under `repos`, we see that builds for discovery-front-end are expected to be run on `.org` whereas builds for schemaservice are expected to be run on `.com`. Consequently any time I run `travis encrypt ...` locally for either of those repos, the encryption will be tied to those endpoints.
+
+When you run `travis encrypt ...`, the command makes a guess about whether the integration will be run on `.org` or `.com`. It makes that guess based on the contents of the `repos` section described above and, failing a match there, falls back on your default endpoint (see notes on `travis endpoint ...` below). When `travis encrypt` defaults to the wrong endpoint, correct that by re-running your `travis encrypt ...` command with ` --com` or ` --org` at the end. (This will add the missing entry to your `~/.travis/config.yml` for subsequent calls.)
+
+To ensure all new Travis integrations default to a `.com` association for you going forward:
+
+```
+travis endpoint --com --set-default
+```
 
 ## References ##
 * [Travis CI: Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners/)
