@@ -10,7 +10,7 @@ Server Name: email-smtp.us-east-1.amazonaws.com
 Port: 587
 Use Transport Layer Security (TLS): Yes
 
-And the authentication is the credntials created by SES Management Console.
+And the authentication is the credentials created by SES Management Console.
 
 ## Mail From Address
 
