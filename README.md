@@ -28,6 +28,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [Production Readiness](standards/production-readiness.md)
 * [Post-mortems](standards/postmortems.md)
 * [Privacy & Data Retention](standards/privacy.md)
+* [Sending Emails from an Application](standards/sending-emails-from-an-application.md)
 
 #### Security
 
