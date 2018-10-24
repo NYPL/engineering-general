@@ -2,7 +2,7 @@
 
 The Digital department at NYPL was formed from several different teams, that had generally been independent and did not share standards on technology, etc. This means that the systems that Digital is responsible for use many different languages, frameworks, deployment environments etc., etc.
 
-This can naturally lead to some issues, as not everyone can be conversant in every technology that is used (while this problem is certainly not unique to NYPL it is particularly pronounced here). This in turn can lead to resource constraints in planning, as you don't just need to worry about what team should deal with something, you also need to consider the individual skillsets. Additionally it can also cause problems when creating new services — should we use Rails, node, Python, Java, Drupal? Microservice or monolith? 
+This can naturally lead to some issues, as not everyone can be conversant in every technology that is used (while this problem is certainly not unique to NYPL it is particularly pronounced here). This in turn can lead to resource constraints in planning, as you don't just need to worry about what team should deal with something, you also need to consider the individual skillsets. Additionally it can also cause problems when creating new services — should we use Rails, node, Python, Java, PHP? Microservice or monolith? 
 
 Therefore, to help inform any technology decisions in the future we have the following guiding principles:
 
