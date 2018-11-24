@@ -22,3 +22,7 @@ A pre-launch checklist SHOULD be completed and can be completed in a pre-launch 
 | Security [1](../security/README.md), [2](../security/oauth.md), [3](../security/secrets.md) |                     |
 | Privacy & Data Retention [1](privacy.md)                                                    |                     |
 | Monitoring & Alarms [1](alerting.md)                                                        |                     |
+
+
+## AWS Billing Tags
+If your service uses AWS, please add billing tags to your production readiness checklist.  You can read more about the tags on the billing-tags document page.
