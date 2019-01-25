@@ -17,7 +17,7 @@ Therefore, to help inform any technology decisions in the future we have the fol
 * APIs could be implemented as Docker containers, or as Lambdas, as appropriate (appropriateness up for discussion!)
 * For event-driven architectures we tend to use AWS lambdas and kinesis event streams.
 * As well as event streams, we also like message queues where appropriate. 
-* As a rule of thumb — events should be used when there is a replayable sequence of events; queues should be used for tracking and managing tasks. E.g., an update of a record is an event; propagating an update into different repositories could be managed as a task in a queue.
+* As a rule of thumb — events should be used when there is a replayable sequence of events; queues should be used for tracking and managing tasks. E.g., an update of a record is an event; propagating an update into different repositories could be managed as a task in a queue. Another way of looking at it (thanks to Paul) is that events describe what has already happened; tasks track what should happen in the (near) future.
 * Any particular lambda should either be invoked by messages or by API endpoints, not both
 * Any new repos should be created in the github.com/NYPL 
 * We like to use CI/CD to automatically test and deploy our new code, and Travis is our preferred tool for CI/CD. 
