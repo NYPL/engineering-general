@@ -25,6 +25,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [Accessibility](standards/accessibility.md)
 * [Documentation](standards/documentation.md)
 * [Versioning](standards/versioning.md)
+* [AWS Tags](standards/aws-tags.md)
 * [Production Readiness](standards/production-readiness.md)
 * [Post-mortems](standards/postmortems.md)
 * [Privacy & Data Retention](standards/privacy.md)
