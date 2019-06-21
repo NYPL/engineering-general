@@ -49,8 +49,8 @@ Important and useful :link: links to other documentation and standards at NYPL.
 
 ### React/Node
 * Header
-  * [App Repository](https://bitbucket.org/NYPL/nypl-dgx-react-header/)
-  * [Component Repository](https://bitbucket.org/NYPL/dgx-header-component/)
+  * [App Repository](https://github.com/NYPL/nypl-dgx-react-header)
+  * [Component Repository](https://github.com/NYPL/dgx-header-component)
   * [Web App](https://header.nypl.org)
 * Homepage
   * [Repository](https://bitbucket.org/NYPL/dgx-homepage)
