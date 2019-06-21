@@ -48,15 +48,16 @@ Important and useful :link: links to other documentation and standards at NYPL.
 ## Web Applications
 
 ### React/Node
+* Header
+  * [App Repository](https://bitbucket.org/NYPL/nypl-dgx-react-header/)
+  * [Component Repository](https://bitbucket.org/NYPL/dgx-header-component/)
+  * [Web App](https://header.nypl.org)
 * Homepage
   * [Repository](https://bitbucket.org/NYPL/dgx-homepage)
   * [Web App](https://www.nypl.org)
-* New Staff Picks
+* Staff Picks
   * [Repository](https://github.com/NYPL/staff-picks)
   * [Web App](https://www.nypl.org/books-music-dvds/recommendations/best-books/childrens)
-* Old Staff Picks (will be deprecated)
-  * [Repository](https://bitbucket.org/NYPL/dgx-staff-picks)
-  * [Web App](https://www.nypl.org/books-music-dvds/recommendations/staff-picks)
 * New Arrivals
   * [Repository](https://bitbucket.org/NYPL/dgx-new-arrivals)
   * [Web App](https://www.nypl.org/books-music-dvds/new-arrivals)
@@ -69,9 +70,9 @@ Important and useful :link: links to other documentation and standards at NYPL.
 * BookLists
   * [Repository](https://bitbucket.org/NYPL/dgx-booklists)
   * [Web App](https://www.nypl.org/books-music-dvds/recommendations/lists/nypl_96th_street)
-* Search Beta
+* Global Search
   * [Repository](https://bitbucket.org/NYPL/dgx-global-search)
-  * [Web App](https://www.nypl.org/searchbeta/)
+  * [Web App](https://www.nypl.org/search/)
 * Blogs Beta
   * [Repository](https://bitbucket.org/NYPL/dgx-blogs)
   * [Web App](https://www.nypl.org/blog/beta/)
