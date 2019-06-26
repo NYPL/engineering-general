@@ -71,7 +71,7 @@ To configure Travis to deploy to Elastic Beanstalk:
         repo: NYPL-discovery/discovery-api
         branch: development # specify the branch for travis to watch
    ```
-Labmda example:
+Lambda example:
   ```yml
   deploy:
   - provider: script
