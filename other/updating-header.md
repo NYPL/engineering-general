@@ -39,15 +39,20 @@ Note: Depending on the nature of the change you may either choose to:
 
 ## 3. Activating Changes in Non-React Apps via Header App
 
-Because not all NYPL apps use React, a special Header App exists to provide two different methods of inclusion:
+Because not all NYPL apps use React, a special [Header App](https://github.com/NYPL/nypl-dgx-react-header) exists to provide two different methods of inclusion:
 
- * [Embeddable Script](https://github.com/NYPL/nypl-dgx-react-header#embeddable-script): Include the header in any app via `<script>` tag.
- * [Fully Rendered HTML](https://github.com/NYPL/nypl-dgx-react-header#drupal-import) (aka "Drupal Import"): Get raw html, JS, and CSS to include in any app server-side.
+ * [Embeddable Javascript](https://github.com/NYPL/nypl-dgx-react-header#embeddable-script): Include the header in any app [via `<script>` tag](https://header.nypl.org/dgx-header.min.js).
+ * [Fully Rendered HTML](https://github.com/NYPL/nypl-dgx-react-header#drupal-import) (aka "Drupal Import"): Get [raw html](https://header.nypl.org/header-markup), [JS](https://header.nypl.org/dgx-header.min.js), and [CSS](https://header.nypl.org/styles.css) to include in any app server-side.
 
-To incorporate changes made to the React Header Component above, change the `@nypl/dgx-header-component` version to match the latest version of dgx-header-component in NPMJS. For example [this PR bumped the Header App to use Header Component `1.4.19`](https://github.com/NYPL/nypl-dgx-react-header/pull/26/files). Travis will automatically deploy changes merged to `development`, `qa`, and `master` (production).
+Deploy the [Header App](https://github.com/NYPL/nypl-dgx-react-header) same as the React Apps above.
 
- * Locations: Locations QA is deployed with `LOCINATOR_ENV` "qa", which causes app to use qa deployments of refinery and header app (i.e. [App will load `https://qa-header.nypl.org/dgx-header.min.js?skipNav=main-content`](https://github.com/NYPL/locations-app/blob/8517c884fe8bc46998077ced735b992875a47b5a/views/index.erb#L65)
- * Staff Profiles: Staff Profiles appears to be [configured identically](https://bitbucket.org/NYPL/dgx-staff-profiles/src/c1ccec275ef7754632c617821a6c1287cfb245a5/views/staff_profiles.erb?at=master#staff_profiles.erb-55), although **it's unclear where/how this is deployed**
- * Research Divisions: This also appears to be [configured identically](https://bitbucket.org/NYPL/research-collections/src/04d8a64e3b140a5751a78974b895c60006c97309/views/research_collections.erb?at=master#research_collections.erb-55), but it's also **unclear where/how this is deployed**.
+### Apps using embedded Javascript
 
+The following Angular apps use the embedded Javascript method of inclusion and are configured to load the header environment matching their own environment (e.g. 'QA' deployment loads 'QA' header JS, etc.):
+ * [**Locations**](https://github.com/NYPL/locations-app): Locations QA is deployed with `LOCINATOR_ENV` "qa", which causes app to use qa deployments of refinery and header app (i.e. [App will load `https://qa-header.nypl.org/dgx-header.min.js?skipNav=main-content`](https://github.com/NYPL/locations-app/blob/8517c884fe8bc46998077ced735b992875a47b5a/views/index.erb#L65)
+ * [**Staff Profiles**](https://github.com/NYPL/staff-profiles/blob/c1ccec275ef7754632c617821a6c1287cfb245a5/views/staff_profiles.erb#L55): Staff Profiles appears to be [configured identically](https://github.com/NYPL/staff-profiles/blob/c1ccec275ef7754632c617821a6c1287cfb245a5/views/staff_profiles.erb#L55), although [**it's unclear where/how this is deployed**](https://github.com/NYPL/staff-profiles/issues/3)
+ * [**Research Divisions**](https://bitbucket.org/NYPL/research-collections): This also appears to be [configured identically](https://bitbucket.org/NYPL/research-collections/src/04d8a64e3b140a5751a78974b895c60006c97309/views/research_collections.erb?at=master#research_collections.erb-55), but it's also [**unclear where/how this is deployed**](https://bitbucket.org/NYPL/research-collections/issues/2/how-is-this-deployed).
 
+### Apps using fully rendered HTML
+
+To validate integration in apps using the "fully rendered HTML" ("Drupal") method of inclusion, look for anticipated markup changes in QA deployment following QA Header App deployment (observing 10 minute cache TTL).
