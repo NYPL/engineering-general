@@ -37,20 +37,20 @@ Example components:
 
 ### Master-QA-Production
 
-This differs from (#development-qa-master)(Development-QA-Master) only in what it considers "Development" and "Production" branches.
+This differs from (#development-qa-master)(Development-QA-Master) in 1) what it considers "Development" and "Production" branches and 2) where the version tag is applied.
 
 | Branch        | Environment | Cut features from this branch | Version tag this branch |
 |---------------|-------------|-------------------------------|-------------------------|
-| `master`      | Development | ✅                            |                         |
+| `master`      | Development | ✅                            | ✅                      |
 | `qa`          | QA          |                               |                         |
-| `production`  | Production  |                               | ✅                      |
+| `production`  | Production  |                               |                         |
 
-1. Create feature branch off `development`
+1. Create feature branch off `master`
 1. Compute next logical version and update `README.md`, `CHANGELOG.md`, `package.json`, etc.
-1. Create PR against `development`
-1. After review, merge `development` > `qa`
-1. After QC signoff, merge `qa` > `master`
-1. Git tag `master` with new version number.
+1. Create PR against `master`
+1. After merging the PR, git tag `master` with new version number.
+1. Merge `master` > `qa`
+1. After QC signoff, merge `qa` > `production`
 
 Example components:
  * https://github.com/NYPL/nypl-library-card-app
