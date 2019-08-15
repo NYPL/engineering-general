@@ -12,6 +12,8 @@ Changes to the component should follow [the instructions in the repo](https://gi
 
 ## 2. Activate Changes in React Apps
 
+> Note that the specific feature being rolled out may require modifying the order of deployments below. For example, if the header functionality is the creation of a cookie during login (via Encore), you may want to deploy the Header App before the React apps below.
+
 Starting with the lowest traffic [React apps](https://github.com/NYPL/engineering-general/tree/master/other#reactnode) (excluding "Header App"), update the `dgx-header-component` dependency to use the new version. Proposed order:
 
  * [Get a library card](https://github.com/NYPL/nypl-library-card-app)
