@@ -13,6 +13,8 @@ The following are common Git workflows, named here so they can be easily referen
 
 ### Development-QA-Master
 
+![Git Workflow: Development-QA-Master diagram](./assets/git-workflow-development-qa-master.png)
+
 | Branch        | Environment | Cut features from this branch | Version tag this branch |
 |---------------|-------------|-------------------------------|-------------------------|
 | `development` | Development | ✅                            |                         |
@@ -36,6 +38,8 @@ Example components:
  * https://github.com/NYPL/dgx-new-arrivals
 
 ### Master-QA-Production
+
+![Git Workflow: Master-QA-Production diagram](./assets/git-workflow-master-qa-production.png)
 
 This differs from (#development-qa-master)(Development-QA-Master) in 1) what it considers "Development" and "Production" branches and 2) where the version tag is applied.
 
@@ -75,6 +79,8 @@ Example components:
 
 ### Development-QA-Master with non-deployment target
 
+![Git Workflow: Master-QA-Production diagram](./assets/git-workflow-development-qa-master-with-non-deployment-target.png)
+
 This is a variation on (#development-qa-master) that specifies a single extra branch situated immediately before `development`, which is not deployed.
 
 For example:
@@ -86,11 +92,12 @@ For example:
 | `qa`          | QA          |                               |                         |
 | `master`      | Production  |                               | ✅                      |
 
-1. Create feature branch off `development`
+1. Create feature branch off `pr_approved`
 1. Compute next logical version and update `README.md`, `CHANGELOG.md`, `package.json`, etc.
-1. Create PR against `development`
-1. After review, merge `development` > `qa`
-1. After QC signoff, merge `qa` > `master`
+1. Create PR against `pr_approved`
+1. Pre-review, deploy to `development` by merging `pr_approved` > `development`
+1. After review, merge `pr_approved` > `qa`
+1. After QC signoff, merge `pr_approved` > `master`
 1. Git tag `master` with new version number.
 
 
