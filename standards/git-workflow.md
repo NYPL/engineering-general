@@ -36,6 +36,7 @@ Example components:
  * https://github.com/NYPL/dgx-booklists
  * https://github.com/NYPL/staff-picks
  * https://github.com/NYPL/dgx-new-arrivals
+ * https://github.com/NYPL-discovery/sierra-retriever
 
 ### Master-QA-Production
 
@@ -71,13 +72,15 @@ This is a simplified form of (#development-qa-master)(Development-QA-Master), wh
 1. Create feature branch off `development`
 1. Compute next logical version and update `README.md`, `CHANGELOG.md`, `package.json`, etc.
 1. Create PR against `development`
-1. After QC signoff, merge `qa` > `master`
+1. After QC signoff, merge `development` > `master`
 1. Git tag `master` with new version number.
 
 Example components:
  * https://github.com/NYPL/dgx-header-component#contributing-is-fun-and-easy (Note this app requests that the `devlopment` > `master` merge be carried out via PR)
 
 ### Development-QA-Master with non-deployment target
+
+Rename: Non-deployment Target Merged to Development, QA, Master
 
 ![Git Workflow: Master-QA-Production diagram](./assets/git-workflow-development-qa-master-with-non-deployment-target.png)
 
@@ -100,6 +103,31 @@ For example:
 1. After QC signoff, merge `pr_approved` > `master`
 1. Git tag `master` with new version number.
 
-
 Example components:
  * https://github.com/NYPL/dgx-global-search (uses "pr_approved" as non-deployment PR target)
+
+### PRs Target Master, Merge to Deployment Branches
+
+This may be a cleaner form of above in that the PR target branch is not also a deployment branch.
+
+![Git Workflow: PRs Target Master, Merge to Deployment Branches](./assets/git-workflow-prs-target-master-merge-to-deployment-branches.png)
+
+| Branch        | Environment | Cut features from this branch | Version tag this branch |
+|---------------|-------------|-------------------------------|-------------------------|
+| `master`      | n/a         | ✅                            | ✅                       |
+| `development` | Development |                               |                         |
+| `qa`          | QA          |                               |                         |
+| `production`  | Production  |                               |                         |
+
+1. Create feature branch off `master`
+1. Compute next logical version and update `README.md`, `CHANGELOG.md`, `package.json`, etc. (Note this may be done *after* PR approval & merge if there are mult. features in play.)
+1. Create PR against `master`
+1. After approval merge PR into `master`
+1. Git tag `master` with new version number.
+1. Optionally deploy to `development` by merging `master` > `development`
+1. Deploy to `qa` by merging `master` > `qa`
+1. After QC signoff (if applicable), merge `master` > `production`
+
+Example components:
+ * https://github.com/NYPL-discovery/discovery-store-poster
+ * https://github.com/NYPL-discovery/discovery-api (Note the README says version tags should apply to `production`, but versions have rarely been applied:.)
