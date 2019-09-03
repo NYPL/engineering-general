@@ -131,3 +131,29 @@ This may be a cleaner form of above in that the PR target branch is not also a d
 Example components:
  * https://github.com/NYPL-discovery/discovery-store-poster
  * https://github.com/NYPL-discovery/discovery-api (Note the README says version tags should apply to `production`, but versions have rarely been applied:.)
+
+
+### Master-Development-QA-Production
+
+This is essentially Development-QA-Production but using `Master` as non-deploy PR target.
+
+![Git Workflow: PRs Target Master, Merge to Deployment Branches](./assets/git-workflow-master-development-qa-production.png)
+
+| Branch        | Environment | Cut features from this branch | Version tag this branch |
+|---------------|-------------|-------------------------------|-------------------------|
+| `master`      | n/a         | ✅                            | ✅                       |
+| `development` | Development |                               |                         |
+| `qa`          | QA          |                               |                         |
+| `production`  | Production  |                               |                         |
+
+1. Create feature branch off `master`
+1. Compute next logical version and update `README.md`, `CHANGELOG.md`, `package.json`, etc.)
+1. Create PR against `master`
+1. After approval merge PR into `master`
+1. Git tag `master` with new version number.
+1. Merge `master` > `development`
+1. Deploy to `qa` by merging `master` > `qa`
+1. After QC signoff (if applicable), merge `master` > `production`
+
+Example components:
+ * https://github.com/NYPL/data.archives
