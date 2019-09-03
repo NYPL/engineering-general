@@ -2,10 +2,10 @@
 
 All components MUST identify their "Git workflow" (aka "Merge strategy", "Steps for promoting a feature") in their README. A Git workflow identifies:
 
- * the persistent branches (e.g. "development", "qa", "master"), including what environment they are deployed to
- * which branch one must use for feature branches
- * whether and how one bumps the component version (if it deviates from [./versioning.md#typical-workflow](the standard)).
- * any deviations from [https://github.com/NYPL/engineering-general/blob/updating-header/standards/travis-ci.md](our typical CI/CD configuration)
+ * the persistent branches (e.g. "development", "qa", "master"), including what environment they are deployed to if any
+ * what branch to cut feature branches from
+ * whether and how one bumps the component version (if it deviates from [the standard](./versioning.md#typical-workflow))
+ * any deviations from [our typical CI/CD configuration](https://github.com/NYPL/engineering-general/blob/updating-header/standards/travis-ci.md)
 
 ## Common worklows
 
@@ -56,7 +56,7 @@ Example components:
 
 ![Git Workflow: Master-QA-Production diagram](./assets/git-workflow-master-qa-production.png)
 
-This differs from (#development-qa-master)(Development-QA-Master) in 1) what it considers "Development" and "Production" branches and 2) where the version tag is applied.
+This differs from [Development-QA-Master](#development-qa-master) in 1) what it considers "Development" and "Production" branches and 2) where the version tag is applied.
 
 | Branch        | Environment | Cut features from this branch | Version tag this branch |
 |---------------|-------------|-------------------------------|-------------------------|
@@ -82,7 +82,7 @@ Example components:
 
 ### Development-Master
 
-This is a simplified form of (#development-qa-master)(Development-QA-Master), which simply removes the `qa` branch.
+This is a simplified form of [Development-QA-Master](#development-qa-master), which simply removes the `qa` branch.
 
 | Branch        | Environment | Cut features from this branch | Version tag this branch |
 |---------------|-------------|-------------------------------|-------------------------|
@@ -104,7 +104,7 @@ Rename: Non-deployment Target Merged to Development, QA, Master
 
 ![Git Workflow: Master-QA-Production diagram](./assets/git-workflow-development-qa-master-with-non-deployment-target.png)
 
-This is a variation on (#development-qa-master) that specifies a single extra branch situated immediately before `development`, which is not deployed.
+This is a variation on (Development-QA-Master)[#development-qa-master] that specifies a single extra branch situated immediately before `development`, which is not deployed.
 
 For example:
 
@@ -155,7 +155,7 @@ Example components:
 
 ### Master-Development-QA-Production
 
-This is essentially Development-QA-Production but using `Master` as non-deploy PR target.
+This is essentially [Development-QA-Production](#development-qa-production) but using `Master` as non-deploy PR target.
 
 ![Git Workflow: PRs Target Master, Merge to Deployment Branches](./assets/git-workflow-master-development-qa-production.png)
 
