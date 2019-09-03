@@ -37,6 +37,20 @@ Example components:
  * https://github.com/NYPL/staff-picks
  * https://github.com/NYPL/dgx-new-arrivals
  * https://github.com/NYPL-discovery/sierra-retriever
+ * https://github.com/NYPL/MyLibraryNYCApp (No version tagging)
+ * https://github.com/NYPL/locations-app (Has a `production` branch solely for storing production app config.)
+ * https://github.com/NYPL/item-checkout-feed-updater
+ * https://github.com/NYPL/recap-hold-request-service
+ * https://github.com/NYPL/hold-request-result-consumer (No version tagging)
+ * https://github.com/NYPL/nypl-hold-request-consumer (No version tagging)
+ * https://github.com/NYPL/hold-request-service (No meaningful version tagging)
+ * https://github.com/NYPL/job-service (No version tagging)
+ * https://github.com/NYPL/sync-item-metadata-to-scsb-listener (No version tagging)
+ * https://github.com/NYPL/checkin-request-service (No version tagging)
+ * https://github.com/NYPL/checkout-request-service (No version tagging)
+ * https://github.com/NYPL/cancel-request-consumer (No version tagging)
+ * https://github.com/NYPL/proxy-request-service (No version tagging)
+ * https://github.com/NYPL/docsservice (No version tagging)
 
 ### Master-QA-Production
 
@@ -59,6 +73,12 @@ This differs from (#development-qa-master)(Development-QA-Master) in 1) what it 
 
 Example components:
  * https://github.com/NYPL/nypl-library-card-app
+ * https://github.com/NYPL/digitalreadingroom (No version tagging)
+ * https://github.com/NYPL/repository-api
+ * https://github.com/NYPL/mms
+ * https://github.com/NYPL/media-ingest-json-bag-parser (This app prefers branch names `master > development > production`, but otherwise appears the same. Also, no versioning.)
+ * https://github.com/NYPL/fedora_ingest_rails (No version tagging)
+ * https://github.com/NYPL/item-feed-viewer
 
 ### Development-Master
 
