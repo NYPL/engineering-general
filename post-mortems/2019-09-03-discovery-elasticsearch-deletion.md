@@ -51,3 +51,4 @@ No existing alarm was triggered until work began to fix it. Our "DiscoveryApiErr
 ## 7. Preventative Measures
  - Added [DiscoveryApiHealthDegraded](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#alarmsV2:alarm/DiscoveryApiProductionHealthDegraded) alarm, which notifies "DiscoveryApiErrorAlarm" topic when health transitions to "Degraded" or worse (and back again). It seems important to leverage EB's monitoring to detect issues *as well as* monitor app error logging (which depends on the app having traffic and logging errors)
  - Drafted [documentation about how ES permissions are managed](https://github.com/NYPL/aws/pull/14)
+ - Enabled error logging on ES domain so that we can use Cloudwatch to review node health/connectivity incidents
