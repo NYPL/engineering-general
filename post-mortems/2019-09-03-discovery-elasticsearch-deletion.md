@@ -15,6 +15,7 @@
  - Some time before Aug 31 10:27am: All indexes deleted. We know they were deleted at this point because that's the creation timestamp on the 'resources-2018-04-09' index
  - Aug 31 10:27am: 'resources-2018-04-09' is created due to an item/bib update triggering an event in the `IndexDocument-production` stream
  - Sept 3, 4:26pm: Melanie Locay via Mellisa Gasparato report SCC isn't working
+ - Sept 3, 8pm: Paul Beaudoin [enables Error logging](https://aws.amazon.com/blogs/big-data/viewing-amazon-elasticsearch-service-error-logs/) on the domain
  - Sept 3, 10:18pm: Paul Beaudoin builds a new index with correct mappings and uses logstash to copy 300k documents into it as new temporary index backing DiscoveryApi. Also disables the `IndexDocument-production` trigger on the `DiscoveryIndexPoster-production` lambda because it wasn't writing useful documents anyway due to missing field mapping.
  - Sept 3 10:41:56pm: Paul configures discover-api EB to use newly created 'resources-2019-09-03' because it now has the correct field mapping and *more* data than 'resources-2018-04-09'
  - Sept 3, 11:11pm: Paul Beaudoin restores 'resources-2018-04-09' from an automated backup (which takes ~5mins)
