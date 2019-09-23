@@ -53,28 +53,28 @@ Important and useful :link: links to other documentation and standards at NYPL.
   * [Component Repository](https://github.com/NYPL/dgx-header-component)
   * [Web App](https://header.nypl.org)
 * Homepage
-  * [Repository](https://bitbucket.org/NYPL/dgx-homepage)
+  * [Repository](https://github.com/NYPL/dgx-homepage)
   * [Web App](https://www.nypl.org)
 * Staff Picks
   * [Repository](https://github.com/NYPL/staff-picks)
   * [Web App](https://www.nypl.org/books-music-dvds/recommendations/best-books/childrens)
 * New Arrivals
-  * [Repository](https://bitbucket.org/NYPL/dgx-new-arrivals)
+  * [Repository](https://github.com/NYPL/dgx-new-arrivals)
   * [Web App](https://www.nypl.org/books-music-dvds/new-arrivals)
 * Shared Collection Catalog (Discovery)
   * [Repository](https://github.com/NYPL-discovery/discovery-front-end)
   * [Web App](https://www.nypl.org/research/collections/shared-collection-catalog/)
 * Library Card
-  * [Repository](https://bitbucket.org/NYPL/nypl-library-card-app)
+  * [Repository](https://github.com/NYPL/nypl-library-card-app)
   * [Web App](https://www.nypl.org/library-card/new/)
 * BookLists
-  * [Repository](https://bitbucket.org/NYPL/dgx-booklists)
+  * [Repository](https://github.com/NYPL/dgx-booklists)
   * [Web App](https://www.nypl.org/books-music-dvds/recommendations/lists/nypl_96th_street)
 * Global Search
-  * [Repository](https://bitbucket.org/NYPL/dgx-global-search)
+  * [Repository](https://github.com/NYPL/dgx-global-search)
   * [Web App](https://www.nypl.org/search/)
 * Blogs Beta
-  * [Repository](https://bitbucket.org/NYPL/dgx-blogs)
+  * [Repository](https://github.com/NYPL/dgx-blogs)
   * [Web App](https://www.nypl.org/blog/beta/)
 
 ### Angular
@@ -82,7 +82,7 @@ Important and useful :link: links to other documentation and standards at NYPL.
   * [Repository](https://github.com/NYPL/locations-prototype)
   * [Web App](https://www.nypl.org/locations/)
 * Staff Profiles
-  * [Repository](https://bitbucket.org/NYPL/dgx-staff-profiles)
+  * [Repository](https://github.com/NYPL/staff-profiles)
   * [Web App](https://www.nypl.org/staff-profiles/)
 * Research Divisions
   * [Repository](https://bitbucket.org/NYPL/research-collections)
