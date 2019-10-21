@@ -46,3 +46,11 @@ We SHOULD use log parsing for generating metrics & exception notification.
 
 If an app writes logs to disk, those files MUST be rotated.
 If the logging library doesn't support this natively - than it should use [logrotate](https://linux.die.net/man/8/logrotate).
+
+## Libraries
+
+We strive to codify this standard in reusable libraries.
+
+| Library          | Source                                                                                                                |
+|:-----------------|:----------------------------------------------------------------------------------------------------------------------|
+| NyplLogFormatter | [Github](https://github.com/NYPL/ruby_nypl_log_formatter) / [Rubygems](https://rubygems.org/gems/nypl_log_formatter/) |
