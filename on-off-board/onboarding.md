@@ -39,6 +39,7 @@ A developer will generally need accounts for the following services:
     - Primary AWS accounts (MFA Login):
         - [nypl-digital-dev](https://nypl-digital-dev.signin.aws.amazon.com/console)
         - [nypl-sandbox](https://nypl-sandbox.signin.aws.amazon.com/console)
+- [New Relic](rpm.newrelic.com/)
 
 ### Less commonly used accounts
 
