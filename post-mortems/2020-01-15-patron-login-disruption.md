@@ -29,7 +29,7 @@ _Before running a post-mortem, please see the [post-mortem standards](../standar
 8. Tracking of Preventative Measures
    - A configuration drift analysis is needed. The code deployments for oauth-server and oauth-app essentially are configuration adjustments, which has little effect on code logic changes.
    - A chaos session should be performed to test out what would be broken with or without configuration changes to identify what can potentially be broken.
-   - If tools such as Optimizely is available, a more gradual deployment should be used with a rollback plan, derisking the deployment.
+   - If tools such as Optimizely is available, a more gradual deployment should be used with a rollback plan, de-risking the deployment.
 9. Additional Issues Found
    - When logging in NYPL.org, the following security concern occurs
      - ilsstaff.nypl.org redirects to browse.nypl.org
