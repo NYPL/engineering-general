@@ -32,8 +32,7 @@ _Before running a post-mortem, please see the [post-mortem standards](../standar
    - If tools such as Optimizely is available, a more gradual deployment should be used with a rollback plan, de-risking the deployment.
 9. Additional Issues Found
    - When logging in NYPL.org, the following security concern occurs
-     - ilsstaff.nypl.org redirects to browse.nypl.org
-     - going to catalog.nypl.org directly on address bar would go to classic catalog, but user would be asked to sign in again. Meanwhile, the header still reads cookies and remembers the user is logged in.
+     - ilsstaff.nypl.org redirects to browse.nypl.org or catalog.nypl.org
+     - Type catalog.nypl.org directly on address bar, but user not logged in to classic catalog as indicated by the Sign In link in the left-hand nav. Meanwhile, the header still reads cookies and remembers the user is logged in.
      - Clicking on sign in on classic catalog link would restart sign in process on ilsstaff.nypl.org.
-     - The user at the same time is still logged in on browse.nypl.org. This is a red-flag for security. User would think that they are logged out when in reality that didn't happen, and subsequent users at can harm that user account if this is happening on public computers.
-     
+     - Type browse.nypl.org into address bar or use the Search form in the header to go to Encore. User is still logged in on browse.nypl.org. This is a red-flag for security. User would think that they are logged out when in reality the user is only logged out from WebPac and not from Encore, and subsequent users at can harm that user account if this is happening on public computers.
