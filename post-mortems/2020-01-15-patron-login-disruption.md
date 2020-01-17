@@ -27,6 +27,13 @@ _Before running a post-mortem, please see the [post-mortem standards](../standar
    - TravisCI should be introduced to handled secure environment variables, run tests, run composer commands, and deploy to AWS.
    - Test environments should be created for both applications for testing changes and for use by QA.
 8. Tracking of Preventative Measures
-   - ?
+   - A configuration drift analysis is needed. The code deployments for oauth-server and oauth-app essentially are configuration adjustments, which has little effect on code logic changes.
+   - A chaos session should be performed to test out what would be broken with or without configuration changes to identify what can potentially be broken.
+   - If tools such as Optimizely is available, a more gradual deployment should be used with a rollback plan, derisking the deployment.
 9. Additional Issues Found
-   - 
+   - When logging in NYPL.org, the following security concern occurs
+     - ilsstaff.nypl.org redirects to browse.nypl.org
+     - going to catalog.nypl.org directly on address bar would go to classic catalog, but user would be asked to sign in again. Meanwhile, the header still reads cookies and remembers the user is logged in.
+     - Clicking on sign in on classic catalog link would restart sign in process on ilsstaff.nypl.org.
+     - The user at the same time is still logged in on browse.nypl.org. This is a red-flag for security. User would think that they are logged out when in reality that didn't happen, and subsequent users at can harm that user account if this is happening on public computers.
+     
