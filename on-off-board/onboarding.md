@@ -61,7 +61,7 @@ A developer will generally need accounts for the following services:
         - [nypl-labs](https://nypl-labs.signin.aws.amazon.com/console)
 - Data Warehouse DB credential
     - [https://github.com/NYPL/data-warehouse#users](https://github.com/NYPL/data-warehouse#users)
-- [New Relic](rpm.newrelic.com/) (Not currently used, just legacy for off-boarding)
+- [New Relic](https://newrelic.com/) (Not currently used, just legacy for off-boarding)
 
 *&#42; uses [NYPL/ServiceNow](https://nyplprod.service-now.com) credentials for authentication*
 
