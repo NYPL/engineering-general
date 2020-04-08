@@ -55,9 +55,8 @@ Important and useful :link: links to other documentation and standards at NYPL.
 * Homepage
   * [Repository](https://github.com/NYPL/dgx-homepage)
   * [Web App](https://www.nypl.org)
-* Staff Picks
+* Staff Picks - Deprecated
   * [Repository](https://github.com/NYPL/staff-picks)
-  * [Web App](https://www.nypl.org/books-music-dvds/recommendations/best-books/childrens)
 * New Arrivals
   * [Repository](https://github.com/NYPL/dgx-new-arrivals)
   * [Web App](https://www.nypl.org/books-music-dvds/new-arrivals)

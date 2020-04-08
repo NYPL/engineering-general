@@ -18,7 +18,6 @@ Starting with the lowest traffic [React apps](https://github.com/NYPL/engineerin
 
  * [Get a library card](https://github.com/NYPL/nypl-library-card-app)
  * [New Arrivals](https://github.com/NYPL/dgx-new-arrivals)
- * [Staff picks](https://github.com/NYPL/staff-picks)
  * [BookLists](https://github.com/NYPL/dgx-booklists)
  * [SCC](https://github.com/NYPL-discovery/discovery-front-end)
  * [Global Search](https://github.com/NYPL/dgx-global-search)
