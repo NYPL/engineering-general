@@ -11,6 +11,7 @@ Developer(s) MUST:
 * let the team know that an app/codebase is deprecated. A message SHOULD be sent in the #dev channel in NYPL's Slack or also email digitaldev@nypl.org.
 * update related documentation where the app/codebase's name comes up. The app's name can be searched in NYPL's Confluence wiki or by asking a teammate in Digital.
 * archive the repo on Github.
+* make sure that all the application servers are shutdown. This includes the development, qa, and production servers on AWS Elastic Beanstalk and any that NYPL IT hosts.
 
 ## Example
 
