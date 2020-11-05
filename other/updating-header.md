@@ -1,6 +1,6 @@
 # Changing NYPL Header
 
-The primary NYPL header is maintained as a React component distributed as an NPM module. To support non-React apps, a "header app" ensures the component may also be included via  aa `<script>` or as fully rendered HTML.
+The primary NYPL header is maintained as a React component distributed as an NPM module. To support non-React apps, a "header app" ensures the component may also be included via  a `<script>` or as fully rendered HTML.
 
 The following proposes a safe sequence of deployments for activing changes to the header across our apps. 
 
@@ -16,13 +16,13 @@ Changes to the component should follow [the instructions in the repo](https://gi
 
 Starting with the lowest traffic [React apps](https://github.com/NYPL/engineering-general/tree/master/other#reactnode) (excluding "Header App"), update the `dgx-header-component` dependency to use the new version. Proposed order:
 
- * [Get a library card](https://github.com/NYPL/nypl-library-card-app)
+ * [Library Card](https://github.com/NYPL/nypl-library-card-app)
  * [New Arrivals](https://github.com/NYPL/dgx-new-arrivals)
  * [BookLists](https://github.com/NYPL/dgx-booklists)
  * [SCC](https://github.com/NYPL-discovery/discovery-front-end)
  * [Global Search](https://github.com/NYPL/dgx-global-search)
- * [Blogs beta](https://github.com/NYPL/dgx-blogs)
  * [Homepage](https://github.com/NYPL/dgx-homepage)
+ * [React Search/Locations](https://github.com/NYPL/dxp-react-search)
 
 For each of these:
  - Clone the repo
@@ -50,7 +50,6 @@ Deploy the [Header App](https://github.com/NYPL/nypl-dgx-react-header) same as t
 ### Apps using embedded Javascript
 
 The following Angular apps use the embedded Javascript method of inclusion and are configured to load the header environment matching their own environment (e.g. 'QA' deployment loads 'QA' header JS, etc.):
- * [**Locations**](https://github.com/NYPL/locations-app): Locations QA is deployed with `LOCINATOR_ENV` "qa", which causes app to use qa deployments of refinery and header app (i.e. [App will load `https://qa-header.nypl.org/dgx-header.min.js?skipNav=main-content`](https://github.com/NYPL/locations-app/blob/8517c884fe8bc46998077ced735b992875a47b5a/views/index.erb#L65)
  * [**Staff Profiles**](https://github.com/NYPL/staff-profiles/blob/c1ccec275ef7754632c617821a6c1287cfb245a5/views/staff_profiles.erb#L55): Staff Profiles appears to be [configured identically](https://github.com/NYPL/staff-profiles/blob/c1ccec275ef7754632c617821a6c1287cfb245a5/views/staff_profiles.erb#L55), although [**it's unclear where/how this is deployed**](https://github.com/NYPL/staff-profiles/issues/3)
  * [**Research Divisions**](https://bitbucket.org/NYPL/research-collections): This also appears to be [configured identically](https://bitbucket.org/NYPL/research-collections/src/04d8a64e3b140a5751a78974b895c60006c97309/views/research_collections.erb?at=master#research_collections.erb-55), but it's also [**unclear where/how this is deployed**](https://bitbucket.org/NYPL/research-collections/issues/2/how-is-this-deployed).
 

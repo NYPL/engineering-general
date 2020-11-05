@@ -72,12 +72,15 @@ Important and useful :link: links to other documentation and standards at NYPL.
 * Global Search
   * [Repository](https://github.com/NYPL/dgx-global-search)
   * [Web App](https://www.nypl.org/search/)
-* Blogs Beta
+* React Search/Locations
+  * [Repository](https://github.com/NYPL/dxp-react-search)
+  * [Web App](https://www.nypl.org/locations)
+* Blogs Beta - Deprecated
   * [Repository](https://github.com/NYPL/dgx-blogs)
   * [Web App](https://www.nypl.org/blog/beta/)
 
 ### Angular
-* Locations
+* Locations - Deprecated
   * [Repository](https://github.com/NYPL/locations-prototype)
   * [Web App](https://www.nypl.org/locations/)
 * Staff Profiles
