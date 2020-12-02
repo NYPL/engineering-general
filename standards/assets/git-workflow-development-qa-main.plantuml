@@ -12,8 +12,8 @@ end
 group Promoting a feature
 
   development ->o qa: Merge development into qa
-  qa ->o master: Merge qa into master
-  hnote over master: Git tag vX.X.X
+  qa ->o main: Merge qa into main
+  hnote over main: Git tag vX.X.X
 
 end
 

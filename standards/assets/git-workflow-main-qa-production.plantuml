@@ -4,15 +4,15 @@ Header Git Workflow: Master-QA-Production
 
 group Adding a feature
 
-  feature <-- master: Cut feature branch
-  feature ->o master: After approval, merge feature
-  hnote over master: Git tag vX.X.X
+  feature <-- main: Cut feature branch
+  feature ->o main: After approval, merge feature
+  hnote over main: Git tag vX.X.X
    
 end
 
 group Promoting a feature
 
-  master ->o qa: Merge master into qa
+  main ->o qa: Merge main into qa
   qa ->o production: Merge qa into production
 
 end

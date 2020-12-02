@@ -13,8 +13,8 @@ end
 group Promoting a feature
 
   pr_approved ->o qa: Merge pr_approved into qa
-  pr_approved ->o master: Merge pr_approved into master
-  hnote over master: Git tag vX.X.X
+  pr_approved ->o main : Merge pr_approved into main
+  hnote over main: Git tag vX.X.X
 
 end
 
