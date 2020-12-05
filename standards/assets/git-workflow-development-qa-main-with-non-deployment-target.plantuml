@@ -1,6 +1,6 @@
 @startuml
 
-Header Git Workflow: Development-QA-Master with non-deployment target
+Header Git Workflow: Development-QA-Main with non-deployment target
 
 group Adding a feature
 

@@ -1,6 +1,6 @@
 @startuml
 
-Header Git Workflow: Master-Development-QA-Production
+Header Git Workflow: Main-Development-QA-Production
 
 group Adding a feature
 

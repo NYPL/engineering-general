@@ -1,6 +1,6 @@
 @startuml
 
-Header Git Workflow: PRs Target Master, Merge to Deployment Branches
+Header Git Workflow: PRs Target Main, Merge to Deployment Branches
 
 group Adding a feature
 
