@@ -44,16 +44,13 @@ The following are common Git workflows, named here so they can be easily referen
 1. Git tag `main` with new version number.
 
 Example components:
- * https://github.com/NYPL/dgx-blogs
  * https://github.com/NYPL/dgx-homepage
  * https://github.com/NYPL/nypl-dgx-react-header
  * https://github.com/NYPL-discovery/discovery-front-end
  * https://github.com/NYPL/dgx-booklists
- * https://github.com/NYPL/staff-picks
  * https://github.com/NYPL/dgx-new-arrivals
  * https://github.com/NYPL-discovery/sierra-retriever
  * https://github.com/NYPL/MyLibraryNYCApp (No version tagging)
- * https://github.com/NYPL/locations-app (Has a `production` branch solely for storing production app config.)
  * https://github.com/NYPL/item-checkout-feed-updater
  * https://github.com/NYPL/recap-hold-request-service
  * https://github.com/NYPL/hold-request-result-consumer (No version tagging)
