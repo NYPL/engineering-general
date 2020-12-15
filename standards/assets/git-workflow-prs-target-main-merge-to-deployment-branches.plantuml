@@ -1,0 +1,22 @@
+@startuml
+
+Header Git Workflow: PRs Target Main, Merge to Deployment Branches
+
+group Adding a feature
+
+  feature <-- main: Cut feature branch
+  feature ->o main: After approval, merge feature
+  hnote over main: Git tag vX.X.X
+   
+end
+
+group Promoting a feature
+
+  main ->o development: Optionally merge to development for testing
+  main ->o qa: Merge main into qa
+  main ->o production: Merge main into production
+
+end
+
+@enduml
+

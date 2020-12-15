@@ -1,0 +1,21 @@
+@startuml
+
+Header Git Workflow: Development-QA-Main
+
+group Adding a feature
+
+  feature <-- development: Cut feature branch
+  feature ->o development: After approval, merge feature
+   
+end
+
+group Promoting a feature
+
+  development ->o qa: Merge development into qa
+  qa ->o main: Merge qa into main
+  hnote over main: Git tag vX.X.X
+
+end
+
+@enduml
+

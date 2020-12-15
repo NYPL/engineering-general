@@ -1,0 +1,22 @@
+@startuml
+
+Header Git Workflow: Development-QA-Main with non-deployment target
+
+group Adding a feature
+
+  feature <-- pr_approved: Cut feature branch
+  feature ->o pr_approved: After approval, merge feature
+  pr_approved ->o development: Optionally merge to development for testing
+   
+end
+
+group Promoting a feature
+
+  pr_approved ->o qa: Merge pr_approved into qa
+  pr_approved ->o main : Merge pr_approved into main
+  hnote over main: Git tag vX.X.X
+
+end
+
+@enduml
+

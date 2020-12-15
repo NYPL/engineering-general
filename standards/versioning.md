@@ -1,6 +1,6 @@
 # Version Tagging
 
-All repositories and components that may be dependencies of other entities MUST use [semantic versioning](https://semver.org/) to enable controlled roll-out of new functionality and mitigate breaking changes.
+All repositories and components that may be dependencies of other entities MUST use [semantic versioning](https://semver.org/) to enable controlled roll-out of new functionality and mitigate breaking changes. For a quick reference on bumping a components version, see (Typical Workflow)[#typical-workflow] below.
 
 Version tags SHOULD start with a "v".
 
@@ -70,3 +70,24 @@ A sample `CHANGELOG.md` follows:
 ## v1.0.0
  - Initial release
 ```
+
+## Typical Workflow
+
+The following is the standard workflow for bumping a component version. If a component deviates from this strategy, it MUST be noted in the `README.md` and SHOULD be noted in `CONTRIBUTING.md`.
+
+1. Cut feature branch against the repo's deveopment branch (typically `development` or `master`)
+1. Update the app version to the next logical version. This may include updates to:
+   - `package.json`/`.gemspec`
+   - `README.md`
+   - `CHANGELOG.md` (See notes above for updating a CHANGELOG)
+1. Commit your changes as part of your feature branch
+1. Create a PR to merge your feature branch into the development branch (typically `development` or `master`)
+1. After approval, merge the development branch into qa
+1. After QC signoff, merge qa into the production branch
+1. Git tag the production branch with version number (see [#git-repository-versioning](notes above)
+
+Note that this strategy sometimes creates extra work if multiple features are under review simultaneously (because they will be competing for the next logical version number). When that happens, discuss with collaborator about whether to:
+1. merge all approved feature branches at once into development (ensuring both changes are noted correctly in the CHANGELOG), or
+1. reward the version number to the first feature merged to production; The other feature will have to be patched with the next logical version number (although it needn't repeat any stage of review).
+
+To see how version bumps are implemented in other Git stategies, see our [./git-workflow.md](Git Workflow doc)
