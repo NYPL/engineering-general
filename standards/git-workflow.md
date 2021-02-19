@@ -14,7 +14,7 @@ For example:
 ```
 ## Contributing
 
-This repo uses the [Development-QA-Main Git Workflow](https://github.com/NYPL/engineering-general/tree/master/standards/git-workflow#development-qa-main)
+This repo uses the [Development-QA-Main Git Workflow](https://github.com/NYPL/engineering-general/blob/master/standards/git-workflow.md#development-qa-main)
 ```
 
 ## A note on master/main
