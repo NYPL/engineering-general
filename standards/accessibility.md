@@ -10,7 +10,7 @@ Applications MUST be fully keyboard navigable.
 
 Applications MUST be built as progressive web applications.
 
-Applications MUST support working with Javascript turned off. This includes making navigation and form submissions work as intended. Enhancements to the applications SHOULD be built afterwards.
+Applications SHOULD support working with Javascript turned off. This includes making navigation and form submissions work as intended. Enhancements to the applications SHOULD be built afterwards.
 
 Developers SHOULD have a working knowledge of the basics of HTML and CSS. This will go a long way to building applications the correct way from the beginning. This alone covers writing valid HTML, creating valid forms with valid `label`s and `input`s, creating page landmarks, creating valid `img` elements, and so on.
 

@@ -22,17 +22,6 @@ We strive for a [blameless culture](../standards/postmortems.md) with teachable 
 * We understand that an existing solution may have been built under extenuating circumstances.
 * We challenge _ideas_ not _people_.
 
-### Building the Best
-
-We will build quality apps through best practices like:
-
-* Testing
-* [Log aggregation](../standards/logging.md)
-* Systems monitoring & [alerting](../standards/alerting.md)
-* Adhering, within reason, to the principles of [The Twelve-Factor App](https://12factor.net/).
-
-We recognize the importance of having a thorough understanding of the problem we are trying to solve with a willingness to create a new, improved solution.
-
 ### Documentation
 
 We will write brief & useful documentation for fellow contributors.
@@ -45,7 +34,6 @@ We recognize that it is hard to translate difficulty points to time and, therefo
 ### Having Sufficient Time & Advance Notice
 
 * We understand the importance of having sufficient time to do work and will communicate that to stakeholders.
-
 * We seek to help stakeholders understand the importance of giving sufficient notice for work requests.
 
 ### Careful Prioritization of Requests

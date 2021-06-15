@@ -6,7 +6,7 @@ The post-mortem SHOULD be done as soon as possible _after_ the incident and SHOU
 
 Post-mortems are *blameless*. We're all human and make mistakes. At NYPL we want to encourage an [engineering culture](../culture/values.md#not-shaming-or-blaming) of experimentation, learning, continuous improvement, and making room for mistakes. We celebrate our post-mortems.
 
-Completed post-mortems SHOULD be saved in the [post-mortems](../post-mortems) directory for a historical record and shared with relevant parties.
+Completed post-mortems SHOULD be saved in Confluence, under the space for your project. This is a directory for a historical record and shared with relevant parties.
 
 ### More learning about post-mortems ###
 

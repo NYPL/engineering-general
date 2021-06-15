@@ -1,4 +1,6 @@
-# Production Readiness
+# Deployment
+
+## Production Readiness
 
 Before launching a new service or application to production, it SHOULD be reviewed by the team to ensure production readiness and adherence with engineering standards.
 
@@ -8,7 +10,7 @@ A pre-launch checklist SHOULD be completed and can be completed in a pre-launch 
 
 ![Production Readiness Whiteboard](../images/production-readiness.jpg)
 
-## Sample Pre-Launch Checklist
+### Sample Pre-Launch Checklist
 
 | Category                                                                                                                                                                                                                                                   | Completeness (1-10) |
 |---------------------------------------------------------------------------------------------|---------------------|
@@ -23,6 +25,3 @@ A pre-launch checklist SHOULD be completed and can be completed in a pre-launch 
 | Privacy & Data Retention [1](privacy.md)                                                    |                     |
 | Monitoring & Alarms [1](alerting.md)                                                        |                     |
 
-
-## AWS Billing Tags
-If your service uses AWS, please add billing tags to your production readiness checklist.  You can read more about the tags on the billing-tags document page.

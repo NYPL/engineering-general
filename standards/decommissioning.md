@@ -15,7 +15,7 @@ Developer(s) MUST:
 
 ## Example
 
-The Staff Picks react application was recently decommissioned and moved to a Drupal-based application. The following is on the [Staff Picks README](https://github.com/nypl/staff-picks).
+In 2020, the Staff Picks react application was decommissioned and moved to a Drupal-based application. The following is on the [Staff Picks README](https://github.com/nypl/staff-picks).
 
 ```
 # Deprecated

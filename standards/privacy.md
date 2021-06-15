@@ -1,6 +1,6 @@
 # Privacy & Data Retention Standards
 
-_This is a stub document to define the privacy and data retention standards for products built by NYPL Engineering._
+[NYPL's full privacy and data retention policy](https://www.nypl.org/help/about-nypl/legal-notices/privacy-policy)
 
 Products (i.e. services or applications) that retain personally identifiable information (PII) for a period greater than 7 days MUST be documented and approved by appropriate Product and Engineering management.
 
