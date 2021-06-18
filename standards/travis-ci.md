@@ -87,6 +87,15 @@ Lambda example:
       branch: development
   ```
 
+### Building PRs
+
+The Travis "Settings" page for a given repo allows you to enable two kinds of builds:
+ * "Build pushed branches": Create a build for all pushed branches and commits (i.e. build when "my-feature" branch is pushed, build when "development" is updated in any way)
+ * "Build pushed pull requests": Create a build any time a PR is created by checking out the *target* branch, locally merging the PR branch into it, and running the test suite against the result.
+
+Both options are enabled by default. The former serves as an essential baseline check. The latter adds assurance that the result of the merge will continue to pass.
+
+Note that the `deploy` section is not evaluated in the context of a pushed pull request.
 
 ## Troubleshooting
 
@@ -145,6 +154,18 @@ To ensure all new Travis integrations default to a `.com` association for you go
 ```
 travis endpoint --com --set-default
 ```
+
+### $TRAVIS_BRANCH
+
+Many apps use `$TRAVIS_BRANCH` environmental variable in `.travis.yml` to inspect the current branch. This allows us to DRY our deployment code by using only a single `deploy` provider that uses `$TRAVIS_BRANCH` to control the place deployed to. [Example](https://github.com/NYPL/checkout-request-service/blob/d181b6de2190aa5e7e57a47ceff49de0f1123326/.travis.yml#L20)
+
+Note that Travis will not attempt to deploy anything in the context of a PR build. For example, when Travis checks out "development" to locally merge "my-feature" and run tests, Travis will not thereafter attempt to *deploy* to "development" even though `$TRAVIS_BRANCH` is "development"; It skips `deploy` altogether for PR builds.
+
+### Recycled [failed] builds appearing in PRs
+
+When creating a PR in a repo with "Build pushed pull requests" enabled, Travis will show two builds: One for the "push" and one for the PR. Typically one creates a PR to merge a recently pushed branch, so both builds will appear "pending". If the source branch was updated a while ago, the build status of the "push" may already be visible when the PR is created. You'll therefore see one pending "PR" build and one "push" build showing the status of the *last* push to that branch. *If the last push to the source branch was a failure*, that build will appear as a failure in your PR. This is sensible and good, but may be distressing because it suggests your PR triggered the failure, but in fact the failure may be old and/or unrelated.
+
+A concrete example: When creating a PR to merge "development" into "qa", we immediately saw that the "push" build was a failure. On clicking through, the failure was found to be in the deployment stage. This was distressing because it initially appeared a deployment was being executed in response to a PR, but in fact the deployment was triggered by the original push to "development" (i.e. we simply hadn't noticed the original failure.)
 
 ## References ##
 * [Travis CI: Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners/)
