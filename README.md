@@ -6,13 +6,15 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 
 ## Contents
 
-### Core Principles
+### Core Values
 * [Engineering Values](culture/values.md)
 * [Library Values](culture/library-values.md)
+
+### Policies
 * [Accessibility](standards/accessibility.md)
 * [Privacy & Data Retention](standards/privacy.md)
   
-### Contributing
+### Code Standards
 * [Coding Style](standards/coding-standards.md)
     * [Versioning](standards/versioning.md)
     * [Naming Conventions](standards/naming-conventions.md)
@@ -43,7 +45,3 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 ### Onboarding/Offboarding
 * [Onboarding](on-off-board/onboarding.md)
 * [Offboarding](on-off-board/offboarding.md)
-
-### Other Documentation
-* [Useful Links](other/README.md)
-  * Important and useful :link: links to other documentation and resources at NYPL.

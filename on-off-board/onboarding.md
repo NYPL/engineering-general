@@ -8,8 +8,6 @@ This document is intended to help developers become familiar with NYPL digital p
 
 - Review the [Contents](../README.md#contents) in the `engineering-general` repo.
   - Contains links to development standards and guidelines at NYPL.
-- Review the [Useful Links](../other/README.md) in the `engineering-general` repo.
-  - Contains links to documentation for various services, applications, and other products at NYPL.
 - Review READMEs (or Wikis) in relevant repos
   - Generally, each repo will contain more app-specific information.
 
