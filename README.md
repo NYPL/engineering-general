@@ -6,41 +6,42 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 
 ## Contents
 
-### Culture
-
+### Core Values
 * [Engineering Values](culture/values.md)
 * [Library Values](culture/library-values.md)
 
-### Standards
-
-* [Lambda deployment with node-lambda](standards/node-lambda.md)
-* [Coding Style](standards/coding-standards.md)
-* [Logging](standards/logging.md)
-* [Monitoring & Alarms](standards/alerting.md)
-* [Naming Conventions](standards/naming-conventions.md)
-* [Test Coverage](standards/test-coverage.md)
-* [CI Coverage](standards/ci-and-deployment.md)
-* [Travis CI](standards/travis-ci.md)
-* [Peer Review](standards/peer-review.md)
+### Policies
 * [Accessibility](standards/accessibility.md)
-* [Documentation](standards/documentation.md)
-* [Versioning](standards/versioning.md)
-* [Production Readiness](standards/production-readiness.md)
-* [Post-mortems](standards/postmortems.md)
 * [Privacy & Data Retention](standards/privacy.md)
+  
+### Code Standards
+* [Coding Style](standards/coding-standards.md)
+    * [Versioning](standards/versioning.md)
+    * [Naming Conventions](standards/naming-conventions.md)
+    * [Logging](standards/logging.md)
+    * [Test Coverage](standards/test-coverage.md)
+    * [Documentation](standards/documentation.md)
+  * [Javascript]()
+    * [NYPL React Design System]()
+  * [Python]()
+  * [Ruby on Rails]() 
+  * [PHP]()
+* [Peer Review](standards/peer-review.md)
+* [CI Coverage](standards/ci.md)
+  * [Github Actions]()
+  * [Travis CI](standards/travis-ci.md) 
+* [Deployment](standards/deployment.md)
+  * [AWS](standards/aws.md)
+  * [Node Lambda](standards/node-lambda.md)
+* [Production Readiness](standards/production-readiness.md)
+* [Monitoring & Alarms](standards/alerting.md)
+* [Post-mortems](standards/postmortems.md)
 
 #### Security
-
 * [General](security/README.md)
 * [OAuth](security/oauth.md)
 * [Secrets Management](security/secrets.md)
 
 ### Onboarding/Offboarding
-
 * [Onboarding](on-off-board/onboarding.md)
 * [Offboarding](on-off-board/offboarding.md)
-
-### Other Documentation
-
-* [Master Links](other/README.md)
-  * Important and useful :link: links to other documentation and resources at NYPL.

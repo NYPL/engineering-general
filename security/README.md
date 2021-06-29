@@ -22,7 +22,7 @@ Front-end applications MUST NOT store any private credentials in browser cache o
 
 Applications SHOULD protect against [XSS and CSRF](http://www.redotheweb.com/2015/11/09/api-security.html) attacks.
 
-Applications SHOULD use HTTPS for connections.
+Applications MUST use HTTPS for connections.
 
 Applications SHOULD sanitize all user inputs, URL parameters or any input parameters exposed to the user to prevent attacks (e.g. XSS, SQL injection).
 

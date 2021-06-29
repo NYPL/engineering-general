@@ -19,7 +19,7 @@ This repo uses the [Development-QA-Main Git Workflow](https://github.com/NYPL/en
 
 ## A note on master/main
 
-Repos should use "main" over "master". The workflows described in this document favor the term "main" over "master" anticipiting that all NYPL repos will eventually make that shift.
+New repos MUST use "main" over "master". The workflows described in this document favor the term "main" over "master" anticipiting that all NYPL repos will eventually make that shift.
 
 ## Common worklows
 

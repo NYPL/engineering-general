@@ -14,12 +14,8 @@ As workers at a public library, we are guided by the ALA's [Core Values of Libra
 * Service
 * Social Responsibility
 
-As employees of the New York Public Library in particular, we are guided by [the library's Core Values](https://www.nypl.org/help/about-nypl/mission/core-values):
+As employees of the New York Public Library in particular, we are guided by [the Library's Core Values](https://lair.nypl.org/-/departments/internal-affairs/human-resources/learning-and-development/culture-engagement/core-values) (internal link):
 
-* Accountability
-* Excellence
-* Expertise
-* Freedom
-* Innovation
-* Passion
-* Teamwork
+* Helpful
+* Curious
+* Resourceful

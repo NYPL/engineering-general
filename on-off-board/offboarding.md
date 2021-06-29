@@ -6,6 +6,8 @@ It's so hard to say goodbye but sometimes we must at NYPL.
 
 Remove the [accounts](onboarding.md#2-set-up-accounts) that might have been created during the onboarding process.
 
+Remove github permissions
+
 ### Slack
 
 1.  Convert the user to a guest in the `#general` channel.
