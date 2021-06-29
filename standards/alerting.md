@@ -1,6 +1,6 @@
 # Monitoring & Alarms
 
-All services, applications, and consumers MNAY have a [CloudWatch Alarm](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) set up,
+All services, applications, and consumers SHOULD have a [CloudWatch Alarm](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) set up.
 
 Multiple alarms MAY be set up.
 

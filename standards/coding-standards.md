@@ -10,7 +10,7 @@ Therefore, to help inform any technology decisions in the future we have the fol
 * If you wish to use a different language, you should discuss with Engineering Managers first, and have considered how the thing you are developing will be maintained in future.
 * We like microservice architectures, which should use RESTful APIs and/or event streams or message queues (the wide variety of languages and frameworks we use make microservices more attractive, as we are less constrained by prior use of languages than we would be in a monolithic application, and, at worst, it is easier to rewrite a microservice in a different language than a larger app).
 * We prefer our RESTful APIs to use JSON as the main data exchange format
-* All APIs we create should have Swagger Docs endpoints
+* All APIs we create should have Swagger 2.0 or OpenAPI 3.0 documentation.
 * Our preferred deployment platform is AWS
 * For traditional server apps, we prefer to develop and deploy them as Docker containers 
 * APIs could be implemented as Docker containers, or as Lambdas, as appropriate (appropriateness up for discussion!)

@@ -42,6 +42,7 @@ A developer will generally need accounts for the following services:
 - NYPL Platform
     - [https://platform.nypl.org](https://platform.nypl.org)
 - [npm organization](https://www.npmjs.com/org/nypl): You do not need an npm account to publish to npm 
+- [Stash](https://stash.nypl.org/): (NYPL VPN needed) IT and devops keep AWS configurations, among other things, here.
 - [Travis CI](https://travis-ci.com): Accounts are OAuthed and synced through Github. Adding/Removing access to Github controls access to Travis.
 - Bitbucket: Older apps are on bitbucket
     - [bitbucket.org/NYPL](https://bitbucket.org/NYPL)
