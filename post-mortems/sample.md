@@ -1,4 +1,5 @@
-_Before running a post-mortem, please see the [post-mortem standards](../standards/postmortems.md)._
+
+NOTE: This sample post-mortem pre-dates the use of [Root Cause Analysis](../standards/root-cause-analysis.md). Please use this for reference only and create a RCA if you are documenting a recent outage.
 
 # Sample Post-mortem
 

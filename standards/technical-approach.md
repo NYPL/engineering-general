@@ -1,0 +1,29 @@
+# Technical Approach Documents
+
+Technical Approach Documents (TADs) serve to help the engineering team document solutions to feature development, share ideas between teams and help highlight potential issues with tasks before they are encountered during the development process.
+
+TADs should strive to describe the whats, hows and whys of the technical problem that is trying to be solved. It should strive to understand the problem at hand in a comprehensive way and explore any challenges so that engineers can be confident in their implementations of solutions. In short writing a TAD should answer any technical questions prior to the start of actual development work, freeing up developers to focus on implementation once the major questions have been resolved.
+
+## Process
+
+TADs do not have to be created for all development work, but MUST be created in the following cases:
+
+- If a Business Requirements Document (BRD) has been created
+- If the scope of work is expected to extend beyond a single sprint
+- If multiple developers will be contributing to the new feature
+
+All TADs MUST follow this process to be approved, at which point JIRA tickets can be created and development work can start.
+
+1. The most senior developer on the feature/task/story is assigned a ticket to write the TAD and the ticket MUST be tagged with `tech-approach`
+2. The assigned developer should collect as much information from the BRD, stakeholders and any other relevant information sources and write the TAD
+3. The TAD MAY be circulated at this point for feedback within a team or stakeholders for further input/feedback
+4. When ready for review the Engineering Leadership Team (ELT) should be notifed and the TAD uploaded to the shared TAD Google Drive (see below)
+5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members
+6. If approved in Step 5 the TAD should be sent to Garvita Kapur for final approval
+7. If approved specific tickets should be created to execute the work as described in the TAD
+
+## Resources
+
+- [Shared TAD Google Drive](https://drive.google.com/drive/u/0/folders/0AN2RNnk4RBBwUk9PVA): All TADs should be added to this drive in the appropraiate portfolio group's directory
+- [TAD Reference Doc](https://docs.google.com/document/d/1jL7yxFBmb8Pv9VR-dYNX1VTFaJzIgfVRyzinKk-T200/edit?usp=sharing): A sample TAD document to be used as the basis for future documents
+- [Confluence TAD Documentation](https://confluence.nypl.org/display/DIGTL/Technical+Approach+Documents): Similar documentation page in confluence containing list of sample TADs from different projects
