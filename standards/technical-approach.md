@@ -20,7 +20,8 @@ TADs do not have to be created for all development work, but MUST be created in 
 TADs SHOULD be created in the following situations:
 
 - If multiple approaches to a feature or problem are valid and the engineer assigned the ticket(s) wishes to document the decisions made
-- If questions are raised about the appropriateness of an approach and engineer/team wishes to document the decision process 
+- If questions are raised about the appropriateness of an approach and engineer/team wishes to document the decision process
+- If a engineer is faced with a decision or choice that they would like to receive feedback on and/or have validated by a more senior member of the engineering team
 
 ## Process
 
@@ -29,9 +30,9 @@ All TADs MUST follow this process to be approved, at which point JIRA tickets ca
 1. The most senior developer on the feature/task/story is assigned a ticket to write the TAD and the ticket MUST be tagged with `tech-approach`
 2. The assigned developer should collect as much information from the BRD, stakeholders and any other relevant information sources and write the TAD
 3. The TAD MAY be circulated at this point for feedback within a team or stakeholders for further input/feedback
-4. When ready for review the Engineering Leadership Team (ELT) should be notified and the TAD uploaded to the shared TAD Google Drive (see below)
+4. When ready for review the Engineering Leadership Team (ELT) should be notified, the TAD uploaded to the shared TAD Google Drive (see below), and the associated JIRA ticket moved to the `Under Review` column
 5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members (see review process below)
-6. If approved in Step 5 the TAD should be sent to Garvita Kapur for final approval
+6. If approved in Step 5 the TAD should be sent to Garvita Kapur for final approval. With final approval the associated JIRA ticket is moved to `Done`
 7. If approved specific tickets should be created to execute the work as described in the TAD
 
 ### Review Process
