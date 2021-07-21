@@ -30,9 +30,17 @@ All TADs MUST follow this process to be approved, at which point JIRA tickets ca
 2. The assigned developer should collect as much information from the BRD, stakeholders and any other relevant information sources and write the TAD
 3. The TAD MAY be circulated at this point for feedback within a team or stakeholders for further input/feedback
 4. When ready for review the Engineering Leadership Team (ELT) should be notified and the TAD uploaded to the shared TAD Google Drive (see below)
-5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members
+5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members (see review process below)
 6. If approved in Step 5 the TAD should be sent to Garvita Kapur for final approval
 7. If approved specific tickets should be created to execute the work as described in the TAD
+
+### Review Process
+
+Step 5 above includes the following steps to be followed by the Tech Lead/Architect who is reviewing the document:
+
+1. After reviewing the document they should add a summary to the end of the TAD including: Potential Risk, Cost and an evaluation of the completion of the TAD
+2. If revisions are requested/necessary the document's author should make the necessary changes and record the process in a changelog to be added to the end of the document
+3. The above steps should be repeated until the document is approved
 
 ## Resources
 
