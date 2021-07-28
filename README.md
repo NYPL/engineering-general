@@ -26,6 +26,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
   * [Python]()
   * [Ruby on Rails]() 
   * [PHP]()
+* [Technical Approach Documents](standards/technical-approach.md)
 * [Peer Review](standards/peer-review.md)
 * [CI Coverage](standards/ci.md)
   * [Github Actions]()
@@ -35,7 +36,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
   * [Node Lambda](standards/node-lambda.md)
 * [Production Readiness](standards/production-readiness.md)
 * [Monitoring & Alarms](standards/alerting.md)
-* [Post-mortems](standards/postmortems.md)
+* [Root Cause Analysis](standards/root-cause-analysis.md)
 
 #### Security
 * [General](security/README.md)
