@@ -13,5 +13,5 @@ We use the [action-slack-notify](https://github.com/rtCamp/action-slack-notify) 
           SLACK_USERNAME: nyplorgBot
 ```
 
-In this case, the `SLACK_WEBHOOK` secret is set to the (test report WebHook URL)[ci.md].
+In this case, the `SLACK_WEBHOOK` secret is set to the [test report WebHook URL](ci.md).
 
