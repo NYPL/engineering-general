@@ -29,7 +29,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 * [Technical Approach Documents](standards/technical-approach.md)
 * [Peer Review](standards/peer-review.md)
 * [CI Coverage](standards/ci.md)
-  * [Github Actions]()
+  * [Github Actions](standards/github-actions.md)
   * [Travis CI](standards/travis-ci.md) 
 * [Deployment](standards/deployment.md)
   * [AWS](standards/aws.md)
