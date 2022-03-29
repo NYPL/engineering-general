@@ -18,11 +18,12 @@ This document is intended to help developers become familiar with NYPL digital p
 A developer will generally need accounts for the following services:
 - Slack
     - [nypl.slack.com](https://nypl.slack.com/)
-- Github (Can use a personal account or make a new NYPL specific github account)
+- Github (Can use a personal account or make a new NYPL specific github account)    
     - Github organizations:
         - [NYPL](https://github.com/NYPL)
         - [NYPL-discovery](https://github.com/NYPL-discovery)
         - [NYPL-Simplified](https://github.com/NYPL-Simplified)
+        - Note that membership in these organizations requires that your Github account have MFA enabled. We'd prefer MFA based on an app or hardware key over MFA based on SMS.
     - Old and no-longer used organizations
         - [NYPL-registry](https://github.com/NYPL-registry)
         - [nypl-spacetime](https://github.com/nypl-spacetime)
