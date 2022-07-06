@@ -56,7 +56,6 @@ To configure Travis to deploy to Elastic Beanstalk:
  2. *From the root directory of your app,*
  <ol type="a">
     <li> Find the encrypted command stored in nypl-digital-dev parameter store: https://console.aws.amazon.com/systems-manager/parameters/%252Fproduction%252Ftravis%252Fadd_aws/description?region=us-east-1 which will automatically add encrypted credentials for AWS_ACCESS_KEY_ID_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_QA, AWS_SECRET_ACCESS_KEY_PRODUCTION, AWS_ACCESS_KEY_ID_QA, and AWS_ACCESS_KEY_ID_PRODUCTION to `.travis.yml`. (If this is a new Travis integration - or new to you - [ensure the repo is locally associated with the right Travis endpoint](#failure-to-decrypt-environmental-variables).)</li>
-    <li> Add --com or --org after all three instances of --add env.global in the command</li>
     <li> Run the command in the root directory of your app</li>
     </ol>
     
