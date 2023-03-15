@@ -49,17 +49,20 @@ Testing is often run during the `script` configuration stage as part of the buil
 ### Deploy ###
 Travis has a `deploy` configuration stage, with a list of preconfigured providers you can use for deployments.
 
-To configure Travis to deploy to Elastic Beanstalk:
+For new Travis users:
+ 1. Sign in to [travis-ci.com](https://www.travis-ci.com/) using your Github account
+ 2. Create a personal access token on Github and give it the scope listed [here](https://docs.travis-ci.com/user/github-oauth-scopes/#repositories-on-httpstravis-cicom-private-and-public) (make sure you use the travis-ci.com scope, NOT the travis-ci.org scope)
+ 3. From the commandline run `travis login --pro --github-token <your_token>`
 
- 1. If you haven't already, run log in to Github through travis:
-    `travis login --org`
- 2. *From the root directory of your app,*
+To configure Travis to deploy:
+
+ 1. From the root directory of your app
  <ol type="a">
     <li> Find the encrypted command stored [in nypl-digital-dev parameter store](https://us-east-1.console.aws.amazon.com/systems-manager/parameters/production/travis/add_aws/description?region=us-east-1&tab=Table#list_parameter_filters=Name:Contains:travis) which will automatically add encrypted credentials for AWS_ACCESS_KEY_ID_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_DEVELOPMENT, AWS_SECRET_ACCESS_KEY_QA, AWS_SECRET_ACCESS_KEY_PRODUCTION, AWS_ACCESS_KEY_ID_QA, and AWS_ACCESS_KEY_ID_PRODUCTION to `.travis.yml`. (If this is a new Travis integration - or new to you - [ensure the repo is locally associated with the right Travis endpoint](#failure-to-decrypt-environmental-variables).)</li>
     <li> Run the command in the root directory of your app</li>
     </ol>
     
- 3. Add `deploy` entries to `.travis.yml` for each deploy hook.
+ 2. Add `deploy` entries to `.travis.yml` for each deploy hook.
  Beanstalk example:
    ```yml
    deploy:
