@@ -30,11 +30,11 @@ the app.
 ```jsx
 <style>
    #Header-Placeholder {
-      min-height: 70px;
+      min-height: 62px;
    }
-   @media screen and (min-width: 1024px) {
+   @media screen and (min-width: 832px) {
       #Header-Placeholder {
-         min-height: 230px;
+         min-height: 130px;
       }
    }
 </style>
@@ -55,11 +55,11 @@ When working in a Next.js app, the script should be placed in the `_document.js`
 ```jsx
 <style>{`
    #Header-Placeholder {
-      min-height: 70px;
+      min-height: 62px;
    }
-   @media screen and (min-width: 1024px) {
+   @media screen and (min-width: 832px) {
       #Header-Placeholder {
-         min-height: 230px;
+         min-height: 130px;
       }
    }
 `}</style>
