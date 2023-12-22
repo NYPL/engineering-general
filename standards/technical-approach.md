@@ -22,7 +22,7 @@ TADs are persuasive documents grounded in facts and best practices. Writing a TA
 
 ## Length
 
-TADs SHOULD be as concise as possible while including all of the details that have a material impact on your design's acceptability. Generally, we recommend TAD be no longer than 10 pages.
+TADs SHOULD be as concise as possible while including all of the details that have a material impact on your design's acceptability. Generally, we recommend a TAD be no longer than 10 pages.
 
 Long TADs are a sign that the document should be split up into multiple TADs, with priority assigned to the one that is required to start implementation.
 
