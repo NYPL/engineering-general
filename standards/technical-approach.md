@@ -1,12 +1,30 @@
 # Technical Approach Documents
 
-Technical Approach Documents (TADs) serve to help the engineering team document solutions to feature development, share ideas between teams and help highlight potential issues with tasks before they are encountered during the development process.
+Technical Approach Documents (TADs) serve to help the engineering team document solutions to feature development, share ideas between teams, and help highlight potential issues with tasks before they are encountered during the development process.
 
-TADs should strive to describe the whats, hows and whys of the technical problem that is trying to be solved. It should strive to understand the problem at hand in a comprehensive way and explore any challenges so that engineers can be confident in their implementations of solutions. In short writing a TAD should answer any technical questions prior to the start of actual development work, freeing up developers to focus on implementation once the major questions have been resolved.
+TADs should strive to describe the whats, hows and whys of the technical problem that is trying to be solved. It should strive to understand the problem at hand in a comprehensive way and explore any challenges so that engineers can be confident in their implementations of solutions. In short, writing a TAD should answer any technical questions prior to the start of actual development work, freeing up developers to focus on implementation once the major questions have been resolved.
+
+## Audience
+
+TADs are ultimately technical documents for a technical audience, not for Product or non-technical stakeholders. They do require approval from the Engineering Leadership Team (ELT) as [described below](#review-process).
 
 ## Authors
 
-TADs should be written by the most senior engineer who is or will be working on a project/feature/fix. If it is unknown who will be doing the implementation work for a project an engineer with previous experience or subject matter knowledge should be assigned the task of writing a TAD.
+TADs should be assigned to engineers by Technical Leads or Technical Architects. Writing a TAD is a good opportunity to grow as an engineer, to have sanctioned time to research integrating different approaches into an NYPL codebase, and experiment with a new tool or technology.
+
+If it is unknown who will be doing the implementation work for a project, an engineer with previous experience or subject matter knowledge should be assigned the task of writing a TAD.
+
+TADs SHOULD have one author. In instances where a more collaborative approach is desired, consider splitting the TAD up into separate TADs each with their own author. See more in the [length](#length) section below.
+
+## Tone
+
+TADs are persuasive documents grounded in facts and best practices. Writing a TAD is communicating, “This is what I think we should do, and this is why.” Readers SHOULD come away from the TAD understanding why we need the solution that you recommended.
+
+## Length
+
+TADs SHOULD be as concise as possible while including all of the details that have a material impact on your design's acceptability. Generally, we recommend TAD be no longer than 10 pages.
+
+Long TADs are a sign that the document should be split up into multiple TADs, with priority assigned to the one that is required to start implementation.
 
 ## When Necessary
 
@@ -22,18 +40,35 @@ TADs SHOULD be created in the following situations:
 - If multiple approaches to a feature or problem are valid and the engineer assigned the ticket(s) wishes to document the decisions made
 - If questions are raised about the appropriateness of an approach and engineer/team wishes to document the decision process
 - If a engineer is faced with a decision or choice that they would like to receive feedback on and/or have validated by a more senior member of the engineering team
+- If writing the TAD will save engineering team time in the implementation phase. Generally, a TAD should eliminate the kind of pull request that generates feedback in the realm of, "We need to rethink this entire approach."
+
+## Resourcing
+
+The quarterly planning process is a good time for Tech Leads and Architects to look ahead at the upcoming quarter and ensure enough engineering time is allocated to writing TADs for a planned feature or project.
+
+## Timing
+
+The TAD MUST be written before any implementation work begins. However, TADs SHOULD NOT be written _too far_ in advance of implementation. Best practice is to make Jira tickets and start implementation in the sprint immediately following document approval.
+
+## Proof of Concepts
+
+A TAD MAY include a proof of concept as demonstration of feasibility of and confidence in the recommended approach.
+
+A proof of concept should be time-boxed to no longer than one sprint (two weeks). Tech leads and architects SHOULD guide engineers in generating a list of questions that the proof of concept aims to answer or clarify.
+
+A proof of concept MUST NOT go to production. The expectation is that a proof of concept is a rough draft built using mock data and may not include the cleanest or most maintainable code. If possible, it is recommended to implement a solution that _only_ runs locally & in a separate repository with a name that includes `proof of concept` in the title.
 
 ## Process
 
 All TADs MUST follow this process to be approved, at which point JIRA tickets can be created and development work can start.
 
-1. The most senior developer on the feature/task/story is assigned a ticket to write the TAD and the ticket MUST be tagged with `tech-approach`
-2. The assigned developer should collect as much information from the BRD, stakeholders and any other relevant information sources and write the TAD
-3. The TAD MAY be circulated at this point for feedback within a team or stakeholders for further input/feedback
+1. An engineer is assigned a ticket to write the TAD and the ticket MUST be tagged with `tech-approach`
+2. The assigned developer should collect as much information from the BRD, stakeholders and any other relevant information sources and write the TAD. It is recommended to time box the first draft of the TAD-writing phase to one sprint (2 weeks) so as not to lose context or momentum on the problem at hand. If a [proof of concept](#proof-of-concepts) is deemed necessary, then this may extend the TAD-writing phase by an additional sprint.
+3. The TAD MAY be circulated at this point for feedback within a team or stakeholders for further input/feedback. Posting the drafted TAD in a public channel is a good way to start receiving feedback. Scheduling a meeting to review the draft with team members is another option. It is recommended to set clear expectations about how long the TAD will be open for comments and discussion from team members and when that window is considered closed.
 4. When ready for review the Engineering Leadership Team (ELT) should be notified, the TAD uploaded to the shared TAD Google Drive (see below), and the associated JIRA ticket moved to the `Under Review` column
 5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members (see review process below)
-6. If approved in Step 5 the TAD should be sent to Garvita Kapur for final approval. With final approval the associated JIRA ticket is moved to `Done`
-7. If approved specific tickets should be created to execute the work as described in the TAD
+6. If approved, in Step 5 the TAD MUST be sent to Garvita Kapur for final approval. With final approval the associated JIRA ticket is moved to `Done`
+7. If approved, specific tickets MUST be created to execute the work as described in the TAD
 
 ### Review Process
 
@@ -42,6 +77,10 @@ Step 5 above includes the following steps to be followed by the Tech Lead/Archit
 1. After reviewing the document they should add a summary to the end of the TAD including: Potential Risk, Cost and an evaluation of the completion of the TAD
 2. If revisions are requested/necessary the document's author should make the necessary changes and record the process in a changelog to be added to the end of the document
 3. The above steps should be repeated until the document is approved
+
+### Changes After Approval
+
+During the implementation phase, it is possible that the approved approach is deemed insufficient and the technical team pivots to a different solution. In this case, it is important to update the original TAD in the "Changelog" section at the bottom of the document. Including a changelog with a record of why something didn’t work the way we expected provides helpful context to new and exisitng team members.
 
 ## Resources
 
