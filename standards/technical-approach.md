@@ -82,6 +82,18 @@ Step 5 above includes the following steps to be followed by the Tech Lead/Archit
 
 During the implementation phase, it is possible that the approved approach is deemed insufficient and the technical team pivots to a different solution. In this case, it is important to update the original TAD in the "Changelog" section at the bottom of the document. Including a changelog with a record of why something didn’t work the way we expected provides helpful context to new and exisitng team members.
 
+## TAD Examples
+
+### TADs that follow the above guidelines
+
+- [Reservoir Design System - Header App AWS Deployment](https://docs.google.com/document/d/1k8tAuQ6OEk23CsGE2p0uqWFmMBRF4Sp8K2r9YRyMkvU/edit#heading=h.kutc298lyner): This document describes the problem and architectural summary in detail without going over the recommended 10 page limit. Each approach includes pros and cons that are grounded in fact and the final recommendation follows technical best practices for maintainability.
+
+### TADs with opportunities for improvement
+
+- [OE Hybrid Mobile TAD](https://docs.google.com/document/d/1OP9vD78IxtP-S3LVwUvFFx-ZHtw8J20MqCUbgwu1GPs/edit#heading=h.kutc298lyner): This document is too long (28 pages) and should have been split up into _multiple_ TADs.
+
+- [Digital Research Books - Expose TOC for Single-Resource PDFs](https://docs.google.com/document/d/1k3RaT24glGBv9cccw2aqiYNSnFgB4SwZxiiNlogSUNM/edit#heading=h.kutc298lyner): This TAD is good, but it sat around for 6 months before implementation started. By the time we started implementing, we realized that we needed to re-think the technical approach and provide a new recommendation. This new approach should be documented in a changelog at the bottom of the document.
+
 ## Resources
 
 - [Shared TAD Google Drive](https://drive.google.com/drive/u/0/folders/0AN2RNnk4RBBwUk9PVA): All TADs should be added to this drive in the appropriate portfolio group's directory
