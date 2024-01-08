@@ -56,7 +56,7 @@ A TAD MAY include a proof of concept as demonstration of feasibility of and conf
 
 A proof of concept should be time-boxed to no longer than one sprint (two weeks). Tech leads and architects SHOULD guide engineers in generating a list of questions that the proof of concept aims to answer or clarify.
 
-A proof of concept MUST NOT go to production. The expectation is that a proof of concept is a rough draft built using mock data and may not include the cleanest or most maintainable code. If possible, it is recommended to implement a solution that _only_ runs locally & in a separate repository with a name that includes `proof of concept` in the title.
+A proof of concept MUST NOT go to production. The expectation is that a proof of concept is a rough draft built using mock data and may not include the cleanest or most maintainable code. If possible, it is recommended to implement a solution that _only_ runs locally & in a separate repository with a name that includes `proof of concept` in the title OR in a feature branch that is left unmerged.
 
 ## Process
 
@@ -67,7 +67,7 @@ All TADs MUST follow this process to be approved, at which point JIRA tickets ca
 3. The TAD MAY be circulated at this point for feedback within a team or stakeholders for further input/feedback. Posting the drafted TAD in a public channel is a good way to start receiving feedback. Scheduling a meeting to review the draft with team members is another option. It is recommended to set clear expectations about how long the TAD will be open for comments and discussion from team members and when that window is considered closed.
 4. When ready for review the Engineering Leadership Team (ELT) should be notified, the TAD uploaded to the shared TAD Google Drive (see below), and the associated JIRA ticket moved to the `Under Review` column
 5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members (see review process below)
-6. If approved, in Step 5 the TAD MUST be sent to Garvita Kapur for final approval. With final approval the associated JIRA ticket is moved to `Done`
+6. If approved, in Step 5 the TAD MUST be sent to the Director of Engineering for final approval. With final approval the associated JIRA ticket is moved to `Done`
 7. If approved, specific tickets MUST be created to execute the work as described in the TAD
 
 ### Review Process
@@ -86,13 +86,19 @@ During the implementation phase, it is possible that the approved approach is de
 
 ### TADs that follow the above guidelines
 
-- [Reservoir Design System - Header App AWS Deployment](https://docs.google.com/document/d/1k8tAuQ6OEk23CsGE2p0uqWFmMBRF4Sp8K2r9YRyMkvU/edit#heading=h.kutc298lyner): This document describes the problem and architectural summary in detail without going over the recommended 10 page limit. Each approach includes pros and cons that are grounded in fact and the final recommendation follows technical best practices for maintainability.
+- [Reservoir Design System — Header App AWS Deployment](https://docs.google.com/document/d/1k8tAuQ6OEk23CsGE2p0uqWFmMBRF4Sp8K2r9YRyMkvU/edit#heading=h.kutc298lyner): This document describes the problem and architectural summary in detail without going over the recommended 10 page limit. Each approach includes pros and cons that are grounded in fact and the final recommendation follows technical best practices for maintainability.
+
+- [DAM — Virtual Reading Room, Phase 1A ](https://docs.google.com/document/d/1c9f2lxb8-ANWdMxcLIej_bN87muSfP7WkLs7zS3BWOc/edit#heading=h.kutc298lyner): 7 pages long and explains a complex new system very clearly
+
+- [LSP — Research Catalog My Account](https://docs.google.com/document/d/12Tcr4b9z-_icH5COr_pWUtUBFFBWo2mOH2T65_zF0tQ/edit#heading=h.kutc298lyner): Clearly defines the problem and why the current solution is bad, and also breaks the suggested approach into two implementation phases to build out the feature incrementally.
+
+- [Digital Research Books — Adding New Relic Instrumentation](https://docs.google.com/document/d/1mklgUj2rQyh8vpjBDw44aeVFX1-_v92KEeaPDmnqCOc/edit#heading=h.k9mn1t9nmu98): This is a good example of a TAD being used as an architecture and planning document. A TAD doesn't always need to weigh different options; it can be used to clarify the team's understanding of a new architectural pattern or third-party library.
 
 ### TADs with opportunities for improvement
 
-- [OE Hybrid Mobile TAD](https://docs.google.com/document/d/1OP9vD78IxtP-S3LVwUvFFx-ZHtw8J20MqCUbgwu1GPs/edit#heading=h.kutc298lyner): This document is too long (28 pages) and should have been split up into _multiple_ TADs.
+- [Open eBooks — Hybrid Mobile TAD](https://docs.google.com/document/d/1OP9vD78IxtP-S3LVwUvFFx-ZHtw8J20MqCUbgwu1GPs/edit#heading=h.kutc298lyner): This document is too long (28 pages) and should have been split up into _multiple_ TADs.
 
-- [Digital Research Books - Expose TOC for Single-Resource PDFs](https://docs.google.com/document/d/1k3RaT24glGBv9cccw2aqiYNSnFgB4SwZxiiNlogSUNM/edit#heading=h.kutc298lyner): This TAD is good, but it sat around for 6 months before implementation started. By the time we started implementing, we realized that we needed to re-think the technical approach and provide a new recommendation. This new approach should be documented in a changelog at the bottom of the document.
+- [Digital Research Books — Expose TOC for Single-Resource PDFs](https://docs.google.com/document/d/1k3RaT24glGBv9cccw2aqiYNSnFgB4SwZxiiNlogSUNM/edit#heading=h.kutc298lyner): This TAD is good, but it sat around for 6 months before implementation started. By the time we started implementing, we realized that we needed to re-think the technical approach and provide a new recommendation. This new approach should be documented in a changelog at the bottom of the document.
 
 ## Resources
 
