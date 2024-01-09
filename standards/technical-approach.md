@@ -80,7 +80,7 @@ Step 5 above includes the following steps to be followed by the Tech Lead/Archit
 
 ### Changes After Approval
 
-During the implementation phase, it is possible that the approved approach is deemed insufficient and the technical team pivots to a different solution. In this case, it is important to update the original TAD in the "Changelog" section at the bottom of the document. Including a changelog with a record of why something didn’t work the way we expected provides helpful context to new and exisitng team members.
+During the implementation phase, it is possible that the approved approach is deemed insufficient and the technical team pivots to a different solution. In this case, it is important to update the original TAD in the "Changelog" section at the bottom of the document. Including a changelog with a record of why something didn’t work the way we expected provides helpful context to new and exisitng team members. You should also tell your Tech Lead/Architect/Manager about these updates, so that any updates are also communicated up the chain if necessary.
 
 ## TAD Examples
 
