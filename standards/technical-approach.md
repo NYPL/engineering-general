@@ -24,7 +24,7 @@ TADs are persuasive documents grounded in facts and best practices. Writing a TA
 
 ## Length
 
-TADs SHOULD be as concise as possible while including all of the details that have a material impact on your design's acceptability. Generally, we recommend a TAD be no longer than 10-12 pages.
+TADs SHOULD be as concise as possible while including all of the details that have a material impact on your design's acceptability. Generally, we recommend a TAD be no longer than 10-12 pages. You may include supplemental information, code samples, and other asides that aren't essential in an optional "Appendix" section. Items in the Appendix don't count toward the recommended 10-12 page limit.
 
 Long TADs are a sign that the document should be split up into multiple TADs, with priority assigned to the one that is required to start implementation.
 
@@ -81,7 +81,7 @@ The next steps section can be a short summary or list of next steps that need to
 
 All TADs MUST follow this process to be approved, at which point JIRA tickets can be created and development work can start.
 
-1. An engineer is assigned a ticket to write the TAD and the ticket MUST be tagged with `tech-approach`. Assigning points to a TAD-writing ticket can be challenging. Generally a TAD is given 5 or 8 points, depending on the complexity of the feature and if a [proof of concept](#proof-of-concepts) is necessary.
+1. An engineer is assigned a ticket to write the TAD and the ticket MUST be tagged with `tech-approach`. Assigning points to a TAD-writing ticket can be challenging. Generally a TAD is given 5, 8, or 13 points, depending on the complexity of the feature, how much research is needed, time for edits, and if a [proof of concept](#proof-of-concepts) is necessary.
 2. The assigned developer should collect as much information from the BRD, stakeholders and any other relevant information sources and write the TAD. It is recommended to time box the TAD-writing process to one sprint (2 weeks) so as not to lose context or momentum on the problem at hand. To make this happen, it is recommended to complete a _first_ draft within one week in order to get peer feedback sooner, especially on major challenges and avoid wasting 2 weeks writing about an insufficient approach. Oftentimes the various iterations, including format fixes, corrections, expansions, and summaries, can take longer than expected. If a [proof of concept](#proof-of-concepts) is deemed necessary, then this may extend the TAD-writing phase by an additional week or sprint, depending on the feature or project.
 3. The TAD MAY be circulated at this point for further feedback within a team or stakeholders for further input/feedback. Posting the drafted TAD in a public channel is a good way to start receiving feedback. Scheduling a meeting to review the draft with team members is another option. It is recommended to set clear expectations about how long the TAD will be open for comments and discussion from team members and when that window is considered closed.
 4. When ready for review the Engineering Leadership Team (ELT) should be notified, the TAD uploaded to the shared TAD Google Drive (see below), and the associated JIRA ticket moved to the `Under Review` column
