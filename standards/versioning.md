@@ -14,6 +14,19 @@ The following convention MUST be used when incrementing the version number:
 
 When flagging a given version as **"pre-release"** (i.e. a version made available for testing, but not for general consumption by the unwary), the version number MUST use an alphanumeric suffix. For example, if the current release is `v1.0.1` and you would like to publish a candidate for `v1.0.2`, you may tag it `v1.0.2-alpha`. After review, pre-release versions MUST be followed by proper release (e.g. `v1.0.2`) for general consumption. [See semver notes on pre-releases](https://semver.org/#spec-item-9)
 
+## API versioning
+### External Users: 
+NYPL does not keep or maintain a list of users of its APIs.  All users of NYPL’s public APIs accept the risk of unexpected changes.  
+
+As early as possible, NYPL will place a deprecation notice in the appropriate API documentation.  The lead time can vary depending on the foreseeability of the change.
+
+NYPL Engineering may make one effort to reach out, via Github or Linkedin or Email, informing maintainers of known external applications. 
+
+For major version upgrades, the former version should remain available.  Former versions are no longer maintained and will not be fixed if they go down.  
+
+### Internal Users
+For internal stakeholders, such as those within NYPL outside of Digital or those inside of Digital, the Product owner on the team will work with the stakeholder to minimize impact of the change. 
+
 ## Git Repository versioning
 
 Any repository using semantic versioning MUST reflect those versions in git "annotation" tags, as in:

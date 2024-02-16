@@ -21,7 +21,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
     * [Logging](standards/logging.md)
     * [Test Coverage](standards/test-coverage.md)
     * [Documentation](standards/documentation.md)
-  * [Javascript]()
+  * [Javascript](standards/javascript.md)
     * [NYPL React Design System]()
   * [Python]()
   * [Ruby on Rails]() 
