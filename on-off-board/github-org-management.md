@@ -1,4 +1,4 @@
-# GitHub Org Management
+# GitHub Organization Management
 
 1. All new repositories and Teams should be created within the existing [NYPL](https://github.com/NYPL) Org, unless specifically called out in the Product Brief, BRD, or TAD. There should not be a need to create additional organizations outside of the NYPL Org or to add repositories within any of the other NYPL organizations, such as NYPL-Simplified. We are aiming to consolidate all extranneous orgs under the NYPL org.
 2. All active NYPL employees, this includes both FTEs and Contractors, who need Read, Write, or Admin access to NYPL repositories must be invited as a Member to the NYPL Org. They should _not_ be added to any repository as an Outside Collaborator.
