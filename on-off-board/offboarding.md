@@ -6,7 +6,7 @@ It's so hard to say goodbye but sometimes we must at NYPL.
 
 Remove the [accounts](onboarding.md#2-set-up-accounts) that might have been created during the onboarding process.
 
-Remove github permissions
+Remove the user from the [NYPL GitHub Organization](https://github.com/orgs/NYPL/people).
 
 ### Slack
 
