@@ -17,7 +17,7 @@
 
 ## How to add a user to a repo:
 
-_Note: The first step in this workflow is done by Hellen Lee during the onboarding process. We recognize that many people realize they need access to certain repositories after the onboarding process has been completed, so we’re listing them here for managers and GitHub admins._
+_Note: Only GitHub Admins/Owners have the ability to add and remove members from the GitHub Org. If you don't have access and need to add or remove someone, contact an Engineering Manager or Tech Lead._
 
 1. If the person you're adding is an NYPL FTE or Contractor, [invite them](https://github.com/orgs/NYPL/people) to the NYPL Organization. They will need to accept this invite via email. Then make sure they have 2FA enabled (required) & ask them to add a recognizable name to their [profile](https://github.com/settings/profile) (optional).
 2. Once the first step is complete, add them to the appropriate portfolio team(s). This should automatically grant them access to any repositories they need. Avoid adding individuals to repositories, unless they're an Outside Collaborator.

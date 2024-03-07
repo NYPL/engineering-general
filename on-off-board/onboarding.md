@@ -19,9 +19,9 @@ A developer will generally need accounts for the following services:
 
 - Slack
   - [nypl.slack.com](https://nypl.slack.com/)
-- Github (Can use a personal account or make a new NYPL specific GitHub account)
+- GitHub (Can use a personal account or make a new NYPL specific GitHub account)
 
-  - NYPL Github organization:
+  - NYPL GitHub organization:
 
     - [NYPL](https://github.com/NYPL)
     - See [GitHub Organization Management](./github-org-management.md) for onboarding steps.
