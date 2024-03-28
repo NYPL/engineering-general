@@ -13,6 +13,16 @@ This approach allows for visual updates to be made to the Header and deployed
 once to the primary app. All applications that implement the Header App will
 receive the update(s) automatically.
 
+## Legacy Header App
+
+The first version of the NYPL Header App was built with Express.js and imported
+a separate npm package for the Header component. This version of the Header App
+is no longer maintained and should not be used for new implementations. Its
+current site is hosted on https://header.nypl.org but SHOULD NOT be used.
+
+- [Legacy Header App Github Repo](https://github.com/NYPL/nypl-dgx-react-header)
+- [Legacy Header npm component Github Repo](https://github.com/NYPL/dgx-header-component)
+
 ## Support
 
 Any questions, concerns, or feedback should be directed to the Reservoir Design
