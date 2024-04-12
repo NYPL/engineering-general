@@ -15,7 +15,6 @@ All Pull Requests to NYPL repositories SHOULD be reviewed prior to merging.
  
 - Pull requests SHOULD NOT be merged without a review and MUST not be merged if a reviewer requests changes
   - Specific policies MAY be agreed upon within teams as to when reviews are required or optional
-  - 
 
 - If changes are requested (or made in response to questions) the requesting engineer SHOULD re-request review when ready
   - This helps reviewers track the current status of open PRs and plan time for review work
@@ -25,7 +24,7 @@ All Pull Requests to NYPL repositories SHOULD be reviewed prior to merging.
 
 - All peer review MUST comply with our [Engineering Values](../culture/values.md)
 
-- All work SHOULD go through the process of peer review. It is a form of collaboration and it strengthens  quality.
+- All work SHOULD go through the process of peer review. It is a form of collaboration and it strengthens quality.
 
 - It SHOULD involve at least one (1) more experienced developer evaluating whether best practices are followed.
 
