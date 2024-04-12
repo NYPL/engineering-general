@@ -5,7 +5,7 @@ All Pull Requests to NYPL repositories SHOULD be reviewed prior to merging.
 - Engineers MUST mark at least one (1) developer as a reviewer and SHOULD request reviews from all relevant engineers
   - Reviewers MAY come from any team within NYPL Digital
   - Teams MAY create [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) files to establish a default group of reviewers
-  - Experience SHOULD not be taken into account when requesting review
+  - Experience SHOULD NOT be taken into account when requesting review
   - Requests for specific feedback MAY be requested by tagging specific engineers in PR comments
 
 - Engineers marked as reviewers SHOULD complete the review in a timely manner
