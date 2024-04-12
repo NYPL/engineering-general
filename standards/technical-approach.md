@@ -6,13 +6,15 @@ Technical Approach Documents (TADs) allow engineers to explore possible solution
 
 TADs are ultimately technical documents for a technical audience, not for Product or non-technical stakeholders. They do require approval from the Engineering Leadership Team (ELT), which includes Engineering Managers and the Director of Engineering as [described below](#review-process).
 
-Generally, the sections of the TAD that you'll be writing are for (1) your technical peers, i.e. other engineers who will be reviewing PRs and implementing the feature alonside you, and (2) the Engineering Manager who will be writing the Review Summary section at the end of the review process. The Director of Engineering will be reading the Review Summary section and skimming any other sections of the document that they find helpful.
+Generally, the sections of the TAD that you'll be writing are for:
+* Your technical peers, i.e. other engineers who will be reviewing PRs and implementing the feature alongside you
+* The Engineering Manager who will be writing the Review Summary section at the end of the review process. The Director of Engineering will be reading the Review Summary section and skimming any other sections of the document that they find helpful.
 
 Since the Engineering Manager might not be intimately familiar with your technical stack or the problem at hand, it is helpful to provide some additional context in the "Problem Definition/Goal" and "Architectural Summary" sections of the template. For example, an iOS engineer might add a brief sentence or two of background information about iOS technologies if the Engineering Manager is not familiar with those technologies.
 
 ## Authors
 
-TADs should be assigned to engineers by Technical Leads or Technical Architects. Writing a TAD is a good opportunity to grow as an engineer, to have sanctioned time to research integrating different approaches into an NYPL codebase, and experiment with a new tool or technology.
+TADs should be assigned to engineers by Technical Leads or Architects. Writing a TAD is a good opportunity to grow as an engineer, to have sanctioned time to research integrating different approaches into an NYPL codebase, and experiment with a new tool or technology.
 
 If it is unknown who will be doing the implementation work for a project, an engineer with previous experience or subject matter knowledge should be assigned the task of writing a TAD.
 
@@ -33,13 +35,13 @@ Long TADs are a sign that the document should be split up into multiple TADs, wi
 TADs do not have to be created for all development work, but MUST be created in the following cases:
 
 - If a Business Requirements Document (BRD) has been created
-- If the scope of work is expected to extend beyond a single sprint
-- If multiple developers will be contributing to the new feature
 - If the pros and cons of introducing a new tool or technology to a project, team, or the department need to be considered
 - If developers disagree or are unsure on the entire approach for implementing the new feature. Generally, a TAD should eliminate the kind of pull request that generates feedback in the realm of, "We need to rethink this entire approach."
 
 TADs SHOULD be created in the following situations:
 
+- If the scope of work is expected to extend beyond a single sprint
+- If multiple developers will be contributing to the new feature
 - If multiple approaches to a feature or problem are valid and the engineer assigned the ticket(s) wishes to document the decisions made
 - If questions are raised about the appropriateness of an approach and engineer/team wishes to document the decision process
 - If a engineer is faced with a decision or choice that they would like to receive feedback on and/or have validated by a more senior member of the engineering team.
@@ -88,6 +90,16 @@ All TADs MUST follow this process to be approved, at which point JIRA tickets ca
 5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members (see review process below)
 6. If approved, the TAD MUST be sent to the Director of Engineering for final approval.
 7. With final approval the associated JIRA ticket is moved to `Done`. Specific tickets MUST be created to execute the work as described in the TAD.
+
+### Sample TAD Timeline
+
+- __Day 1-2__ Research & information gathering
+- __Day 3-4__ Complete research & begin drafting
+- __Day 5__ Complete initial draft
+- __Day 6__ Refine draft & circulate internally for feedback
+- __Day 7-8__ Refine draft & finalize recommendations
+- __Day 9__ Finalize draft
+- __Day 10__ Submit TAD for review
 
 ### Review Process
 
