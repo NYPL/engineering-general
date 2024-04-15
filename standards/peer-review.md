@@ -19,6 +19,10 @@
   - This helps reviewers track the current status of open PRs and plan time for review work
   - Additional rounds of review SHOULD be completed until the PR can be either merged or closed
 
+- Engineers SHOULD utilize the Draft PR status to socialize work in progress and to solicit feedback
+  - Reviewers SHOULD NOT use the "request changes" option on draft PR reviews
+  - When a draft PR is ready for full review the requesting engineer MUST update its status and request (or re-request) review from relevant team members
+
 # Peer Review
 
 - All peer review MUST comply with our [Engineering Values](../culture/values.md)
