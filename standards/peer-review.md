@@ -1,8 +1,8 @@
 ## Pull Request Workflow
 
 - All Pull Requests to NYPL repositories MUST be reviewed prior to merging (caveat below).
-  - PRs MUST NOT be merged if a reviewed requests changes
-  - Teams MAY agree to specific written policies as to conditions when reviews are not required. Such a policy MUST be approved by a Tech Lead or Engineering Manager.
+  - PRs MUST NOT be merged if a reviewer requests changes
+  - Teams MAY agree to specific written policies as to conditions when reviews are not required. Such a policy MUST be approved by an Engineering Manager or Director.
   
 - Engineers MUST mark at least one (1) developer as a reviewer and SHOULD request reviews from all relevant engineers
   - Reviewers MAY come from any team within NYPL Digital
