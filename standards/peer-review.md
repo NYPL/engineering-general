@@ -18,6 +18,7 @@
 - If changes are requested (or made in response to questions) the requesting engineer SHOULD re-request review when ready
   - This helps reviewers track the current status of open PRs and plan time for review work
   - Additional rounds of review SHOULD be completed until the PR can be either merged or closed
+  - To help track PR status teams MAY use GitHub labels (e.g. `Changes Requested`, `Needs Review` and `Ship It`) to help socialize status.
 
 - Engineers SHOULD utilize the Draft PR status to socialize work in progress and to solicit feedback
   - Reviewers SHOULD NOT use the "request changes" option on draft PR reviews
