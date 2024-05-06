@@ -6,7 +6,7 @@ This document is intended to help developers become familiar with NYPL digital p
 
 ## Welcome & First Day
 
-We hope that you'll have a good first at NYPL Digital! Generally 4 things should happen your first day:
+We hope that you'll have a good first day at NYPL Digital! Generally 4 things should happen your first day:
 
 1. You'll meet your team and have a lunch or other meet-and-greet
 2. You'll get your laptop and have some time to set it up
@@ -41,6 +41,13 @@ We __strongly__ encourage team members to use a password manager for their crede
 - [MacPass](https://macpassapp.org/)
   - This is a local, open source, password management solution
   - It is not officially supported, but provides an easy place to track passwords
+
+### Multi-Factor Authentication
+
+Using multi-factor authentication (MFA) is also __strongly__ encouraged at NYPL. For some accounts (most importantly AWS) it is __required__. There are several options for MFA:
+
+- NYPL-supplied Yubi key. If you'd prefer a physical authentication key, please request one from your manager.
+- MFA Application such as Duo or Microsoft Authenticator. These should be installed on your phone to support authentication.
 
 ### Commonly used accounts
 
@@ -97,4 +104,16 @@ Your manager should set up an initial set of meetings with both team members and
 
 ## 4. Initial Tasks
 
-We strive to design an initial set of tickets/tasks for new team members that both allow them to begin exploring codebases tktk
+We strive to design an initial set of tickets/tasks for new team members that both allow them to begin exploring codebases as well as making impactful contributions early in their time in Digital. We are not a "deploy to production on Day 1" shop, but aim to have new engineers putting up PRs by the end of their first sprint.
+
+Please discuss your initial set of tasks with your manager and new team. Our goals generally are:
+
+- Allow you to explore the codebases you'll be contributing to, via tasks such as:
+  - Extending unit test coverage
+  - Refactoring a specific class/module to align with a larger codebase
+  - Implementing a new linting, CI/CD or other quality-of-life tool
+- Help you understand our standards for development in NYPL Digital, through things like:
+  - Reviewing open PRs
+  - Implementing specific code quality changes on a small codebase
+  - Refactoring an application to a new version of its current tech stack
+- Anything that you and your tech lead decide!
