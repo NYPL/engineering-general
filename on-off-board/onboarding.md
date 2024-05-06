@@ -27,7 +27,7 @@ There is a lot to learn in Digital, and there is no way to pick everything up in
 - Review the documents and initial tasks outlined in the specific onboarding documents provided to you on your first day (Which is probably how you ended up here!)
 - Ask questions. If your manager did not ask you to do this already: start a document with questions and things that were unclear!
   - This document should be an important part of your early 1:1s with your manager
-  - We want to use these questions to improve our documentation and processes! People with fresh eyes often see things that we miss
+  - We want to use these questions to improve our documentation and processes! Fresh eyes often see things that we miss
 
 ## 2. Account Setup
 
@@ -50,6 +50,7 @@ A developer will generally need accounts for the following services. Most of the
 - GitHub (Can use a personal account or make a new NYPL specific GitHub account)
   - [NYPL Main GitHub Organization](https://github.com/NYPL)
   - See [GitHub Organization Management](./github-org-management.md) for onboarding steps.
+  - We ask that all members have a username that contains their name somewhere. If you do not want to update your personal Github account, we encourage you to make an NYPL-specific account!
   - Team-specific organizations
     - [NYPL-discovery](https://github.com/NYPL-discovery)
     - [NYPL-Simplified](https://github.com/NYPL-Simplified)
@@ -69,7 +70,7 @@ A developer will generally need accounts for the following services. Most of the
 
 ### Less commonly used accounts
 
-- [NYPL Platform](https://platform.nypl.org) Assorted APIs for interacting with NYPL resources
+- [NYPL Platform](https://platformdocs.nypl.org) Assorted APIs for interacting with NYPL resources
 - [NPM Organization](https://www.npmjs.com/org/nypl) (NOTE: You do not need an npm account to publish to npm)
 - [New Relic](https://newrelic.com/) Telemetry, metrics and monitoring
 - [Docker Hub](https://hub.docker.com/u/nypl/) Used for publically distributed images. Internal images are hosted on AWS ECR
