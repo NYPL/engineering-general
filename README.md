@@ -52,3 +52,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 - [Onboarding](on-off-board/onboarding.md)
 - [Offboarding](on-off-board/offboarding.md)
 - [GitHub Org Management](on-off-board/github-org-management.md)
+
+### How To
+
+- [Use AWS](how-to/use-aws.md)

@@ -5,7 +5,7 @@ All repos MUST identify their "Git workflow" (aka "Merge strategy", "Steps for p
  * the persistent branches (e.g. "development", "qa", "master"/"main"\*), including what environment they are deployed to if any
  * what branch to cut feature branches from
  * whether and how one bumps the component version (if it deviates from [the standard](./versioning.md#typical-workflow))
- * any deviations from [our typical CI/CD configuration](https://github.com/NYPL/engineering-general/blob/updating-header/standards/travis-ci.md)
+ * any deviations from [our typical CI/CD configuration](/standards/travis-ci.md)
 
 Repos SHOULD link to the relevant Git workflow in this document and need not say anything more about the procedure if this document adequately describes it.
 
