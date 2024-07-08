@@ -133,6 +133,6 @@ During the implementation phase, it is possible that the approved approach is de
 
 ## Resources
 
-- [Shared TAD Google Drive](https://drive.google.com/drive/u/0/folders/0AN2RNnk4RBBwUk9PVA): All TADs should be added to this drive in the appropriate portfolio group's directory
+- [Shared TAD Google Drive](https://drive.google.com/drive/folders/1cEhlmSmeSTSdc-cYatCNrjs7PZQone-T): All TADs should be added to this drive in the appropriate portfolio group's directory
 - The TAD Template can be found in the Google Drive NYPL template gallery. Select it in Google Docs using `File > New > From template gallery` and make sure you're on the `NYPL` tab. Navigate to the `NYPL` section header and the TAD template will be in the list.
 - [Confluence TAD Documentation](https://confluence.nypl.org/display/DIGTL/Technical+Approach+Documents): Similar documentation page in confluence containing list of sample TADs from different projects
