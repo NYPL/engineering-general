@@ -17,6 +17,7 @@ The following are good examples of Github Action scripts that build a Docker ima
 
 - [patron-info-poller](https://github.com/NYPL/patron-info-poller/blob/main/.github/workflows/deploy-qa.yml)
 - [drb-etl-pipeline](https://github.com/NYPL/drb-etl-pipeline/blob/main/.github/workflows/build-production.yaml)
+- [digital-collections](https://github.com/NYPL/digital-collections/blob/main/.github/workflows/deploy_production.yml)
 - [shared-ruby](https://github.com/NYPL/shared-ruby/blob/develop/.github/workflows/build-qa.yml)
 
 While the above examples can serve as a template, there are a few things to note:
@@ -38,7 +39,7 @@ permissions:
     aws-region: us-east-1
 ```
 
-- In the build step, make sure to update the `ECR_REPOSITORY` with the app's ERC repo name.
+- In the build step, make sure to update the `ECR_REPOSITORY` with the app's ECR repo name.
 - In the `aws ecs update-service` command step, update the app's ECS cluster and service name.
 
 ## Tests and other actions
