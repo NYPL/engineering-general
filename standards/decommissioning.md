@@ -18,6 +18,12 @@ Developer(s) MUST:
 * archive the repo on Github.
 * work with IT make sure that all the AWS EBS, ECS, or Lambda servers are shutdown. This includes the QA and Production servers in their relevant AWS accounts.
 
+## Team-specific Processes
+
+The above serves as a general guideline for decommissioning and deprecating products, services, and codebases. Teams can have their own process, in addition to the above, that is more detailed and specific to the type of products they work on. Regardless of all the steps involved, it's important to communicate it and update documentation.
+
+The LSP team has to decommission certain endpoints and services and it was captured in their `lsp_workflows` [Deprecating a Service](https://github.com/NYPL/lsp_workflows/pull/24/files) document.
+
 ## Examples
 
 ### Application Restructure
@@ -34,7 +40,3 @@ As of February 2020, this app is no longer in use at NYPL, and the current imple
 #### BarcodeService
 
 The [BarcodeService](https://github.com/NYPL/barcode-service) app was a Node-wrapped PHP AWS Lambda that served the Platform API `/api/v0.1/patron/{id}/barcode` endpoint. The codebase and lambda have not been updated since 2017 and it was verified that the lambda had no invocations in the past 12 months.
-
-#### AuthService
-
-The [AuthService](https://github.com/NYPL/barcode-service) app was a Node-wrapped PHP AWS Lambda that served the Platform API `/api/v0.1/` endpoint. This lambda was running on an old version of Node and PHP and instead of updating the repo, it was replatformed to Python and included as part of the [PatronServices]() codebase.
