@@ -15,8 +15,14 @@ Developer(s) MUST:
 * update the codebase's README and submit a PR.
   * This MUST include a "Deprecated" heading at the top, a "no longer supported" note, and the date of decommission.
   * If the repository has moved to a different source control location, the link MUST be included.
-* archive the repo on Github.
+* archive the repository on Github.
 * work with DevOps make sure that all the AWS EBS, ECS, or Lambda servers are shutdown. This includes the QA and Production servers in their relevant AWS accounts.
+
+## Deprecating npm Packages
+
+If the decommissioned product or deprecated repository publishes a package on npm, the package must be marked as deprecated in npm. Do NOT delete or unpublish the npm package or any version but deprecate it through the package's settings on npm. See [npm docs](https://docs.npmjs.com/deprecating-and-undeprecating-packages-or-package-versions) for more information.
+
+If you don't have permission to deprecate a package, context an npm collaborator in Digital.
 
 ## Team-specific Processes
 
