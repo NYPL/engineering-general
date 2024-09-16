@@ -8,9 +8,9 @@ Travis is a CI/CD provider that facilitates an automated deployment of codebases
 
 ## How to Rotate Travis/AWS Keys
 
-For better security, once every six months DevOps will change the keys that Travis must use to deploy to AWS. There is an ID and a SECRET. Development and QA builds share a pair of ID and SECRET values. Production builds have their own ID and SECRET. To properly rotate keys, you will therefore need to update four values.
+For better security, once every six months DevOps will change the keys that Travis must use to deploy to AWS. There is an ID and a SECRET. Development and QA builds share a pair of ID and SECRET values. Production builds have their own ID and SECRET. To properly rotate keys, you will therefore need to update four values for each app. All apps share the same four keys.
 
-The simplest method for updating these keys is via environment variables stored in the Travis UI. The values are found in the AWS Parameter Store UI.
+The simplest method for updating these keys is via [environment variables](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings) stored in the Travis UI. The values are found in the AWS Parameter Store UI.
 
 ### Requirements
 1. [Access to AWS](aws-use.md)
@@ -33,4 +33,8 @@ The simplest method for updating these keys is via environment variables stored 
 8. Repeat step 7 for the access key _secret_ variable.
 9. Log into the AWS NYPL Dev account Parameter Store to retrieve the values for the Dev/QA servers and repeat steps 7 & 8 for Dev/QA keys.
 
-There is another, older process that involves encrypting the values using the Travis CLI, storing the encrypted values in the `.travis.yml`, and then merging the changes into the repo. But this is not recommended and the encryption command may fail in some cases.
+There is another, older process that involves encrypting the AWS values using the Travis CLI, storing the encrypted values in the `.travis.yml`, and then merging the changes into the repo. But this is not recommended and the encryption command may fail in some cases.
+
+### Testing
+
+To test that the updated keys are correct you can re-run the last Travis build on a dev, QA or production branch of the repo. However, you may wish to avoid re-running builds on production services during business hours. You could wait for the next official deployment. If it builds, the keys are correct. If not, you can double-check them during your maintenance window.
