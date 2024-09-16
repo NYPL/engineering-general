@@ -8,7 +8,7 @@ Travis is a CI/CD provider that facilitates an automated deployment of codebases
 
 ## How to Rotate Travis/AWS Keys
 
-For better security, once every six months DevOps will change the keys that Travis must use to deploy to AWS. There is an ID and a SECRET. Development and QA builds share a pair of ID and SECRET values. Production builds have their own ID and SECRET. To properly rotate keys, you will therefore need to update four values for each app. All apps share the same four keys.
+For better security, once every six months DevOps will change the keys that Travis must use to deploy to AWS. There is an ID and a SECRET. Development and QA builds share a pair of ID and SECRET values. Production builds have their own ID and SECRET. To properly rotate keys, you will therefore need to update four values for each app. **All apps share the same four keys.**
 
 The simplest method for updating these keys is via [environment variables](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings) stored in the Travis UI. The values are found in the AWS Parameter Store UI.
 
