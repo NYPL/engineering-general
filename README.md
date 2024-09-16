@@ -55,4 +55,4 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 
 ### How To
 
-- [Use AWS](how-to/use-aws.md)
+- [Use AWS](how-to/aws-use)
