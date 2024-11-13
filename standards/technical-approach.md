@@ -5,11 +5,11 @@ Technical Approach Documents (TADs) allow engineers to explore possible solution
 ## Audience
 
 TADs are ultimately technical documents for a technical audience, not for Product or non-technical stakeholders. They do require approval from a Technical Team Lead or Technical Architect and one other engineer on your team [described below](#review-process).
-If the TAD involves multiple teams, please adjust the required approvals accordingly.
+If the TAD involves multiple teams, please adjust the required approvals accordingly.  If the author is a Technical Team Lead or Technical Architect, seek approval from the next most senior engineer and one other engineer on your team.
 
 Generally, the sections of the TAD that you'll be writing are for:
 * Your technical peers, i.e. other engineers who will be reviewing PRs and implementing the feature alongside you
-* The Technical Team Lead or Technical Architect who will be writing the Review Summary section at the end of the review process.
+* The engineers who will be writing the Review Summary section at the end of the review process.
 
 ## Authors
 
@@ -101,7 +101,7 @@ All TADs MUST follow this process to be approved, at which point JIRA tickets ca
 
 ### Review Process
 
-Step 5 above includes the following steps to be followed by the Tech Lead or Architect and another engineer who are reviewing the document:
+Step 5 above includes the following steps to be followed by the engineers who are reviewing the document:
 
 1. After reviewing the document they should add a summary to the end of the TAD including: Potential Risk, Cost and an evaluation of the completion of the TAD
 2. If revisions are requested/necessary the document's author should make the necessary changes and record the process in a changelog to be added to the end of the document
