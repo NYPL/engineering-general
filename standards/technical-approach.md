@@ -4,13 +4,12 @@ Technical Approach Documents (TADs) allow engineers to explore possible solution
 
 ## Audience
 
-TADs are ultimately technical documents for a technical audience, not for Product or non-technical stakeholders. They do require approval from the Engineering Leadership Team (ELT), which includes Engineering Managers and the Director of Engineering as [described below](#review-process).
+TADs are ultimately technical documents for a technical audience, not for Product or non-technical stakeholders. They do require approval from a Technical Team Lead or Technical Architect and one other engineer on your team [described below](#review-process).
+If the TAD involves multiple teams, please adjust the required approvals accordingly.  If the author is a Technical Team Lead or Technical Architect, seek approval from the next most senior engineer and one other engineer on your team.
 
 Generally, the sections of the TAD that you'll be writing are for:
 * Your technical peers, i.e. other engineers who will be reviewing PRs and implementing the feature alongside you
-* The Engineering Manager who will be writing the Review Summary section at the end of the review process. The Director of Engineering will be reading the Review Summary section and skimming any other sections of the document that they find helpful.
-
-Since the Engineering Manager might not be intimately familiar with your technical stack or the problem at hand, it is helpful to provide some additional context in the "Problem Definition/Goal" and "Architectural Summary" sections of the template. For example, an iOS engineer might add a brief sentence or two of background information about iOS technologies if the Engineering Manager is not familiar with those technologies.
+* The engineers who will be writing the Review Summary section at the end of the review process.
 
 ## Authors
 
@@ -87,9 +86,8 @@ All TADs MUST follow this process to be approved, at which point JIRA tickets ca
 2. The assigned developer should collect as much information from the BRD, stakeholders and any other relevant information sources and write the TAD. It is recommended to time box the TAD-writing process to one sprint (2 weeks) so as not to lose context or momentum on the problem at hand. To make this happen, it is recommended to complete a _first_ draft within one week in order to get peer feedback sooner, especially on major challenges and avoid wasting 2 weeks writing about an insufficient approach. Oftentimes the various iterations, including format fixes, corrections, expansions, and summaries, can take longer than expected. If a [proof of concept](#proof-of-concepts) is deemed necessary, then this may extend the TAD-writing phase by an additional week or sprint, depending on the feature or project.
 3. The TAD MAY be circulated at this point for further feedback within a team or stakeholders for further input/feedback. Posting the drafted TAD in a public channel is a good way to start receiving feedback. Scheduling a meeting to review the draft with team members is another option. It is recommended to set clear expectations about how long the TAD will be open for comments and discussion from team members and when that window is considered closed.
 4. When ready for review the Engineering Leadership Team (ELT) should be notified, the TAD uploaded to the shared TAD Google Drive (see below), and the associated JIRA ticket moved to the `Under Review` column
-5. The TAD MUST be reviewed by at least one ELT member with subject area knowledge, and SHOULD be reviewed by two members (see review process below)
-6. If approved, the TAD MUST be sent to the Director of Engineering for final approval.
-7. With final approval the associated JIRA ticket is moved to `Done`. Specific tickets MUST be created to execute the work as described in the TAD.
+5. The TAD MUST be reviewed by engineers on your team [described above](#audience).
+6. With final approval the associated JIRA ticket is moved to `Done`. Specific tickets MUST be created to execute the work as described in the TAD.
 
 ### Sample TAD Timeline
 
@@ -103,7 +101,7 @@ All TADs MUST follow this process to be approved, at which point JIRA tickets ca
 
 ### Review Process
 
-Step 5 above includes the following steps to be followed by the Tech Lead/Architect who is reviewing the document:
+Step 5 above includes the following steps to be followed by the engineers who are reviewing the document:
 
 1. After reviewing the document they should add a summary to the end of the TAD including: Potential Risk, Cost and an evaluation of the completion of the TAD
 2. If revisions are requested/necessary the document's author should make the necessary changes and record the process in a changelog to be added to the end of the document
