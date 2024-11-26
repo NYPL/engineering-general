@@ -55,4 +55,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY/OPTIONAL, in these doc
 
 ### How To
 
-- [Use AWS](how-to/use-aws.md)
+- [Use AWS](how-to/aws-use)
+  - [Shell into an ECS Container](how-to/aws-ecs-ssh.md)
+- [Use Travis](how-to/travis-use.md)
+  - [Rotate Travis/AWS keys](how-to/travis-use.md#how-to-rotate-travisaws-keys)
