@@ -10,8 +10,8 @@ Depending on strategic initiatives, scope, security, budget, number of teams inv
 The Directors of Engineering may also request to review and approve the TAD.
 
 Examples:
-- If the scope of work impacts strategy or budget, ask the Directors of Engineering to review.
-- If there's a significant change to infrastructure, ask Dev Ops to review.
+* If the scope of work impacts strategy or budget, ask the Directors of Engineering to review.
+* If there's a significant change to infrastructure, ask Dev Ops to review.
 
 Generally, the sections of the TAD that you'll be writing are for:
 * Your technical peers, i.e. other engineers who will be reviewing PRs and implementing the feature alongside you
