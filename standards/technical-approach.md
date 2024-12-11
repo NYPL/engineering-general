@@ -5,7 +5,9 @@ Technical Approach Documents (TADs) allow engineers to explore possible solution
 ## Audience
 
 TADs are ultimately technical documents for a technical audience, not for Product or non-technical stakeholders. They do require approval from a Technical Team Lead or Technical Architect and one other engineer on your team [described below](#review-process).
-If the TAD involves multiple teams, please adjust the required approvals accordingly.  If the author is a Technical Team Lead or Technical Architect, seek approval from the next most senior engineer and one other engineer on your team.
+If the author is a Technical Team Lead or Technical Architect, seek approval from the next most senior engineer and one other engineer on your team.
+Depending on strategic initiatives, scope, security, budget, number of teams involved, etc. add additional reviewers accordingly. 
+The Directors of Engineering may also request to review and approve the TAD.
 
 Generally, the sections of the TAD that you'll be writing are for:
 * Your technical peers, i.e. other engineers who will be reviewing PRs and implementing the feature alongside you
