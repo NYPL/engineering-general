@@ -85,7 +85,7 @@ flowchart TD
     C --> D[Automated Tests Run]
     D -->|Tests Pass| E[Merge to Main]
     E --> F[Auto Deploy to Production]
-    F --> G[Feature Flag OFF<br>(Feature Hidden)]
+    F --> G[Feature Flag OFF<br>aka Feature Hidden]
     G --> H[Enable Feature Flag<br>for Release]
     H --> I[Feature Visible to Users]
     D -.->|Tests Fail| J[Fix Required]
