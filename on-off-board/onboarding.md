@@ -102,7 +102,7 @@ Complete access setup for relevant AWS accounts (MFA required):
 - **Slack**: [nypl.slack.com](https://nypl.slack.com/)
 - **JIRA**: [newyorkpubliclibrary.atlassian.net](https://newyorkpubliclibrary.atlassian.net/)
 - **VPN Request**: [ServiceNow Link](https://nyplprod.service-now.com/nyplsp?id=sc_cat_item&sys_id=3ae790c0878db9006a42c74d19434d00)
-- **Password Sharing**: [PrivateBin](https://privatebin.nypl.org/)
+- **Secure Info Sharing**: [PrivateBin](https://privatebin.nypl.org/) (for sharing sensitive information securely, e.g. credentials, tokens, or config snippets)
 
 ### Key Confluence Spaces
 
