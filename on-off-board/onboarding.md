@@ -45,7 +45,7 @@ We hope that you'll have a good first day at NYPL Digital! Use this checklist to
 ### Account Setup Completion
 
 - [ ] Access [JIRA](https://newyorkpubliclibrary.atlassian.net/) for ticket management
-- [ ] Request AWS account access via [DevOps FAQ](https://newyorkpubliclibrary.atlassian.net/wiki/spaces/DOPS/pages/138346498/Frequently+Asked+Questions+FAQs#How-do-I-request-AWS-access%3F--How-do-I-rescind-AWS-access%3F)
+- [ ] Request AWS account access via [DevOps FAQ](https://newyorkpubliclibrary.atlassian.net/wiki/spaces/DOPS/pages/138346498/Frequently+Asked+Questions+FAQs#How-do-I-request-AWS-access%3F--How-do-I-rescind-AWS-access%3F) - Your manager should be able to tell you which accounts you need access to. Devops maintains a list [here](https://newyorkpubliclibrary.atlassian.net/wiki/spaces/DOPS/pages/651624449/How+do+I+set+up+AWS+IAM+Identity+Center#What-are-the-AWS-accounts-under-NYPL%3F).
 - [ ] Join GitHub organizations:
   - [ ] [NYPL Main GitHub Organization](https://github.com/NYPL)
   - [ ] Team-specific organizations as needed ([NYPL-discovery](https://github.com/NYPL-discovery), [NYPL-Simplified](https://github.com/NYPL-Simplified))
@@ -70,13 +70,10 @@ We hope that you'll have a good first day at NYPL Digital! Use this checklist to
 
 ### AWS Account Access
 
-Complete access setup for relevant AWS accounts (MFA required):
+NYPL uses AWS IAM Identity Center for account access. You can access all of your AWS accounts via [awsconsole.nypl.org](https://awsconsole.nypl.org) (MFA required).
 
-- [ ] [nypl](https://nypl.signin.aws.amazon.com/console) - Main production account
-- [ ] [nypl-dev](https://nypl-dev.signin.aws.amazon.com/console) - Main QA/dev account
-- [ ] [nypl-digital-dev](https://nypl-digital-dev.signin.aws.amazon.com/console) - Main account for LSP and DRB
-- [ ] [nypl-sandbox](https://nypl-sandbox.signin.aws.amazon.com/console) - Dev/testing environment
-- [ ] Other team-specific accounts as needed
+- [ ] Log in to [awsconsole.nypl.org](https://awsconsole.nypl.org) to access your assigned AWS accounts
+- [ ] Follow the [AWS IAM Identity Center Setup Guide/FAQ](https://newyorkpubliclibrary.atlassian.net/wiki/x/AQDXJg) for instructions on setup and troubleshooting
 
 ### Additional Tool Access (As Needed)
 
