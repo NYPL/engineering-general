@@ -1,29 +1,25 @@
 # **TL;DR**
 
-- This document outlines a new approach to manual testing, shifting focus towards automation.
-- Manual testing by the QA team should be avoided for generic checks or minor fixes covered by automated tests.
-- Manual testing is still needed for new features, complex integrations, visual QA, and accessibility testing.
-- The new QA process prioritizes automation, with developers responsible for self-verification and writing automated tests.
-- Clear and detailed acceptance criteria are crucial for determining manual QA needs.
-- Effective manual testing methods are described here, including using a dedicated template and exploratory testing.
-- We suggest scheduling exploratory testing during feature development, before major releases, and after automated test runs.
-- Hosting team-wide bug-bash sessions with clear goals, preparation, and follow-up is recommended.
-- User Acceptance Testing (UAT) with external stakeholders is important for ensuring the product meets business needs. Links to sample docs are included here.
+- Prioritize automated testing; manual QA is for new features, complex integrations, visual, and accessibility checks.
+- Avoid manual QA for generic requests or minor fixes covered by automation.
+- Developers self-verify and write tests; QA supplements and fills gaps.
+- If manual QA is needed, clear acceptance criteria is essential.
+- Manual testing methods: QA/VQA/Accessibility template doc, exploratory testing, bug-bash, UAT.
 
 ---
 
-# Manual Testing: A New Approach
+# Manual Testing: Strategic Use in an Automation-First Workflow
 
 This document outlines a new approach to manual testing, emphasizing a shift toward automation and a more strategic use of manual testing resources.
 
-## When to Avoid Manual Testing by the QA team
+## When to Avoid Manual Testing by the QA Team
 
 Manual testing should not be used as a routine "check the boxes" task. Avoid manual testing when:
 
 - The request is generic, like "Please check and make sure everything is ok".
 - The work is a minor fix or change that can be sufficiently covered by automated tests.
 
-## When Manual Testing is Still Needed
+## When Manual Testing Is Still Needed
 
 Manual testing should be reserved for scenarios that genuinely benefit from a second set of eyes. This includes:
 
@@ -130,21 +126,21 @@ Exploratory testing is basically where a tester learns about the software, figur
 
 Bug-bash sessions can be initiated by anyone on the team. QA Engineers, in particular, should be able to organize and run these sessions with their teammates, especially when the situation calls for it. Hosting a successful team-wide bug-bash session requires careful planning, a well-run execution, and a solid follow-up. A bug bash is essentially a period of focused, informal testing where the entire team (QA personnel, developers, designers, product managers, etc.) dedicates time to find as many bugs as possible in a short time frame. Think of it as a "bug-hunting party".
 
-#### 1\. Before the Bug Bash (Planning)
+#### 1. Before the Bug Bash (Planning)
 
 - **Define a Clear Goal:** The most important step. Decide what you're testing. Is it a brand-new feature? An entire user flow? Make the goal and scope very specific (e.g., "Find all bugs related to the new user profile page on iOS and Android").
 - **Set the Time:** A bug bash should be a focused effort, not an all-day event. A one hour session works well to maintain energy and focus. Book this time on everyone's calendar.
 - **Prepare the Environment:** Ensure the build is stable and deployed to a staging or testing environment. Provide clear instructions on how to access the build, log in, and perform any necessary setup.
 - **Create a Centralized Bug-Reporting System:** Use a dedicated channel or a spreadsheet to track bugs in real time. Tools like Jira, or a shared Google Sheet work well. Make the reporting process as simple as possible.
 
-#### 2\. During the Bug Bash (Execution)
+#### 2. During the Bug Bash (Execution)
 
 - **Kick-off Meeting:** Start the session with a brief meeting. Reiterate the goal, the scope, and how to report bugs. This gets everyone on the same page.
 - **Test and Report:** Encourage everyone to test freely and creatively. Remind them not to worry about writing perfect bug reports. Focus on getting the core information down: what the bug is, where they found it, and how to reproduce it. Screenshots and screen recordings are highly encouraged.
 - **Foster Communication:** Encourage the team to talk to each other. When someone finds a bug, they should announce it. This prevents multiple people from finding and reporting the same issue. Use a dedicated Slack channel or a Zoom chat for real-time discussion.
 - **Make it fun\!** Consider a small prize for the person who finds the most critical bug.
 
-#### 3\. After the Bug Bash (Follow-up)
+#### 3. After the Bug Bash (Follow-Up)
 
 - **Review and Triage:** Immediately after the session, get the product manager to review the submitted bugs. Help them triage them into severity categories (e.g., high, medium, low) and assign them to the appropriate people.
 - **Celebrate the Wins:** Acknowledge the team's effort and celebrate the results. Share a summary of how many bugs were found, the most critical one, and the overall impact of the session.
