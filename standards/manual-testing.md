@@ -38,7 +38,7 @@ _\*Note: Visual QA and Accessibility Testing are currently owned by the accessib
 
 ### Focus on Automation
 
-The QA team, under new leadership, is prioritizing automation. The goal is to reduce reliance on manual testing and instead focus on comprehensive automated tests. This shift requires the entire development team to critically evaluate the necessity of manual testing for each feature or bug fix.
+The QA team is prioritizing automation over manual testing. The goal is to reduce reliance on manual testing and instead focus on comprehensive automated tests. This shift requires the entire development team to critically evaluate the necessity of manual testing for each feature or bug fix.
 
 ### Developer Responsibility
 
@@ -50,21 +50,15 @@ Regardless of whether a change requires manual QA or is a minor fix, engineers a
 
 Developers should ensure their work is thoroughly covered by unit tests and, when appropriate, Playwright or API integration tests. For minor fixes or changes, developer discretion should be sufficient without requiring a QA team member's approval.
 
+For guidance on our overall approach to automated testing, please refer to our [Automated Testing Strategy](https://docs.google.com/document/d/1ZcIcFLrYx7UJptqEA737b_8gNXljVG23RVv9_q9zp18/edit?usp=sharing).
+
 The responsibility for writing tests isn't strictly divided between Engineers (unit tests) and QA Engineers (Playwright tests). The engineer developing a feature or fixing a bug should write the most appropriate test to ensure their code functions correctly and provides confidence in their work. QA Engineers will then supplement these efforts by identifying and addressing testing gaps, developing additional automated tests based on product requirements, ensuring automated tests are being written as part of the development process, and conducting regular manual testing, as detailed further in this document.
-
-_Note: We don’t yet have a formally recommended process for the split between what should be covered by a unit test versus what should be covered by another kind of test. We are working this out as we go, and we hope to collaborate with engineering teams to strike the right balance over the next few months._
-
-_What we do know:_
-
-- _Tests that run on PRs should run relatively quickly (ideally \~15 minutes or less)_
-- _A more robust suite of tests should run automatically on QA/Staging environments after every deployment_
-- _Devs & QA Engineers should all know how to debug and fix issues related to any and all automated test suites. One QA engineer can’t be the bottleneck to fix a broken test in a CI/CD pipeline._
 
 ### The "Ready for QA" Column Revisited
 
-Historically, the "Ready for QA" column on Jira boards signified that a QA person needed to review and approve a ticket before it could progress. While the Research Catalog team has developed an intuitive understanding of which tickets truly require QA review, this document aims to formalize that understanding and align it with the new emphasis on automation.
+Historically, the "Ready for QA" column on Jira boards signified that a QA person needed to review and approve a ticket before it could progress. For many teams, this column became a bottleneck, with tickets lingering and waiting for manual testing. Some teams have since removed this column entirely and instead assign manual testing tickets directly to the QA Engineer. Others still use the column.
 
-_Note: Chris and Sam will work with PjMs to formalize a recommendation here._
+Teams should use whatever workflow best supports their needs, but it's important to monitor how many tickets are regularly placed in this column for manual testing and whether it is causing delays in deploying to production. With a greater focus on automation, the number of tickets requiring manual QA should trend downward over time. If the "Ready for QA" column is becoming a bottleneck, consider revisiting your team's process or reducing reliance on manual testing for routine changes.
 
 ### Importance of Acceptance Criteria
 
@@ -74,9 +68,9 @@ Clear and detailed acceptance criteria are always necessary for any work going t
 
 ### Use the Manual Testing Document
 
-This document originated as a repository for testing notes and Jira ticket tracking on large projects where Jira alone was insufficient. It allowed for listing tickets in a table with testing comments, and a visual representation of bug status (red for bugs, green for fixes). The Project Management team expanded this approach by adding sections for Visual QA, Accessibility, and incorporating acceptance criteria, thus opening the process to more team members. \[This document will build upon that foundation, adapting it to the current focus on automation.\]?
+Use the Manual Testing Document whenever manual testing is required—such as for new features, components, or complex integrations. This collaborative document brings together Visual QA, Accessibility QA, and functional testing in one place. The template for this document is now an official template in our Google Workspace (see the "VQA/QA/Accessibility Manual Testing Template" in the NYPL tab of the Template Gallery).
 
-This document is now an official template in the NYPL Google Drive workspace. To use a fresh template, go to [docs.google.com](http://docs.google.com), click on “Template gallery”, select the NYPL tab, and scroll to the NYPL section (you may need to expand the view to see the template). The template is named “VQA/QA/Accessibility Manual Testing Template”.
+As manual testing is completed in this document, QA Engineers should create and prioritize automated testing tickets for any gaps identified (if not already written). This ensures that manual QA directly leads to improved automated test coverage.
 
 Examples of how this document has been used for past projects:
 
@@ -103,7 +97,7 @@ Exploratory testing is basically where a tester learns about the software, figur
 
 ### Hosting team-wide bug-bash sessions
 
-Hosting a successful team-wide bug-bash session requires careful planning, a well-run execution, and a solid follow-up. A bug bash is essentially a period of focused, informal testing where the entire team (QA personnel, developers, designers, product managers, etc.) dedicates time to find as many bugs as possible in a short time frame. Think of it as a "bug-hunting party".
+Bug-bash sessions can be initiated by anyone on the team. QA Engineers, in particular, should be able to organize and run these sessions with their teammates, especially when the situation calls for it. Hosting a successful team-wide bug-bash session requires careful planning, a well-run execution, and a solid follow-up. A bug bash is essentially a period of focused, informal testing where the entire team (QA personnel, developers, designers, product managers, etc.) dedicates time to find as many bugs as possible in a short time frame. Think of it as a "bug-hunting party".
 
 #### 1\. Before the Bug Bash (Planning)
 
@@ -127,7 +121,9 @@ Hosting a successful team-wide bug-bash session requires careful planning, a wel
 
 ### Asking stakeholders outside of the team to perform user acceptance testing (UAT)
 
-Asking stakeholders outside the immediate development team to perform User Acceptance Testing (UAT) is a crucial step for several reasons. It ensures the product meets the business needs from the perspective of real-world users and decision-makers, providing a vital, unbiased check before a release.
+User Acceptance Testing (UAT) with stakeholders outside the immediate development team is generally a process owned and led by Product Managers. Since Product Managers have the relationships with outside stakeholders, they should coordinate and drive this process. QA Engineers are available to assist in whatever way is most useful—such as preparing test plans, supporting test sessions, or helping with documentation—but the Product Manager should take the lead.
+
+UAT is a crucial step for several reasons. It ensures the product meets the business needs from the perspective of real-world users and decision-makers, providing a vital, unbiased check before a release.
 
 The ILS team takes this approach with each Sierra upgrade. They have a long-standing practice of using a multi-tab Google Sheet to collaborate with various library departments. This sheet is used to engage the actual users of Sierra admin tools, who are asked to perform steps simulating their daily tasks. Testers sign-off on each action from the spreadsheet. These testing sessions are typically conducted during off-hours, often on weekends.
 
@@ -138,13 +134,13 @@ The ILS team takes this approach with each Sierra upgrade. They have a long-stan
 
 ### Best Practices for UAT
 
-Scheduling Best Practices
+#### Scheduling Best Practices
 
 - Make sure high-priority bugs are resolved, all core functionality passes integration testing, and the test environment is stable.
 - Don't schedule all users at once. Group testers based on how they will use the application (this may not be applicable for Library apps)
 - Keep Sessions Short and Focused
 
-Test Session Best Practices
+#### Test Session Best Practices
 
 - Run tests on a server that is as close to production as possible (or production, if you’re not testing new features, and just want to know how users are using your application.)
 
