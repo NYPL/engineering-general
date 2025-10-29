@@ -34,6 +34,37 @@ Manual testing should be reserved for scenarios that genuinely benefit from a se
 
 _\*Note: Visual QA and Accessibility Testing are currently owned by the accessibility consultant and the design team, and the process for these types of testing remains unchanged at this time._
 
+```mermaid
+graph TD
+    Start([New Work Item or Change]) --> HasTests{Does this have<br/>automated test<br/>coverage -- unit, integration, or e2e?}
+
+    HasTests -->|No| WriteTests[Write automated tests<br/>unit, integration, or e2e]
+    WriteTests --> TestsAdequate{Are automated<br/>tests adequate<br/>for this change?}
+
+    HasTests -->|Yes| TestsAdequate
+
+    TestsAdequate -->|Yes - Minor fix<br/>or change| DevReview[Developer self-verifies<br/>in QA environment]
+    DevReview --> Ship([Ship it!])
+
+    TestsAdequate -->|No - Need human<br/>verification| CheckCriteria{Does work meet<br/>manual testing criteria?<br/>• New feature/component<br/>• Complex integration<br/>• Visual QA<br/>• Accessibility testing}
+
+    CheckCriteria -->|Yes to any| ManualTest[Conduct Manual Testing<br/>See decision tree below to select a method]
+    CheckCriteria -->|No to all| IsGeneric{Is request generic?<br/>e.g., 'check everything'}
+
+    IsGeneric -->|Yes| NoManualTest[No manual testing needed<br/>Rely on automation]
+    IsGeneric -->|No| ManualTest
+
+    ManualTest --> Document[Document findings<br/>and create tickets]
+
+    Document --> IssuesFound{Issues found<br/>during testing?}
+    IssuesFound -->|Yes| Triage[Triage and prioritize bugs<br/>Assign to team members]
+    Triage --> FixIssues[Fix critical and<br/>high-priority issues]
+    FixIssues --> Start
+
+    IssuesFound -->|No| Ship
+    NoManualTest --> Ship
+```
+
 ## New QA Process: Key Changes
 
 ### Focus on Automation
@@ -145,6 +176,30 @@ The ILS team takes this approach with each Sierra upgrade. They have a long-stan
 - Run tests on a server that is as close to production as possible (or production, if you’re not testing new features, and just want to know how users are using your application.)
 
 ## Choosing the Right Manual Testing Approach
+
+```mermaid
+graph TD
+    Start([Manual Testing Needed]) --> IsLargeComplex{Large, complex project<br/>with multiple components<br/>or stakeholders?}
+
+    IsLargeComplex -->|Yes| UseDoc[📋 Manual Testing Document<br/>• Systematic tracking<br/>• Multiple team members<br/>• Visual bug status<br/>• Complex coordination]
+
+    IsLargeComplex -->|No| NeedsUAT{Need validation from<br/>real users/stakeholders<br/>outside dev team?}
+
+    NeedsUAT -->|Yes| Method3[👥 User Acceptance Testing<br/>• Real-world users<br/>• Critical business processes<br/>• Domain expertise required<br/>• Stakeholder sign-off]
+
+    NeedsUAT -->|No| IsNewFeature{New feature ready<br/>for intensive<br/>team scrutiny?}
+
+    IsNewFeature -->|Yes| Method2[🐛 Bug Bash Session<br/>• Whole team participates<br/>• 1 hour focused session<br/>• Specific scope<br/>• Find many bugs quickly]
+
+    IsNewFeature -->|No| Method1[🔍 Exploratory Testing<br/>• 30 min focused sessions<br/>• Creative scenarios<br/>• Edge cases<br/>• Human judgment]
+
+    UseDoc --> CanCombine[💡 Tip: Can combine<br/>methods as needed]
+    Method1 --> CanCombine
+    Method2 --> CanCombine
+    Method3 --> CanCombine
+
+    CanCombine --> Examples[Examples:<br/>• Manual Doc + Exploratory during dev<br/>• Manual Doc + Bug Bash before release<br/>• Manual Doc + UAT with stakeholders<br/>• Exploratory + UAT]
+```
 
 Different situations call for different manual testing strategies. Use this guide to determine which approach fits your needs:
 
