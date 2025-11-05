@@ -1,4 +1,8 @@
-# **TL;DR**
+# Manual Testing: Strategic Use in an Automation-First Workflow
+
+This document outlines a new approach to manual testing, emphasizing a shift toward automation and a more strategic use of manual testing resources.
+
+## **TL;DR**
 
 - Prioritize automated testing; manual QA is for new features, complex integrations, visual, and accessibility checks.
 - Avoid manual QA for generic requests or minor fixes covered by automation.
@@ -7,10 +11,6 @@
 - Manual testing methods: QA/VQA/Accessibility template doc, exploratory testing, bug-bash, UAT.
 
 ---
-
-# Manual Testing: Strategic Use in an Automation-First Workflow
-
-This document outlines a new approach to manual testing, emphasizing a shift toward automation and a more strategic use of manual testing resources.
 
 ## When to Avoid Manual Testing by the QA Team
 
