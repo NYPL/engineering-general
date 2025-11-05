@@ -48,7 +48,6 @@ Example components:
  * https://github.com/NYPL/nypl-dgx-react-header
  * https://github.com/NYPL-discovery/discovery-front-end
  * https://github.com/NYPL/dgx-booklists
- * https://github.com/NYPL/dgx-new-arrivals
  * https://github.com/NYPL-discovery/sierra-retriever
  * https://github.com/NYPL/MyLibraryNYCApp (No version tagging)
  * https://github.com/NYPL/item-checkout-feed-updater
