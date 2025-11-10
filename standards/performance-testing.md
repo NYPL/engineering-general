@@ -84,21 +84,21 @@ The thresholds defined below can be used as a starting point when lacking histor
 
 ### Response Time
 - **Definition:** Time for server to respond to a request.
-- **Sample Thresholds:**
+- **Example Thresholds:**
     - <ins>Baseline</ins>: ≤ 2s for 95% of requests
     - <ins>Peak</ins>: ≤ 3s for 95% of requests
     - <ins>Stress</ins>: Monitor for degradation as system approaches limits
 
 ### Error Rate
 - **Definition:** Percentage of requests resulting in errors.
-- **Thresholds:**
+- **Example Thresholds:**
     - <ins>Baseline:</ins> 0%
     - <ins>Peak:</ins> < 1%
     - <ins>Stress:</ins> Identify max concurrency before error rate is unacceptable (e.g., 5%)
 
 ### Throughput
 - **Definition:** Requests processed per second.
-- **Thresholds:**
+- **Example Thresholds:**
     - <ins>Baseline:</ins> ≥ 10 RPS
     - <ins>Peak:</ins> ≥ 250 RPS
     - <ins>Stress:</ins> Monitor decline as system reaches limits
@@ -114,13 +114,13 @@ Begin by explicitly defining the goals of the load testing. While stakeholders m
 > [!NOTE]
 > For untested systems, it is strongly advised to set the following goals in addition to stakeholder requests:
 >
-> 🎯 <ins>Benchmarking</ins>: Establish baseline performance; a set of metrics to target or improve upon.
+> 🎯&nbsp;&nbsp;**Benchmarking**: Establish baseline performance; a set of metrics to target or improve upon.
 >
-> ⚙️ <ins>Process and infrastructure</ins>: Create a framework for sustainable performance testing of the system.
+> ⚙️&nbsp;&nbsp;**Process and infrastructure**: Create a framework for sustainable performance testing of the system.
 >
-> 🤝 <ins>Knowledge sharing</ins>: Provide guidance that empowers team members to run future tests with confidence.
+> 🤝&nbsp;&nbsp;**Knowledge sharing**: Provide guidance that empowers team members to run future tests with confidence.
 >
-> 📝 <ins>Documentation</ins>: Document performance data, process, and other key information.
+> 📝&nbsp;&nbsp;**Documentation**: Document performance data, process, and other key information.
 #### **Understand the System Under Test**
 ##### **System Architecture**
 Communicate with developers familiar with the system to gain insights into its design. This understanding is essential for accurately modeling user behavior and writing test scripts properly.
@@ -187,7 +187,7 @@ For examples, see [DevOps requests for performance testing](https://newyorkpubli
 #### **Test Scenario Design**
 Design test scenarios based on the identified core user flows and pages.
 
-Ensure they're ranked in order of importance to ensure the most common actions are carried out more frequently to accurately reflect live traffic patterns. This ranking will inform proper weighing of test scenarios when scripting the test.
+Ensure they're ranked in order of importance so the most common actions are carried out more frequently to accurately reflect live traffic patterns. This ranking will inform proper weighing of test scenarios when scripting the test.
 
 #### **Define Load Profiles**
 Establish different load profiles to evaluate the system's response under varying traffic levels. Ramp-up periods (known as _spawn rates_ in Locust) and test run durations should also be included to ensure that test runs are carried out using the same parameters each time.
@@ -274,19 +274,20 @@ After test completion, interpret charts and graphs within the LoadForge reports.
 
 Compare results to baseline metrics to determine how the system responds to higher traffic.
 
-> [!IMPORTANT]
-> The line chart in a report that plots KPI measurements throughout a test run should be the starting point for determining how well the system performed. Some key signs to look for when analyzing the chart from the test's start to its finish are given below.
+> [!NOTE]
+> The line chart in a report that plots KPI measurements throughout a test is the ideal starting point for determining how well the system performed. Some key signs to look for when analyzing the chart from the test's start to its finish are given below.
 >
-> ✅ System performed well:
+> ✅&nbsp;&nbsp;<ins>System performed well</ins>:
 >    - Throughput and users maintain a 1-1 relationship.
 >    - Median response time begins to flatten and converges to a lower value.
 >
-> 🔻 System performance degraded:
->    - Throughput flattens out or declines during or shortly after the ramp-up period.
+> 🔻&nbsp;&nbsp;<ins>System performance degraded</ins>:
+>    - Throughput flattens out or drops during ramp-up.
 >    - Median response time and/or error rate continually increase and tail off to a higher value.
->    - Several large spikes occur for any KPI. If only this is observed without the above two, then its a sign of system instability, but with an ability for it to recover quickly.
->
-> ⚠️ If local testing of the test script was not carried out, error spikes could be due to issues with the script itself. LoadForge produces logs that may provide debugging information for script issues.
+>    - Several large spikes occur for any KPI. If only this is observed without the above two, then it's a sign of system instability, but shows an ability for it to recover quickly.
+
+> [!WARNING]
+> If local testing of the test script was not carried out, error spikes could be due to issues with the script itself. LoadForge produces logs that may provide debugging information for script issues.
 
 #### **Utilize Observability Tools**
 Use observability tools to correlate real-time data with metrics collected from LoadForge test results. If errors or performance degradation are detected, use New Relic APM (if set up); analyze logs to seek more information on errors and slow transaction traces to identify bottlenecks.
