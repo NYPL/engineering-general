@@ -1,6 +1,6 @@
 # Library Values
 
-As workers at a public library, we are guided by the ALA's [Core Values of Librarianship](http://www.ala.org/advocacy/intfreedom/corevalues):
+As workers at a public library, we are guided by the ALA's [Core Values of Librarianship](https://www.ala.org/advocacy/advocacy/intfreedom/corevalues):
 
 * Access
 * Confidentiality/Privacy
