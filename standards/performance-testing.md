@@ -31,44 +31,71 @@ Ensure web services perform reliably and remain responsive under expected and pe
 ## Tools
 | Tool                | Purpose & Usage |
 |---------------------|-----------------------------------------------------------------------------------------|
-| **Locust**       | Open source load test framework for simulating user behavior with Python code. |
-| **LoadForge**       | Cloud-based load test service for running Locust tests with realistic and reliable simulation of live traffic. Offers detailed reports, test scheduling, CI/CD capabilities, live performance monitoring, and other useful features.
-| **New Relic / AWS** | Monitor application performance and server-side metrics. Track resource utilization during tests, identify bottlenecks, and correlate real-time data with test results. |
-| **PageSpeed Insights** | Measure Web Vitals metrics. Run on key pages, track over time, and obtain suggestions for improvement. |
-| **Google Analytics**| Leverage user engagement data to identify core flows, high-traffic pages, and user concurrency thresholds. |
+| **[Locust](https://locust.io/)**       | Open source load test framework for simulating user behavior with Python code. |
+| **[LoadForge](https://loadforge.com/)**       | Cloud-based load test service for running Locust tests with realistic and reliable simulation of live traffic. Offers detailed reports, test scheduling, CI/CD capabilities, live performance monitoring, and other useful features.
+| **[New Relic](https://newrelic.com/)** / **[AWS](https://aws.amazon.com/)** | Monitor application performance and server-side metrics. Track resource utilization during tests, identify bottlenecks, and correlate real-time data with test results. |
+| **[PageSpeed Insights](https://pagespeed.web.dev/)** | Measure Web Vitals metrics. Run on key pages, track over time, and obtain suggestions for improvement. |
+| **[Google Analytics](https://marketingplatform.google.com/about/analytics/)**| Leverage user engagement data to identify core flows, high-traffic pages, and user concurrency thresholds. |
 
 ---
 
 ## Key Performance Indicators (KPIs)
 
-
 ### Load Testing
 Locust measures typical performance metrics (see [LoadForge documentation](https://docs.loadforge.com/runs/run-results)).
-- Response time
-    - Median
-    - Average
-    - P95 (and other percentiles)
-    - Max
-    - Min
-- Throughput
-- Error rate
-- Concurrent users
+
+⏱️&nbsp;&nbsp;**Response time**: Captured using multiple stats
+  - Median
+  - Average
+  - P95 and other percentiles
+  - Max
+  - Min
+
+🚀&nbsp;&nbsp;**Throughput**: Rate of incoming requests (measured in RPS)
+
+🚫&nbsp;&nbsp;**Error rate**: Percentage of unsuccessful requests
+
+👥&nbsp;&nbsp;**Concurrent users**: Number of simultaneous users engaging with the system
 
 > [!TIP]
 > Median response time is the most reliable single metric for comparing performance trends across multiple test runs, as it is less affected by outliers than averages or maximum values.
 
 ### Web Vitals
-Higher-level metrics intended to measure UX of front-end applications (defined at [web.dev](https://web.dev/articles/vitals)).
-- First Contentful Paint (FCP)
-- Largest Contentful Paint (LCP)
-- Total Blocking Time (TBT)
-- Cumulative Layout Shift (CLS)
-- Speed Index (SI)
-- Time to First Byte (TTFB)
+High-level Metrics developed by Google that quantify front-end application UX (defined at [web.dev](https://web.dev/articles/vitals)).
 
-Web Vitals metrics for a particular web page can be assessed by viewing [CrUX report](https://developer.chrome.com/docs/crux) data using [pagespeed.web.dev](https://pagespeed.web.dev/), aggregated over the last 28 days.
+**Core Web Vitals**: The primary metrics for evaluating page experience, focusing specifically on how users perceive the speed and stability of a page.
+  - Largest Contentful Paint (LCP)
+  - Interaction to Next Paint (INP)
+  - Cumulative Layout Shift (CLS)
 
-For obtaining specific measurements rather than aggregated field data, tests can be conducted using the [PageSpeed API](https://developers.google.com/speed/docs/insights/v5/get-started) to measure a page's Web Vitals at any given time. Measurements in that fashion are referred to as lab data, which is especially useful when evaluating performance in test environments prior to production releases (as live users don't interact with our test environments, so real-time data from the CrUX report is either non-existent or unreliable for them).
+**Other Web Vitals**: While the three metrics above are the primary indicators of a web app’s UX, they are backed by a broader set of supporting metrics that help diagnose why one or more Core Web Vitals may be underperforming.
+  - First Contentful Paint (FCP)
+  - Time to First Byte (TTFB)
+  - Total Blocking Time (TBT)
+  - Speed Index (SI)
+  - Time to Interactive (TTI)
+
+Note this latter set of metrics is ordered by role in the page load lifecycle.
+
+#### Relationships
+Because Web Vitals share many of the same underlying signals and scoring inputs with each other, changes to one metric often affect others. Improvements or regressions in a single metric can cascade across others.
+
+Some relationships between the core set and the underlying ones include:
+- A poor FCP score almost always leads to poor LCP.
+- If TTFB is slow, FCP will be delayed by the same amount, thereby impacting LCP.
+- TBT is the "lab"  equivalent of INP (see [lab data vs field data](https://web.dev/articles/lab-and-field-data-differences#lab_data_versus_field_data)). Improving TBT in a controlled lab environment is the most effective way to improve INP in the field.
+- SI provides a holistic view of the "perceived" loading speed, whereas LCP only focuses on a single element.
+- TTI has been deprioritized in favor of TBT and INP but it still remains a useful metric for understanding when a page is fully "settled" and usable.
+
+#### Measuring Web Vitals
+ A number of services offer access to Core Web Vitals for measurements of real-time (i.e. field) data:
+- **PageSpeed Insights**: Provides [CrUX report](https://developer.chrome.com/docs/crux) data, aggregated over the last 28 days
+- **LoadForge**: Performance monitoring features that include Core Web Vitals scores
+- **New Relic Browser**: Collects data from actual users over the last 7 day period
+
+PageSpeed Insights is the preferred tool for measuring Web Vitals. It is free to use, has an [API](https://developers.google.com/speed/docs/insights/v5/get-started) that can be used for automating lab measurements, and provides actionable suggestions for improving low scores. Tests can be run on demand against any URL, which is especially valuable in pre-production environments since they have little or no real user traffic (and thus limited field data), making lab measurements from PageSpeed Insights the primary way to evaluate and tune performance before release.
+
+📜&nbsp;&nbsp;The script [runpagespeed.py](https://drive.google.com/file/d/152Qi3SOqvTgIgz5niuahPtyX9pADNVa1/view?usp=sharing) leverages the PageSpeed API and was used prior to major releases for Digital Collections.
 
 > [!IMPORTANT]
 > Traditional performance testing metrics and Web Vitals are entirely different sets of data. Metrics like response time, error rate and throughput can be measured for any web service with load testing while Web Vitals are for front-end applications only and not intended for evaluating performance at varying levels of traffic.
@@ -208,9 +235,7 @@ Load profiles to test should include the following parameters defined in the tab
 > Calculation of spawn rates for achieving halfway ramp-up is determined by dividing the number of users by half the duration (in seconds).
 
 #### **Test Script Creation**
-Develop one or more test scripts (known as locustfiles) as needed, defining weighted tasks that each carry out the set of web requests associated with the actions for a given test scenario. Set appropriate wait times to mimic user pauses, handle necessary request headers, and manage request payloads if applicable (e.g. for POST requests).
-
-Go to [locust.io](https://www.locust.io) for official documentation.
+Develop one or more test scripts (known as locustfiles) as needed, defining weighted tasks that each carry out the set of web requests associated with the actions for a given test scenario. Set appropriate wait times to mimic user pauses, handle necessary request headers, and manage request payloads if applicable (e.g. for POST requests). See [Locust documentation](https://docs.locust.io/en/stable/) for syntax and other key information.
 
 > [!TIP]
 > LoadForge has a [browser recorder](https://docs.loadforge.com/test-scripts/record-your-browser) that may be used to capture the exact set of web requests involved in carrying out a set of actions.
@@ -234,7 +259,7 @@ The domain [nypl.org](https://www.nypl.org) is already validated, permitting Loa
 > For an example DevOps request in this case, see [DOPS-781](https://newyorkpubliclibrary.atlassian.net/browse/DOPS-781).
 
 #### **Test Definition**
-The recommended way to create a test in LoadForge is by utilizing the Full Test Editor to import a locustile and set the desired test parameters such as number of users, spawn rate, and location where traffic should originate from (New York is the most sensible option).
+The recommended way to create a test in LoadForge is by utilizing the Full Test Editor to import a locustfile and set the desired test parameters such as number of users, spawn rate, and location where traffic should originate from (New York is the most sensible option).
 
 It is recommended to create one test per each load profile to avoid having to constantly edit a test in order to run against different user thresholds (e.g. baseline vs peak).
 
@@ -249,9 +274,9 @@ Optionally set scoring targets for KPIs to automatically determine the success o
 > On a short timeline, it is better to go with a simple test containing one task that just requests the root of the site.
 
 #### **Running Tests**
-After confirming environment readiness, test script accuracy, and monitoring tools are active, the test is ready to run with LoadForge. The duration of the test run is set at the time of running a test in LoadForge, not in the test's definition itself.
+After confirming environment readiness, test script accuracy, and monitoring tools are active, the test is ready to run with LoadForge. The duration of the test run is set at the time of running a test in LoadForge, not in the test definition itself.
 
-Respective team members and DevOps should be notified of when a test run is to be taken place and ideally planned in advance. This can be done using the DevOps & Digital Release Calendar in our Google workspace calendar.
+Respective team members and DevOps should be notified of when a test run is to take place and ideally planned in advance. This can be done using the DevOps & Digital Release Calendar in our Google workspace calendar.
 
 #### **Test Monitoring**
 Actively monitor test runs using LoadForge's real-time reporting and any monitoring tools that have been set up to obtain real-time insights on system health. Note trends in KPIs and resource utilization as volume increases.
@@ -284,7 +309,8 @@ Compare results to baseline metrics to determine how the system responds to high
 > 🔻&nbsp;&nbsp;<ins>System performance degraded</ins>:
 >    - Throughput flattens out or drops during ramp-up.
 >    - Median response time and/or error rate continually increase and tail off to a higher value.
->    - Several large spikes occur for any KPI. If only this is observed without the above two, then it's a sign of system instability, but shows an ability for it to recover quickly.
+>    - Several large spikes occur for any KPI.
+>      - If only this is observed without the above two, it indicates system instability but also shows an ability for it to recover quickly.
 
 > [!WARNING]
 > If local testing of the test script was not carried out, error spikes could be due to issues with the script itself. LoadForge produces logs that may provide debugging information for script issues.
@@ -301,7 +327,7 @@ LoadForge retains our reports for up to 2 years, but it's better to own our perf
 ### 6. Reporting
 ---
 #### **Create Report as Deliverable**
-Create a report for documenting test results, recording KPIs and noting any deviations from baseline metrics or with prior results, if they exist. Ideally write in an analysis of the results, highlightng noteworthy findings and takeaways.
+Create a report for documenting test results, recording KPIs and noting any deviations from baseline metrics or with prior results, if they exist. Ideally include an analysis of the results, highlighting noteworthy findings and takeaways.
 
 Select a reporting format that's appropriate to the test scope. Larger projects likely warrant a doc or sheet to track KPIs across multiple test iterations, while for smaller requests it's usually sufficient to report results by commenting on the associated Jira ticket.
 
@@ -320,7 +346,7 @@ Clearly communicate test results to stakeholders by delivering report(s) and ide
 The tester's role is to carry out the tests and present the findings effectively so that stakeholders can properly determine next steps (e.g. if a regression is detected for an upcoming release). Any insights gained from monitoring tools should also be shared, as they can point developers in the right direction for performance improvement.
 
 #### **Version Control**
-Commit test script(s) and other relevant files to the GitHub repository for the system under test, ideally including a README for setup instructions and other information such as links to past test runs
+Commit test scripts and other relevant files to the GitHub repository for the system under test, ideally including a README with setup instructions and other information, such as links to past test runs.
 
 Example: https://github.com/NYPL/de-visualization/tree/main/locust
 
@@ -334,4 +360,4 @@ LoadForge provides a [scheduling feature](https://docs.loadforge.com/tests/sched
 ### CI/CD
 Whether using Locust on its own or the [LoadForge API](https://docs.loadforge.com/api-reference/introduction), test runs can be triggered in CI/CD pipelines to support shift left initiatives.
 
-To detect performance regressions during CI checks, a proven approach is to export key metrics from each test run as artifacts (such as a CSV) stored in the GitHub repository. Using tools like the [Google Sheet action](https://github.com/marketplace/actions/gsheet-action), a sheet can be automatically updated with the latest results, which enables comparison of current metrics against established benchmarks or previous test runs, helping to quickly identify regressions before merging code, track performance trends over time, and link them to specific updates.
+To detect performance regressions during CI checks, a proven approach is to export key metrics from each test run as artifacts (such as a CSV) stored in the GitHub repository. Using tools like the [Google Sheet action](https://github.com/marketplace/actions/gsheet-action), a sheet can be automatically updated with the latest results, which enables comparison of current metrics against established benchmarks or previous test runs, helping to quickly identify regressions before merging code, track performance trends over time, and link performance changes to specific updates.
