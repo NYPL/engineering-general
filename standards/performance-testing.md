@@ -61,7 +61,7 @@ Locust measures typical performance metrics (see [LoadForge documentation](https
 > Median response time is the most reliable single metric for comparing performance trends across multiple test runs, as it is less affected by outliers than averages or maximum values.
 
 ### Web Vitals
-High-level Metrics developed by Google that quantify front-end application UX (defined at [web.dev](https://web.dev/articles/vitals).
+High-level Metrics developed by Google that quantify front-end application UX (defined at [web.dev](https://web.dev/articles/vitals)).
 
 **Core Web Vitals**: The primary metrics for evaluating page experience, focusing specifically on how users perceive the speed and stability of a page.
   - Largest Contentful Paint (LCP)
@@ -93,7 +93,9 @@ Some relationships between the core set and the underlying ones include:
 - **LoadForge**: Performance monitoring features that include Core Web Vitals scores
 - **New Relic Browser**: Collects data from actual users over the last 7 day period
 
-PageSpeed Insights is the preferred tool for measuring Web Vitals. It is free to use, has an [API](https://developers.google.com/speed/docs/insights/v5/get-started) that can be used for automating lab measurements, and provides actionable suggestions for improving low scores. Tests can be run on demand against any URL, which is especially valuable in pre-production environments: since they have little or no real user traffic (and thus limited field data), lab measurements from PageSpeed Insights become the primary way to evaluate and tune performance before release.
+PageSpeed Insights is the preferred tool for measuring Web Vitals. It is free to use, has an [API](https://developers.google.com/speed/docs/insights/v5/get-started) that can be used for automating lab measurements, and provides actionable suggestions for improving low scores. Tests can be run on demand against any URL, which is especially valuable in pre-production environments since they have little or no real user traffic (and thus limited field data), making lab measurements from PageSpeed Insights the primary way to evaluate and tune performance before release.
+
+📜&nbsp;&nbsp;The script [runpagespeed.py](https://drive.google.com/file/d/152Qi3SOqvTgIgz5niuahPtyX9pADNVa1/view?usp=sharing) leverages the PageSpeed API and was used prior to major releases for Digital Collections.
 
 > [!IMPORTANT]
 > Traditional performance testing metrics and Web Vitals are entirely different sets of data. Metrics like response time, error rate and throughput can be measured for any web service with load testing while Web Vitals are for front-end applications only and not intended for evaluating performance at varying levels of traffic.
