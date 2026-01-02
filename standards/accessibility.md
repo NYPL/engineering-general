@@ -1,6 +1,6 @@
 # Accessibility Standards
 
-The Library provides resources that should be accessible to all patrons. When building front-end applications that patrons interact with, we MUST build the applications with the accessibility-first approach. The Library uses [WCAG 2.2, level AA] as their conformance guideline for web accessibility.
+The Library provides resources that should be accessible to all patrons. When building front-end applications that patrons interact with, we MUST build the applications with the accessibility-first approach. The Library uses [WCAG 2.1, level AA] as their conformance guideline for web accessibility.
 
 Developers MUST review Storybook's Accessibility guidelines to set a strong foundation for an accessible application; please note that following these guidelines alone does not guarantee that an application is fully accessible.
 
