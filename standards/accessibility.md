@@ -2,7 +2,7 @@
 
 The Library provides resources that should be accessible to all patrons. When building front-end applications that patrons interact with, we MUST build the applications with the accessibility-first approach. The Library uses [WCAG 2.2, level AA] as their conformance guideline for web accessibility.
 
-Developers are encouraged to review Storybook Accessibility guidelines [Aria Landmarks](https://nypl.github.io/nypl-design-system/reservoir/v4/?path=/docs/accessibility-guide-aria-landmarks--docs)
+Developers MUST review Storybook's Accessibility guidelines [Aria Landmarks](https://nypl.github.io/nypl-design-system/reservoir/v4/?path=/docs/accessibility-guide-aria-landmarks--docs)
 
 ### Implementation
 
