@@ -1,8 +1,8 @@
 # Accessibility Standards
 
-The Library provides resources that should be accessible to all patrons. When building front-end applications that patrons interact with, we MUST build the applications with the accessibility-first approach. The Library uses [WCAG 2.0, level AA](https://nypl.github.io/design-toolkit/resources/glossary.html#wcag-20) as their conformance guideline for web accessibility.
+The Library provides resources that should be accessible to all patrons. When building front-end applications that patrons interact with, we MUST build the applications with the accessibility-first approach. Based on NYPL Digital Product & Design guidelines, NYPL web applications SHOULD utilize [WCAG 2.1, level AA](https://www.w3.org/TR/WCAG21/) as their conformance standard for web accessibility.
 
-This is a general overview and the Design Toolkit's [Developer Checklist](https://nypl.github.io/design-toolkit/resources/development-checklist.html) MUST be followed to set a strong foundation for an accessible application. Checking off items from the Developer Checklist does not guarantee that an application is fully accessible.
+The Reservoir Accessibility Guide can help set a strong foundation for an accessible application. It may be found within the [Reservoir Design System Storybook](https://nypl.github.io/nypl-design-system/reservoir/v4/?path=/docs/welcome--docs), and starts with information on [Aria Landmarks](https://nypl.github.io/nypl-design-system/reservoir/v4/?path=/docs/accessibility-guide-aria-landmarks--docs). Please note that following these guidelines alone does not guarantee that an application is fully accessible and should ideally be done in conjunction with other resources and a review from an accessibility consultant.
 
 ### Implementation
 
@@ -35,4 +35,3 @@ Developers MUST run their applications through web accessibility tools.
 
 Developers SHOULD have repo tools or IDE tools installed to help fix accessibility issues as they code. For example, the [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) is an ESLint plugin that can be added to check for errors when running the app's code through ESLint. Some IDEs and text editors (Atom, for example), can pick up the configuration and tell you the errors as you code.
 
-A more comprehensive list of tools can be found in the Design Toolkit's [Resources](https://nypl.github.io/design-toolkit/resources/resources.html) section.
