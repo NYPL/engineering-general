@@ -61,14 +61,14 @@ Locust measures typical performance metrics (see [LoadForge documentation](https
 > Median response time is the most reliable single metric for comparing performance trends across multiple test runs, as it is less affected by outliers than averages or maximum values.
 
 ### Web Vitals
-High-level Metrics developed by Google that quantify front-end application UX (defined at [web.dev](https://web.dev/articles/vitals)).
+High-level metrics developed by Google that quantify loading, interactivity, and visual rendering of web pages (defined at [web.dev](https://web.dev/articles/vitals)).
 
-**Core Web Vitals**: The primary metrics for evaluating page experience, focusing specifically on how users perceive the speed and stability of a page.
+**Core Web Vitals**: The primary metrics, focusing specifically on how users perceive the speed and stability of a page.
   - Largest Contentful Paint (LCP)
   - Interaction to Next Paint (INP)
   - Cumulative Layout Shift (CLS)
 
-**Other Web Vitals**: While the three metrics above are the primary indicators of a web app’s UX, they are backed by a broader set of supporting metrics that help diagnose why one or more Core Web Vitals may be underperforming.
+**Other Web Vitals**: While the three metrics above are the key performance indicators, they are backed by a broader set of supporting metrics that help diagnose why one or more of them may be underperforming.
   - First Contentful Paint (FCP)
   - Time to First Byte (TTFB)
   - Total Blocking Time (TBT)
