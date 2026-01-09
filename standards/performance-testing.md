@@ -69,8 +69,8 @@ High-level metrics developed by Google that quantify loading, interactivity, and
   - Cumulative Layout Shift (CLS)
 
 **Other Web Vitals**: While the three metrics above are the key performance indicators, they are backed by a broader set of supporting metrics that help diagnose why one or more of them may be underperforming.
-  - First Contentful Paint (FCP)
   - Time to First Byte (TTFB)
+  - First Contentful Paint (FCP)
   - Total Blocking Time (TBT)
   - Speed Index (SI)
   - Time to Interactive (TTI)
