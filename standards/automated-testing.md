@@ -75,7 +75,7 @@ While Unit, Integration, and E2E tests provide a helpful framework, the goal is 
 - **Accessibility Testing:** \[TBD – will need to work this out with Clare; some teams use jest-axe but this isn’t consistent across all of our apps\]
 - **Visual Regression:** \[TBD – some teams use jest snapshot testing but this isn’t consistent across all of our apps\]
 - **Security Testing:** \[TBD – will need to work this out with DevOps\]
-- **Performance/Load Testing:** [QA Performance Test Plan](https://docs.google.com/document/d/1jhk2kd-mseCAa2_C-HApVnO6PdTVwj0jBLAd03n37SY/edit?usp=sharing)
+- **Performance/Load Testing:** [performance-testing.md](https://github.com/NYPL/engineering-general/blob/main/standards/performance-testing.md)
 
 ## Execution, Maintenance, and Reporting
 
