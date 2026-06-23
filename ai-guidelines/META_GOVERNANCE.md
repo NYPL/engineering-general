@@ -14,11 +14,11 @@ In essence, **this charter outlines the maintenance *behind* the working policy*
 
 ## Rotating Stewardship
 
-The AI working policy will be reviewed on a **quarterly basis**. Two engineering pods will be paired up to review and recommend changes to the policy, based on their teams' actual experiences with AI tooling. Not only does this encourage cross-pod collaboration, but it also gives technical leadership a chance to gather how and why tools like Gemini and CoPilot are used by engineers.
+The AI working policy and its associated governance will be reviewed on a **quarterly basis**. Two engineering pods will be paired up to review and recommend changes to the policy, based on their teams' actual experiences with AI tooling. Not only does this encourage cross-pod collaboration, but it also gives technical leadership a chance to gather how and why tools like Gemini and CoPilot are used by engineers.
 
 After assessing the current policy against their engineers' experiences and against any external or vendor changes (e.g. licensing, pricing, data privacy updates), the pods will propose changes as needed, along with the associated rationale.
 
-Final approval of these recommendations will come from either the technical team leads, the AI pod, or higher leadership. *(TBD)*
+Final approval of these recommendations will come from either higher leadership, e.g. Garvita Kapur.
 
 ### Example Rotation Schedule
 
