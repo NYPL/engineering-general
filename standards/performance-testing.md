@@ -139,7 +139,7 @@ The thresholds defined below can be used as a starting point when lacking histor
 Begin by explicitly defining the goals of the load testing. While stakeholders may present general requests, it is the tester’s responsibility to translate them into clear, actionable objectives that guide the testing process and ensure alignment with project needs.
 
 > [!NOTE]
-> For untested systems, it is strongly advised to set the following goals in addition to stakeholder requests:
+> Set the following goals in addition to stakeholder requests, _especially_ for untested systems:
 >
 > 🎯&nbsp;&nbsp;**Benchmarking**: Establish baseline performance; a set of metrics to target or improve upon.
 >
@@ -170,8 +170,12 @@ Leverage existing analytics data (e.g from Google Analytics) to determine realis
 ##### **Exploratory Testing**
 If a web application, engage with it by performing common user actions and navigating to frequently accessed pages while the Network tab of the browser's developer tools is open. This allows the tester to see the web request(s) involved with particular actions; scripting test scenarios requires precise replication of those requests and any associated payloads (e.g. if a form submission involves a POST request).
 
-#### **Consider a Written Test Plan**
-Such a document provides a clear understanding of the testing approach for the team and facilitates effective communication with stakeholders. See [MODv2 load test plan](https://docs.google.com/document/d/1Soc2vDXuMx0Ikf9f7G88P_RFGpp3deSwrOG4tqvqR-Q/edit?usp=sharing) for an example.
+#### **Written Test Plan**
+A written test plan provides a clear understanding of the testing approach for the team and facilitates effective communication with stakeholders. See the following examples (listed by date with most recent on bottom):
+- [DC Facelift Performance Testing](https://docs.google.com/document/d/196-OdgspFEbvb5VXidIwc5Fa1lK-i9XkHdWhAEH4dKo/edit?usp=sharing)
+- [Repo & Collections API Performance Testing](https://docs.google.com/document/d/1f2tndhxSpBz3wR7hWP6ZpI83_fg5NRE7U3vtAafAZxw/edit?usp=sharing)
+- [MODv2 Load Test Plan](https://docs.google.com/document/d/1Soc2vDXuMx0Ikf9f7G88P_RFGpp3deSwrOG4tqvqR-Q/edit?usp=sharing)
+- [Enhanced Search Load Testing](https://docs.google.com/document/d/1STgOAZQFIsmZc7gr-iL1W6gFA5qBempu-hfCVzRtHE8/edit?usp=sharing)
 
 ---
 ### 2. Environment Setup
@@ -194,8 +198,7 @@ Clearly documenting the specifications of the performance test environment is hi
 
 Consistent environment configuration ensures that future tests are comparable and that observed performance changes can be attributed to code modifications rather than infrastructure differences. This minimizes variability across test iterations, enabling accurate assessment of the impact of code changes on system performance.
 
-Examples:
-- [Repo & Collections API Performance Testing](https://docs.google.com/document/d/1f2tndhxSpBz3wR7hWP6ZpI83_fg5NRE7U3vtAafAZxw/edit?usp=sharing)
+Example:
 - [FY25Q2: Digital Collections QA Infrastructure Updates for Performance Testing](https://docs.google.com/document/d/1XdF7tERouWCsPgkQOfCQdescNIC_HGZnMW9daGVQNXw/edit?usp=sharing)
 
 #### **DevOps Coordination**
@@ -348,8 +351,11 @@ The tester's role is to carry out the tests and present the findings effectively
 #### **Version Control**
 Commit test scripts and other relevant files to the GitHub repository for the system under test, ideally including a README with setup instructions and other information, such as links to past test runs.
 
-Example: https://github.com/NYPL/de-visualization/tree/main/locust
-
+Examples:
+- [de-visualization/locust](https://github.com/NYPL/de-visualization/tree/main/locust)
+- [collections-api/locust](https://github.com/NYPL/collections-api/tree/qa/locust)
+- [digital-collections/locust](https://github.com/NYPL/digital-collections/tree/qa/locust)
+- [digital-research-books/etl-pipeline/tests/locust](https://github.com/NYPL/digital-research-books/tree/main/etl-pipeline/tests/locust)
 ---
 
 ## Cadence & Continuous Testing
