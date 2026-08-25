@@ -84,7 +84,7 @@ The responsibility for writing tests isn't strictly divided between Engineers (u
 
 #### Developer Accessibility Testing
 
-While new patron-facing features always require a formal accessibility review, developers should ensure that all changes, including bug fixes and smaller enhancements, remain accessible to screen reader and magnification software users. This can be as simple as validating the expected user flow with JAWS enabled or with the browser zoomed to 400%. Developers can test with VoiceOver on their own machines, or use the shared Windows laptop to access JAWS, NVDA, and other Windows-only assistive technologies.
+While new patron-facing features always require a formal accessibility review, developers should ensure that all changes, including bug fixes and minor features, remain accessible to screen reader and magnification software users. This can be as simple as validating the expected user flow with JAWS enabled or with the browser zoomed to 400%. Developers can test with VoiceOver on their own machines, or use the shared Windows laptop to access JAWS, NVDA, and other Windows-only assistive technologies. 
 
 Developers should also make use of automated accessibility testing wherever possible. Unit tests can verify expected ARIA labels, keyboard interactions, and focus management, while tools such as Axe DevTools can identify programmatic WCAG violations, like missing alternative text or improper heading structure. See our [accessibility standards](./accessibility.md) for more details.
 
