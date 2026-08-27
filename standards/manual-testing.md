@@ -29,7 +29,7 @@ Manual testing should be reserved for scenarios that genuinely benefit from a se
 - Accessibility testing\*\*
 
 \* Visual QA is owned by the design team.  
-\*\* Accessibility testing is owned by the accessibility consultant, but should be supplemented by manual testing. See [Developer Accessibility Testing](#developer-accessibility-testing).
+\*\* Accessibility testing is owned by the accessibility consultant, but should be supplemented by developers. See [Developer Accessibility Testing](#developer-accessibility-testing).
 
 ```mermaid
 graph TD
