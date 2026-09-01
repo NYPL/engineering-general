@@ -26,9 +26,10 @@ Manual testing should be reserved for scenarios that genuinely benefit from a se
 - New features or components
 - Complex integrations
 - Visual QA\*
-- Accessibility testing\*
+- Accessibility testing\*\*
 
-_\*Note: Visual QA and Accessibility Testing are currently owned by the accessibility consultant and the design team, and the process for these types of testing remains unchanged at this time._
+\* Visual QA is owned by the design team.  
+\*\* Accessibility testing is owned by the accessibility consultant, but should be supplemented by developers. See [Developer Accessibility Testing](#developer-accessibility-testing).
 
 ```mermaid
 graph TD
@@ -81,6 +82,12 @@ For guidance on our overall approach to automated testing, please refer to our [
 
 The responsibility for writing tests isn't strictly divided between Engineers (unit tests) and QA Engineers (Playwright tests). The engineer developing a feature or fixing a bug should write the most appropriate test to ensure their code functions correctly and provides confidence in their work. QA Engineers will then supplement these efforts by identifying and addressing testing gaps, developing additional automated tests based on product requirements, ensuring automated tests are being written as part of the development process, and conducting regular manual testing, as detailed further in this document.
 
+#### Developer Accessibility Testing
+
+While new patron-facing features always require a formal accessibility review, developers should ensure that all changes, including bug fixes and minor features, remain accessible to screen reader and magnification software users. This can be as simple as validating the expected user flow with JAWS enabled or with the browser zoomed to 400%. Developers can test with VoiceOver (MacOS) on their own machines, or use the shared Windows laptop to access JAWS, NVDA, and other Windows-only assistive technologies. 
+
+Developers should also make use of automated accessibility testing wherever possible. Unit tests can verify expected ARIA labels, keyboard interactions, and focus management, while tools such as Axe DevTools can identify programmatic WCAG violations, like missing alternative text or improper heading structure. See our [accessibility standards](./accessibility.md) for more details.
+
 ### The "Ready for QA" Column Revisited
 
 Historically, the "Ready for QA" column on Jira boards signified that a QA person needed to review and approve a ticket before it could progress. For many teams, this column became a bottleneck, with tickets lingering and waiting for manual testing. Some teams have since removed this column entirely and instead assign manual testing tickets directly to the QA Engineer. Others still use the column.
@@ -103,6 +110,7 @@ Examples of how this document has been used for past projects:
 
 - [Staff Profiles: Accessibility/QA/UAT and Bug Tracking](https://docs.google.com/document/d/1RiK1fOHdrmJjzWlYlpHC697d-5SBlUirpvUU5qBpxJ8/edit?tab=t.0#heading=h.bngjjr7cfh5e)
 - [Research Catalog: Collection filter/ advanced search VQA/QA](https://docs.google.com/document/d/1CqQZg5vyHRm-0knUGnX8VBT54i06VLle32j0nyFcLIc/edit?usp=sharing)
+
 
 ### Exploratory testing or _Spend time with your application_
 
