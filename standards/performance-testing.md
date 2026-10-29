@@ -135,6 +135,8 @@ The thresholds defined below can be used as a starting point when lacking histor
 ### 1. Test Planning
 ---
 
+**Example:** [Performance Testing Step by Step (Library Card Application)](https://docs.google.com/document/d/15pN1GdGNy4xqaueLzmTvfyFMM8liEPZXI928sQ6mXXQ/edit?usp=sharing) is a first-time walkthrough of this process, from tooling setup through test design and the pilot run, with the Jira tickets used at each step.
+
 #### **Define Objectives**
 Begin by explicitly defining the goals of the load testing. While stakeholders may present general requests, it is the tester’s responsibility to translate them into clear, actionable objectives that guide the testing process and ensure alignment with project needs.
 
